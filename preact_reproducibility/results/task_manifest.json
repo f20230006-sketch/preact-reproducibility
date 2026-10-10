@@ -1,0 +1,525 @@
+{
+  "tasks": [
+    {
+      "task_id": "ArcadeData__arcadedb-4281",
+      "split": "val"
+    },
+    {
+      "task_id": "ArcadeData__arcadedb-4411",
+      "split": "train"
+    },
+    {
+      "task_id": "ArcadeData__arcadedb-4455",
+      "split": "train"
+    },
+    {
+      "task_id": "Gentleman-Programming__gentle-ai-595",
+      "split": "train"
+    },
+    {
+      "task_id": "HKUDS__nanobot-4048",
+      "split": "train"
+    },
+    {
+      "task_id": "HKUDS__nanobot-4129",
+      "split": "train"
+    },
+    {
+      "task_id": "HKUDS__nanobot-4274",
+      "split": "train"
+    },
+    {
+      "task_id": "Martian-Engineering__lossless-claw-814",
+      "split": "train"
+    },
+    {
+      "task_id": "PerryTS__perry-3982",
+      "split": "train"
+    },
+    {
+      "task_id": "Soju06__codex-lb-744",
+      "split": "train"
+    },
+    {
+      "task_id": "agno-agi__agno-8148",
+      "split": "train"
+    },
+    {
+      "task_id": "apache__dubbo-go-3357",
+      "split": "test"
+    },
+    {
+      "task_id": "apache__hugegraph-3037",
+      "split": "test"
+    },
+    {
+      "task_id": "apache__pulsar-25793",
+      "split": "val"
+    },
+    {
+      "task_id": "apache__pulsar-25865",
+      "split": "train"
+    },
+    {
+      "task_id": "apache__pulsar-25953",
+      "split": "train"
+    },
+    {
+      "task_id": "astral-sh__ruff-25414",
+      "split": "train"
+    },
+    {
+      "task_id": "astral-sh__ruff-25567",
+      "split": "test"
+    },
+    {
+      "task_id": "better-auth__better-auth-10070",
+      "split": "val"
+    },
+    {
+      "task_id": "better-auth__better-auth-9756",
+      "split": "train"
+    },
+    {
+      "task_id": "cloudflare__vinext-1371",
+      "split": "train"
+    },
+    {
+      "task_id": "cloudflare__vinext-1574",
+      "split": "train"
+    },
+    {
+      "task_id": "cloudflare__vinext-1837",
+      "split": "train"
+    },
+    {
+      "task_id": "cloudnative-pg__cloudnative-pg-10747",
+      "split": "train"
+    },
+    {
+      "task_id": "danny-avila__LibreChat-13166",
+      "split": "test"
+    },
+    {
+      "task_id": "docker__docker-agent-2992",
+      "split": "train"
+    },
+    {
+      "task_id": "facebook__lexical-8676",
+      "split": "train"
+    },
+    {
+      "task_id": "fallow-rs__fallow-762",
+      "split": "val"
+    },
+    {
+      "task_id": "fallow-rs__fallow-821",
+      "split": "train"
+    },
+    {
+      "task_id": "fallow-rs__fallow-824",
+      "split": "train"
+    },
+    {
+      "task_id": "fallow-rs__fallow-913",
+      "split": "train"
+    },
+    {
+      "task_id": "fathah__hermes-desktop-249",
+      "split": "train"
+    },
+    {
+      "task_id": "fathah__hermes-desktop-268",
+      "split": "train"
+    },
+    {
+      "task_id": "floci-io__floci-1021",
+      "split": "train"
+    },
+    {
+      "task_id": "floci-io__floci-1032",
+      "split": "val"
+    },
+    {
+      "task_id": "floci-io__floci-1142",
+      "split": "train"
+    },
+    {
+      "task_id": "floci-io__floci-1209",
+      "split": "train"
+    },
+    {
+      "task_id": "floci-io__floci-1235",
+      "split": "test"
+    },
+    {
+      "task_id": "floci-io__floci-1325",
+      "split": "train"
+    },
+    {
+      "task_id": "gleam-lang__gleam-5797",
+      "split": "train"
+    },
+    {
+      "task_id": "gleam-lang__gleam-5798",
+      "split": "train"
+    },
+    {
+      "task_id": "gotd__td-1759",
+      "split": "train"
+    },
+    {
+      "task_id": "harbor-framework__harbor-1764",
+      "split": "val"
+    },
+    {
+      "task_id": "helidon-io__helidon-11979",
+      "split": "train"
+    },
+    {
+      "task_id": "intellectronica__ruler-556",
+      "split": "train"
+    },
+    {
+      "task_id": "ivov__lisette-491",
+      "split": "train"
+    },
+    {
+      "task_id": "ivov__lisette-627",
+      "split": "val"
+    },
+    {
+      "task_id": "ivov__lisette-657",
+      "split": "train"
+    },
+    {
+      "task_id": "kenn-io__agentsview-602",
+      "split": "train"
+    },
+    {
+      "task_id": "kestra-io__kestra-16067",
+      "split": "train"
+    },
+    {
+      "task_id": "kestra-io__kestra-16119",
+      "split": "train"
+    },
+    {
+      "task_id": "kestra-io__kestra-16450",
+      "split": "train"
+    },
+    {
+      "task_id": "kubernetes-sigs__kueue-11559",
+      "split": "train"
+    },
+    {
+      "task_id": "kubernetes-sigs__kueue-11619",
+      "split": "train"
+    },
+    {
+      "task_id": "langchain-ai__deepagents-3866",
+      "split": "val"
+    },
+    {
+      "task_id": "langchain4j__langchain4j-5315",
+      "split": "val"
+    },
+    {
+      "task_id": "langchain4j__langchain4j-5328",
+      "split": "train"
+    },
+    {
+      "task_id": "langchain4j__langchain4j-5367",
+      "split": "train"
+    },
+    {
+      "task_id": "livekit__agents-5944",
+      "split": "train"
+    },
+    {
+      "task_id": "ludo-technologies__pyscn-500",
+      "split": "test"
+    },
+    {
+      "task_id": "ludo-technologies__pyscn-548",
+      "split": "val"
+    },
+    {
+      "task_id": "marimo-team__marimo-9626",
+      "split": "train"
+    },
+    {
+      "task_id": "marimo-team__marimo-9754",
+      "split": "train"
+    },
+    {
+      "task_id": "marimo-team__marimo-9766",
+      "split": "train"
+    },
+    {
+      "task_id": "matrixorigin__matrixone-24632",
+      "split": "train"
+    },
+    {
+      "task_id": "microsoft__apm-1553",
+      "split": "train"
+    },
+    {
+      "task_id": "microsoft__typescript-go-4062",
+      "split": "train"
+    },
+    {
+      "task_id": "microsoft__typescript-go-4194",
+      "split": "train"
+    },
+    {
+      "task_id": "microsoft__waza-247",
+      "split": "val"
+    },
+    {
+      "task_id": "mikro-orm__mikro-orm-7799",
+      "split": "train"
+    },
+    {
+      "task_id": "mozilla-ai__any-llm-1121",
+      "split": "train"
+    },
+    {
+      "task_id": "mui__base-ui-4849",
+      "split": "train"
+    },
+    {
+      "task_id": "mui__base-ui-4903",
+      "split": "test"
+    },
+    {
+      "task_id": "mvanhorn__cli-printing-press-1920",
+      "split": "test"
+    },
+    {
+      "task_id": "mvanhorn__cli-printing-press-2002",
+      "split": "test"
+    },
+    {
+      "task_id": "mvanhorn__cli-printing-press-2086",
+      "split": "val"
+    },
+    {
+      "task_id": "nearai__ironclaw-3694",
+      "split": "train"
+    },
+    {
+      "task_id": "nearai__ironclaw-3735",
+      "split": "train"
+    },
+    {
+      "task_id": "nesquena__hermes-webui-3069",
+      "split": "test"
+    },
+    {
+      "task_id": "open-jarvis__OpenJarvis-465",
+      "split": "train"
+    },
+    {
+      "task_id": "openrewrite__rewrite-7784",
+      "split": "train"
+    },
+    {
+      "task_id": "oxc-project__oxc-22623",
+      "split": "train"
+    },
+    {
+      "task_id": "promptfoo__promptfoo-9313",
+      "split": "test"
+    },
+    {
+      "task_id": "pydantic__pydantic-ai-5580",
+      "split": "train"
+    },
+    {
+      "task_id": "pydantic__pydantic-ai-5842",
+      "split": "train"
+    },
+    {
+      "task_id": "raullenchai__Rapid-MLX-426",
+      "split": "val"
+    },
+    {
+      "task_id": "react-hook-form__react-hook-form-13464",
+      "split": "train"
+    },
+    {
+      "task_id": "rest-sh__restish-337",
+      "split": "train"
+    },
+    {
+      "task_id": "rust-lang__rust-analyzer-22397",
+      "split": "test"
+    },
+    {
+      "task_id": "sipeed__picoclaw-2928",
+      "split": "train"
+    },
+    {
+      "task_id": "stablyai__orca-1934",
+      "split": "train"
+    },
+    {
+      "task_id": "stablyai__orca-4331",
+      "split": "train"
+    },
+    {
+      "task_id": "stablyai__orca-5176",
+      "split": "train"
+    },
+    {
+      "task_id": "tailscale__tailscale-19847",
+      "split": "val"
+    },
+    {
+      "task_id": "tashfeenahmed__freellmapi-289",
+      "split": "train"
+    },
+    {
+      "task_id": "teng-lin__notebooklm-py-826",
+      "split": "test"
+    },
+    {
+      "task_id": "tursodatabase__turso-7117",
+      "split": "train"
+    },
+    {
+      "task_id": "ubugeeei-prod__vize-1265",
+      "split": "train"
+    },
+    {
+      "task_id": "ubugeeei-prod__vize-1281",
+      "split": "train"
+    },
+    {
+      "task_id": "ubugeeei-prod__vize-1508",
+      "split": "train"
+    },
+    {
+      "task_id": "ubugeeei-prod__vize-769",
+      "split": "test"
+    },
+    {
+      "task_id": "ubugeeei-prod__vize-774",
+      "split": "val"
+    },
+    {
+      "task_id": "ueberdosis__tiptap-7887",
+      "split": "test"
+    },
+    {
+      "task_id": "ueberdosis__tiptap-7896",
+      "split": "train"
+    },
+    {
+      "task_id": "verl-project__verl-6506",
+      "split": "train"
+    },
+    {
+      "task_id": "vuejs__core-14877",
+      "split": "train"
+    },
+    {
+      "task_id": "vuejs__core-14897",
+      "split": "val"
+    },
+    {
+      "task_id": "withcoral__coral-1143",
+      "split": "train"
+    },
+    {
+      "task_id": "withcoral__coral-1179",
+      "split": "test"
+    },
+    {
+      "task_id": "withcoral__coral-1186",
+      "split": "test"
+    },
+    {
+      "task_id": "woodpecker-ci__woodpecker-6623",
+      "split": "train"
+    }
+  ],
+  "shards": [
+    {
+      "relative_path": "rebench/claude-code/run_0.jsonl.gz",
+      "compressed_sha256": "51142febb5e17b2fbac881af5d32ac827c6f25d480769e9ef4bbd397522af994",
+      "decompressed_sha256": "45e1b2a570cc3946bddbf3ae9e3282c0c95e2a6baa4c8a1196264ae14b13186e"
+    },
+    {
+      "relative_path": "rebench/claude-code/run_1.jsonl.gz",
+      "compressed_sha256": "2995f80247c4b3f96d5344749e7939b4445cd3c8524c72f7e64550084e35cb47",
+      "decompressed_sha256": "3deedd0034f0178406c3e8774cae78eb33999f0b0f12d27788ee249aa35513e3"
+    },
+    {
+      "relative_path": "rebench/claude-code/run_2.jsonl.gz",
+      "compressed_sha256": "080feee6b4dec0ba523dc9af084c0b0ae6225fe3deb28c7264e219a39e75a153",
+      "decompressed_sha256": "2f4b9b879d10881ced544ff9490de7c6af861ae752299fc356344a06e4998969"
+    },
+    {
+      "relative_path": "rebench/claude-code/run_3.jsonl.gz",
+      "compressed_sha256": "0c9e7d612a61d9a49c92fd4d45e4b10a9a61954d602bf2b4234e5e755719a3f0",
+      "decompressed_sha256": "a58454651f7b3613931970650d125ec2722b6718c913f8ee591b0c98b1d8cd90"
+    },
+    {
+      "relative_path": "rebench/claude-code/run_4.jsonl.gz",
+      "compressed_sha256": "932ed5542618ababc488f55487739e6d72aacfbdd8b8fd30f11ebbfd84fd1932",
+      "decompressed_sha256": "91ac5c0701e559161136a3fb6305b162f9e9925e0164c1128741238949d3e830"
+    },
+    {
+      "relative_path": "rebench/gpt-5.6-luna/run_0.jsonl.gz",
+      "compressed_sha256": "5b256a9f192ca71572dd23b4f2e53ac3a14454d88b835f95b47bad5288634f31",
+      "decompressed_sha256": "b4801528421d978c7181f871b1ffa01a1914319afa065c639ddecda8f98ffa24"
+    },
+    {
+      "relative_path": "rebench/gpt-5.6-luna/run_1.jsonl.gz",
+      "compressed_sha256": "5a89fb76fd73141ff8e5345ee44d0e547762fa0dab5e8b44684c9fcef72694b3",
+      "decompressed_sha256": "9632392b9051849e19ba55ae307349f0eb3759ad7844f94d8c3fc1bfb8141e9c"
+    },
+    {
+      "relative_path": "rebench/gpt-5.6-luna/run_2.jsonl.gz",
+      "compressed_sha256": "a069a6fb542afc751325b4f0399da2f561c24ad3b5d23cddeaaca4aa28bbc1f2",
+      "decompressed_sha256": "3b3d7ffa3c5395056527656ced1c48fa30c642ec68139bf14f24b6dc1717581f"
+    },
+    {
+      "relative_path": "rebench/gpt-5.6-luna/run_3.jsonl.gz",
+      "compressed_sha256": "810536b13280edd2932546da6111d6ca3676359a6c1245ba6e577c76917044e8",
+      "decompressed_sha256": "cf5703ee448e11f56a49ed391e9b257d509d6cda086d3e8252da6c9bd948c9e4"
+    },
+    {
+      "relative_path": "rebench/gpt-5.6-luna/run_4.jsonl.gz",
+      "compressed_sha256": "28451709437f9ceb11e5eb57765a0e77eeadb9f4e0218502b6bbadbd4e7b7b8d",
+      "decompressed_sha256": "d7de975f1785add086984cfec5b0fef3ff814c436645ebc30a1c3493dee92821"
+    },
+    {
+      "relative_path": "rebench/qwen3.6-27b/run_0.jsonl.gz",
+      "compressed_sha256": "4463e9cd5d9049d8cd71d5a8d27267c36959ff7d606c44c1f83d3fff20a4b3e4",
+      "decompressed_sha256": "235c4cb5aa1666520eec81303b7a83166932a852a46a6724dfc665f3fc29f6eb"
+    },
+    {
+      "relative_path": "rebench/qwen3.6-27b/run_1.jsonl.gz",
+      "compressed_sha256": "75e367abee26da58dc5a5bc0481445d388e59fd6e1ca6bc2bfc9a1d41cc2de3d",
+      "decompressed_sha256": "b8d4521dfeea81ec42065dec1ccf50674621b8bd0d9aad70385d1c1e5abfaa9a"
+    },
+    {
+      "relative_path": "rebench/qwen3.6-27b/run_2.jsonl.gz",
+      "compressed_sha256": "3a86500848065bb7e42bb567df916e6b0a1a7a4cb59d6f4f9f71607b3c87705f",
+      "decompressed_sha256": "e3d6b466a3fc8d145428d256fd209de9aced0f379097cdb411e601b9888d7748"
+    },
+    {
+      "relative_path": "rebench/qwen3.6-27b/run_3.jsonl.gz",
+      "compressed_sha256": "28e0bbad155f836555f3178e9ecd3cb05e01e361191fb2a87d207d4c5b307796",
+      "decompressed_sha256": "8485f46fb2b3faa2d49a42e241d98cd74760caa572af7127909bf6cba689baba"
+    },
+    {
+      "relative_path": "rebench/qwen3.6-27b/run_4.jsonl.gz",
+      "compressed_sha256": "b24883acb640a44e6f7ea3c03ac9c3791046583785e09d424c62576f9a3ec6b6",
+      "decompressed_sha256": "b4b09a8be05d6d8f82036d2cc8cde3bca8b093f14141b9dcf2f0c2e8b21ad326"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "claude-code": {
+    "tasks": 111,
+    "runs_per_task": [
+      5
+    ],
+    "failed_runs": 220,
+    "other_attempt_success_rate_given_failure": 0.1636,
+    "share_failed_runs_with_at_least_one_other_success": 0.3864,
+    "mean_steps_success": 44.5,
+    "mean_steps_failure": 55.6
+  },
+  "gpt-5.6-luna": {
+    "tasks": 111,
+    "runs_per_task": [
+      5
+    ],
+    "failed_runs": 313,
+    "other_attempt_success_rate_given_failure": 0.1534,
+    "share_failed_runs_with_at_least_one_other_success": 0.2812,
+    "mean_steps_success": 15.3,
+    "mean_steps_failure": 18.0
+  },
+  "qwen3.6-27b": {
+    "tasks": 111,
+    "runs_per_task": [
+      5
+    ],
+    "failed_runs": 382,
+    "other_attempt_success_rate_given_failure": 0.1728,
+    "share_failed_runs_with_at_least_one_other_success": 0.3848,
+    "mean_steps_success": 69.0,
+    "mean_steps_failure": 80.4
+  }
+}

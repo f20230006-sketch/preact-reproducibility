@@ -1,0 +1,36 @@
+{
+  "scope": "Same source/data numerical rerun in an isolated environment, not independent data collection.",
+  "tolerance": 1e-08,
+  "reports": [
+    {
+      "file": "preact_pilot_results.json",
+      "max_absolute_numeric_difference": 0,
+      "numeric_fields": 141,
+      "mismatches_above_tolerance": []
+    },
+    {
+      "file": "preact_pilot_audit_results.json",
+      "max_absolute_numeric_difference": 0.0,
+      "numeric_fields": 204,
+      "mismatches_above_tolerance": []
+    },
+    {
+      "file": "preact_invariance_ablation_results.json",
+      "max_absolute_numeric_difference": 0.0,
+      "numeric_fields": 72,
+      "mismatches_above_tolerance": []
+    },
+    {
+      "file": "preact_retry_opportunity_results.json",
+      "max_absolute_numeric_difference": 0,
+      "numeric_fields": 21,
+      "mismatches_above_tolerance": []
+    },
+    {
+      "file": "major_revision_results.json",
+      "max_absolute_numeric_difference": 7.771561172376096e-16,
+      "numeric_fields": 916,
+      "mismatches_above_tolerance": []
+    }
+  ]
+}

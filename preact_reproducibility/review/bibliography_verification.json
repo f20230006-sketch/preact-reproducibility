@@ -1,0 +1,378 @@
+{
+  "records": [
+    {
+      "arxiv_id": "2210.03629",
+      "url": "https://arxiv.org/abs/2210.03629",
+      "verified_date": "2026-10-10",
+      "primary_title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "authors": [
+        "Yao, Shunyu",
+        "Zhao, Jeffrey",
+        "Yu, Dian",
+        "Du, Nan",
+        "Shafran, Izhak",
+        "Narasimhan, Karthik",
+        "Cao, Yuan"
+      ],
+      "identity_matches_snapshot": true,
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2303.11366",
+      "url": "https://arxiv.org/abs/2303.11366",
+      "verified_date": "2026-10-10",
+      "primary_title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+      "authors": [
+        "Shinn, Noah",
+        "Cassano, Federico",
+        "Berman, Edward",
+        "Gopinath, Ashwin",
+        "Narasimhan, Karthik",
+        "Yao, Shunyu"
+      ],
+      "identity_matches_snapshot": true,
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2503.18666",
+      "url": "https://arxiv.org/abs/2503.18666",
+      "verified_date": "2026-10-10",
+      "primary_title": "AgentSpec: Customizable Runtime Enforcement for Safe and Reliable LLM Agents",
+      "authors": [
+        "Wang, Haoyu",
+        "Poskitt, Christopher M.",
+        "Sun, Jun"
+      ],
+      "identity_matches_snapshot": true,
+      "status": "verified",
+      "printed_bibliography_title_matches": true
+    },
+    {
+      "arxiv_id": "2504.08942",
+      "url": "https://arxiv.org/abs/2504.08942",
+      "verified_date": "2026-10-10",
+      "primary_title": "AgentRewardBench: Evaluating Automatic Evaluations of Web Agent Trajectories",
+      "authors": [
+        "L\u00f9, Xing Han",
+        "Kazemnejad, Amirhossein",
+        "Meade, Nicholas",
+        "Patel, Arkil",
+        "Shin, Dongchan",
+        "Zambrano, Alejandra",
+        "Sta\u0144czak, Karolina",
+        "Shaw, Peter",
+        "Pal, Christopher J.",
+        "Reddy, Siva"
+      ],
+      "identity_matches_snapshot": true,
+      "status": "verified",
+      "printed_bibliography_title_matches": true
+    },
+    {
+      "arxiv_id": "2508.00500",
+      "url": "https://arxiv.org/abs/2508.00500",
+      "verified_date": "2026-10-10",
+      "primary_title": "ProbGuard: Proactive Runtime Monitoring for LLM Agent Safety via Probabilistic Prediction",
+      "authors": [
+        "Wang, Haoyu",
+        "Poskitt, Christopher M.",
+        "Wei, Jiali",
+        "Sun, Jun"
+      ],
+      "identity_matches_snapshot": true,
+      "status": "verified",
+      "printed_bibliography_title_matches": true
+    },
+    {
+      "arxiv_id": "2509.02360",
+      "url": "https://arxiv.org/abs/2509.02360",
+      "verified_date": "2026-10-10",
+      "primary_title": "When Agents go Astray: Course-Correcting SWE Agents with PRMs",
+      "authors": [
+        "Gandhi, Shubham",
+        "Tsay, Jason",
+        "Ganhotra, Jatin",
+        "Kate, Kiran",
+        "Rizk, Yara"
+      ],
+      "identity_matches_snapshot": true,
+      "status": "verified",
+      "printed_bibliography_title_matches": true
+    },
+    {
+      "arxiv_id": "2509.10401",
+      "url": "https://arxiv.org/abs/2509.10401",
+      "verified_date": "2026-10-10",
+      "primary_title": "Abduct, Act, Predict: Scaffolding Causal Inference for Automated Failure Attribution in Multi-Agent Systems",
+      "authors": [
+        "West, Alva",
+        "Weng, Yixuan",
+        "Zhu, Minjun",
+        "Lin, Zhen",
+        "Ning, Zhiyuan",
+        "Zhang, Yue"
+      ],
+      "identity_matches_snapshot": true,
+      "status": "verified",
+      "printed_bibliography_title_matches": true
+    },
+    {
+      "arxiv_id": "2512.06749",
+      "url": "https://arxiv.org/abs/2512.06749",
+      "verified_date": "2026-10-10",
+      "primary_title": "DoVer: Intervention-Driven Auto Debugging for LLM Multi-Agent Systems",
+      "authors": [
+        "Ma, Ming",
+        "Zhang, Jue",
+        "Yang, Fangkai",
+        "Kang, Yu",
+        "Lin, Qingwei",
+        "Rajmohan, Saravan",
+        "Zhang, Dongmei"
+      ],
+      "identity_matches_snapshot": true,
+      "status": "verified",
+      "printed_bibliography_title_matches": true
+    },
+    {
+      "arxiv_id": "2602.03338",
+      "url": "https://arxiv.org/abs/2602.03338",
+      "verified_date": "2026-10-10",
+      "primary_title": "Accurate Failure Prediction in Agents Does Not Imply Effective Failure Prevention",
+      "authors": [
+        "Vasudev, Rakshith",
+        "Russak, Melisa",
+        "Bikel, Dan",
+        "Alshikh, Waseem"
+      ],
+      "identity_matches_snapshot": true,
+      "status": "verified",
+      "printed_bibliography_title_matches": true
+    },
+    {
+      "arxiv_id": "2603.20260",
+      "url": "https://arxiv.org/abs/2603.20260",
+      "verified_date": "2026-10-10",
+      "primary_title": "ProMAS: Proactive Error Forecasting for Multi-Agent Systems Using Markov Transition Dynamics",
+      "authors": [
+        "Zhao, Xinkui",
+        "Liu, Sai",
+        "Zhang, Yifan",
+        "Ma, Qingyu",
+        "Cheng, Guanjie",
+        "Wang, Naibo",
+        "Liu, Chang"
+      ],
+      "identity_matches_snapshot": true,
+      "status": "verified",
+      "printed_bibliography_title_matches": true
+    },
+    {
+      "arxiv_id": "2604.15075",
+      "url": "https://arxiv.org/abs/2604.15075",
+      "verified_date": "2026-10-10",
+      "primary_title": "Atropos: Improving Cost-Benefit Trade-off of LLM-based Agents under Self-Consistency with Early Termination and Model Hotswap",
+      "authors": [
+        "Kim, Naryeong",
+        "Yoo, Shin"
+      ],
+      "identity_matches_snapshot": true,
+      "status": "verified",
+      "printed_bibliography_title_matches": true
+    },
+    {
+      "arxiv_id": "2605.06455",
+      "url": "https://arxiv.org/abs/2605.06455",
+      "verified_date": "2026-10-10",
+      "primary_title": "PrefixGuard: Online Failure Warning and Trace-Grounded Diagnosis for LLM Agents",
+      "authors": [
+        "Huang, Xinmiao",
+        "Hu, Jinwei",
+        "He, Qisong",
+        "Roy, Rajarshi",
+        "Wu, Changshun",
+        "Dong, Yi",
+        "Huang, Xiaowei"
+      ],
+      "identity_matches_snapshot": true,
+      "status": "verified",
+      "printed_bibliography_title_matches": true
+    },
+    {
+      "arxiv_id": "2605.06737",
+      "url": "https://arxiv.org/abs/2605.06737",
+      "verified_date": "2026-10-10",
+      "primary_title": "A Self-Healing Framework for Reliable LLM-Based Autonomous Agents",
+      "authors": [
+        "Jeong, Cheonsu",
+        "Shin, Younggun"
+      ],
+      "identity_matches_snapshot": true,
+      "status": "verified",
+      "printed_bibliography_title_matches": true
+    },
+    {
+      "arxiv_id": "2605.08715",
+      "url": "https://arxiv.org/abs/2605.08715",
+      "verified_date": "2026-10-10",
+      "primary_title": "AgentForesight: Online Auditing for Early Failure Prediction in Multi-Agent Systems",
+      "authors": [
+        "Zhang, Boxuan",
+        "Zhu, Jianing",
+        "Shi, Zeru",
+        "Liu, Dongfang",
+        "Tang, Ruixiang"
+      ],
+      "identity_matches_snapshot": true,
+      "status": "verified",
+      "printed_bibliography_title_matches": true
+    },
+    {
+      "arxiv_id": "2605.12925",
+      "url": "https://arxiv.org/abs/2605.12925",
+      "verified_date": "2026-10-10",
+      "primary_title": "AgentLens: Revealing The Lucky Pass Problem in SWE-Agent Evaluation",
+      "authors": [
+        "Sahoo, Priyam",
+        "Mittal, Gaurav",
+        "Li, Xiaomin",
+        "Ma, Shengjie",
+        "Steenhoek, Benjamin",
+        "Lin, Pingping",
+        "Hu, Yu"
+      ],
+      "identity_matches_snapshot": true,
+      "status": "verified",
+      "printed_bibliography_title_matches": true
+    },
+    {
+      "arxiv_id": "2605.15206",
+      "url": "https://arxiv.org/abs/2605.15206",
+      "verified_date": "2026-10-10",
+      "primary_title": "AgentStop: Terminating Local AI Agents Early to Save Energy in Consumer Devices",
+      "authors": [
+        "Pham, Dzung",
+        "Katevas, Kleomenis",
+        "Shamsabadi, Ali Shahin",
+        "Haddadi, Hamed"
+      ],
+      "identity_matches_snapshot": true,
+      "status": "verified",
+      "printed_bibliography_title_matches": true
+    },
+    {
+      "arxiv_id": "2606.05414",
+      "url": "https://arxiv.org/abs/2606.05414",
+      "verified_date": "2026-10-10",
+      "primary_title": "When Evidence is Sparse: Weakly Supervised Early Failure Alerting in Dialogs and LLM-Agent Trajectories",
+      "authors": [
+        "Baidya, Avinash",
+        "Liang, Xinran",
+        "Guo, Ruocheng",
+        "Gao, Xiang",
+        "Das, Kamalika"
+      ],
+      "identity_matches_snapshot": true,
+      "status": "verified",
+      "printed_bibliography_title_matches": true
+    },
+    {
+      "arxiv_id": "2607.09510",
+      "url": "https://arxiv.org/abs/2607.09510",
+      "verified_date": "2026-10-10",
+      "primary_title": "Failure as a Process: An Anatomy of CLI Coding Agent Trajectories",
+      "authors": [
+        "Zhao, Xiangxin",
+        "Li, Han",
+        "Li, Shuaiting",
+        "Zhao, Tianyi",
+        "Barr, Earl T.",
+        "Sarro, Federica",
+        "Ye, He"
+      ],
+      "identity_matches_snapshot": true,
+      "status": "verified",
+      "printed_bibliography_title_matches": true
+    },
+    {
+      "arxiv_id": "2607.27443",
+      "url": "https://arxiv.org/abs/2607.27443",
+      "verified_date": "2026-10-10",
+      "primary_title": "Leveraging Trajectory Graphs for Pre-Execution Error Diagnosis in Agentic LLM Systems",
+      "authors": [
+        "Zheng, Xu",
+        "Chen, Zhuomin",
+        "Lin, Chaohao",
+        "Wei, Hua",
+        "Chen, Haifeng",
+        "Cheng, Wei",
+        "Luo, Dongsheng"
+      ],
+      "identity_matches_snapshot": true,
+      "status": "verified",
+      "printed_bibliography_title_matches": true
+    },
+    {
+      "arxiv_id": "2608.02464",
+      "url": "https://arxiv.org/abs/2608.02464",
+      "verified_date": "2026-10-10",
+      "primary_title": "Real-Time Detection and Repair of LLM Agent Failures",
+      "authors": [
+        "Dubey, Sunny"
+      ],
+      "identity_matches_snapshot": true,
+      "status": "verified",
+      "printed_bibliography_title_matches": true
+    },
+    {
+      "arxiv_id": "2608.03222",
+      "url": "https://arxiv.org/abs/2608.03222",
+      "verified_date": "2026-10-10",
+      "primary_title": "Fail-Fast, Restart-Smart: Early Failure Prediction and Restart for SWE Agentic Tasks",
+      "authors": [
+        "Wang, Chenyu",
+        "Lyu, Yunbo",
+        "He, Junda",
+        "Yang, Zhou",
+        "Zhong, Chenxing",
+        "Harel, Yaniv",
+        "Lo, David"
+      ],
+      "identity_matches_snapshot": true,
+      "status": "verified",
+      "printed_bibliography_title_matches": true
+    },
+    {
+      "arxiv_id": "2609.02783",
+      "url": "https://arxiv.org/abs/2609.02783",
+      "verified_date": "2026-10-10",
+      "primary_title": "EarlyEval: Cheaper Agent Evaluation via Early Outcome Prediction",
+      "authors": [
+        "Shi, Yuling",
+        "Sun, Zhensu",
+        "Dong, Junsen",
+        "Wan, Chengcheng",
+        "Lo, David",
+        "Gu, Xiaodong"
+      ],
+      "identity_matches_snapshot": true,
+      "status": "verified",
+      "printed_bibliography_title_matches": true
+    },
+    {
+      "arxiv_id": "2609.25647",
+      "url": "https://arxiv.org/abs/2609.25647",
+      "verified_date": "2026-10-10",
+      "primary_title": "Testing-Driven Reliability Audit of Trajectory-Based Early Outcome Prediction for LLM Agents: Target-Specific Calibration Transfer Persists Within a Single Benchmark",
+      "authors": [
+        "Cao, YanZe"
+      ],
+      "identity_matches_snapshot": true,
+      "status": "verified",
+      "printed_bibliography_title_matches": true
+    }
+  ],
+  "scope": "Primary identity and hyperlink checks, not independent replication or acceptance verification.",
+  "dataset_reference_verified": true,
+  "dataset_provenance_file": "results/hub_provenance.json"
+}

@@ -1,0 +1,41 @@
+review_id,short,category,Unseen tasks,Held-out agent,Scaffold/domain,Calibration,Intervention,Replay/control,source_location,source_url
+P01,Intervention paradox,1,R,NR,R,R,R,R,"Sections on critic calibration, intervention results, pilot test, and limitations.",https://arxiv.org/abs/2602.03338
+P02,FailFast–RestartSmart,1,R,R,NR,R,R,R,"Experimental setup, threshold calibration, Tables on stopping and restart, deployment limitations.",https://arxiv.org/abs/2608.03222
+P03,PrefixGuard,1,NR,NR,NR,R,NR,NR,v2 Appendix B split allocation and calibration; conclusion.,https://arxiv.org/abs/2605.06455
+P04,Sparse evidence,1,NR,NR,NR,Q,NR,NR,"Evidence-sparsity analysis, predictor/trigger experiments, limitations.",https://arxiv.org/abs/2606.05414
+P05,AgentForesight,1,Q,NR,Q,NR,NR,NR,"v2 evaluation protocol, external Who&When experiment, Appendix G limitations.",https://arxiv.org/abs/2605.08715
+P06,Trajectory Graph Copilot,1,R,NR,NR,NR,R,Q,"Section 5 experimental setup, pass/grounding comparisons and graph construction.",https://arxiv.org/abs/2607.27443
+P07,Atropos,1,NR,NR,NR,Q,R,Q,Prediction/hotswap experiments and threats to validity.,https://arxiv.org/abs/2604.15075
+P08,EarlyEval,1,NR,R,NR,R,Q,NR,"Research questions, Section III calibration/features, leave-one-agent-out results.",https://arxiv.org/abs/2609.02783
+P09,AgentStop,1,NR,NR,NR,Q,Q,NR,"Hardware experiments, early-stop results, Discussion 8.1.",https://arxiv.org/abs/2605.15206
+P10,Automata from traces,1,NR,NR,NR,NR,Q,NR,"Setup, failure-prediction experiments, Section 6 limitations.",https://arxiv.org/abs/2608.23670
+P11,Calibration-transfer audit,1,Q,R,Q,R,NR,NR,"Abstract, shared-predictor controls, persistence battery and boundary-test results.",https://arxiv.org/abs/2609.25647
+P12,ProbGuard,1,NR,NR,NR,Q,R,Q,v4 safety/intervention experiments and probabilistic abstraction; author reports ASE 2026 acceptance.,https://arxiv.org/abs/2508.00500
+P13,SWE-PRM,1,NR,NR,NR,NR,R,Q,Inference-time framework and feedback strategy experiments.,https://arxiv.org/abs/2509.02360
+P14,Telemetry sentinel,1,NR,R,Q,R,R,R,"Synthetic result table, deployment transfer, Section 9 repair table and Section 11 limitations.",https://arxiv.org/abs/2608.02464
+P15,ProMAS,1,NR,NR,NR,NR,NR,NR,"Method, Who&When experiment and accuracy/latency comparison.",https://arxiv.org/abs/2603.20260
+P16,Self-healing framework,2,NR,NR,NR,NR,NR,NR,"Sections 3–4 framework, setup, baselines and evaluation.",https://arxiv.org/abs/2605.06737
+P17,AgentRx,2,NR,NR,NR,NR,NR,NR,"Benchmark construction, judging experiments and Section 7 limitations.",https://arxiv.org/abs/2602.02475
+P18,ToolPRMBench,2,Q,NR,Q,NR,NR,NR,"Main discrimination experiments, Limitations and Appendix A split table.",https://arxiv.org/abs/2601.12294
+P19,AgentLens,2,NR,NR,NR,NR,NR,NR,"Dataset construction, process-tier experiments and Appendix A limitations.",https://arxiv.org/abs/2605.12925
+P20,PROACT-Agent,2,Q,NR,Q,NR,R,Q,"Canonical-root/source split table, held-out safety and AgentDojo results.",https://arxiv.org/abs/2609.34415
+P21,AgentSpec,2,NR,NR,NR,NR,R,Q,"Runtime DSL, evaluation and generated-rule experiments; record reports ICSE 2026 publication.",https://arxiv.org/abs/2503.18666
+P22,Who&When Pro,2,NR,NR,NR,NR,NR,NR,Controlled construction pipeline and benchmark analysis.,https://arxiv.org/abs/2607.09996
+P23,Who&When,2,NR,NR,NR,NR,NR,NR,Dataset and attribution comparisons; inspected camera-ready v3.,https://arxiv.org/abs/2505.00212
+P24,MAST,2,NR,NR,NR,NR,NR,NR,"Taxonomy construction, annotation validation and cross-framework analysis.",https://arxiv.org/abs/2503.13657
+P25,Failure as a process,2,NR,NR,NR,NR,NR,NR,"Empirical setup, trajectory analyses and limitations; findings refined from full-text extraction.",https://arxiv.org/abs/2607.09510
+P26,Plan compliance,2,NR,NR,NR,NR,R,R,"Plan/action assessment, reminder experiment and threats to validity.",https://arxiv.org/abs/2604.12147
+P27,"Abduct, Act, Predict",2,NR,NR,NR,NR,NR,NR,Abduct/act/predict framework and attribution evaluation.,https://arxiv.org/abs/2509.10401
+P28,DoVer,2,NR,NR,Q,NR,R,R,"Framework, dataset-specific recovery and hypothesis-validation results.",https://arxiv.org/abs/2512.06749
+P29,AgentDebug,2,NR,NR,NR,NR,R,Q,"Failure taxonomy, AgentDebug framework and benchmark experiments.",https://arxiv.org/abs/2509.25370
+P30,TRAIL,2,NR,NR,NR,NR,NR,NR,Benchmark construction and model localization evaluation.,https://arxiv.org/abs/2505.08638
+P31,AgentNoiseBench,2,NR,NR,NR,NR,NR,NR,Noise construction and robustness experiments.,https://arxiv.org/abs/2602.11348
+P32,ReAct,3,NR,NR,NR,NR,NR,NR,ICLR camera-ready v3 methods and interactive results.,https://arxiv.org/abs/2210.03629
+P33,Reflexion,3,NR,NR,NR,NR,NR,NR,Framework and reflection/memory ablations.,https://arxiv.org/abs/2303.11366
+P34,AgentRewardBench,3,NR,NR,NR,NR,NR,NR,Expert annotation and LLM/rule evaluator comparisons.,https://arxiv.org/abs/2504.08942
+P35,Model-based runtime robotics,3,NR,NR,NR,NR,NR,NR,Dynamics/failure-model design and system-level experiments.,https://arxiv.org/abs/2310.17552
+P36,WebArena,3,NR,NR,NR,NR,NR,NR,Environment/task construction and baseline evaluation.,https://arxiv.org/abs/2307.13854
+P37,AgentBench,3,NR,NR,NR,NR,NR,NR,ICLR 2024 benchmark design and failure analysis.,https://arxiv.org/abs/2308.03688
+P38,SWE-bench,3,NR,NR,NR,NR,NR,NR,Dataset construction and execution-based evaluation.,https://arxiv.org/abs/2310.06770
+P39,SWE-bench Live,3,NR,NR,NR,NR,NR,NR,Inspected v2 benchmark pipeline and evaluation.,https://arxiv.org/abs/2505.23419
+P40,Neural calibration,3,NR,NR,NR,NR,NR,NR,Calibration metrics and temperature-scaling experiments.,https://arxiv.org/abs/1706.04599

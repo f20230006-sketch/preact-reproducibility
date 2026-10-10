@@ -1,0 +1,48 @@
+{
+  "scope": "Current-machine offline CPU timing; original agent execution and downloads excluded. Batch inference is not single-request latency.",
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.5.1",
+    "scikit_learn": "1.6.1",
+    "matplotlib": "3.10.9",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "logical_cpu_count": 32,
+    "scipy": "1.18.0",
+    "omp_num_threads": "1"
+  },
+  "checks": {
+    "future_suffix_and_terminal_label_invariance": true,
+    "short_prefix_excluded": true,
+    "task_split_disjointness": true
+  },
+  "feature_count": 20,
+  "task_counts": {
+    "train": 78,
+    "val": 16,
+    "test": 17
+  },
+  "feature_rows": 5271,
+  "load_and_extract_seconds": 2.849577799999679,
+  "checkpoint_20": {
+    "train_n": 440,
+    "validation_n": 94,
+    "test_n": 92,
+    "selected_model": "hist_gradient_boosting",
+    "validation_auprc": 0.6670036825246088,
+    "fit_two_candidates_seconds": 0.03515020000122604,
+    "batch_predict_median_ms": 0.7630000000062864,
+    "amortized_predict_us_per_row": 8.293478260937896
+  },
+  "script_sha256": {
+    "preact_invariance_ablation.py": "17c502e5457c0763c14594a1965314dabc8d89982e1efc10ef46b2f9241e1636",
+    "preact_pilot.py": "973f1010df05f6fb8e1851d2752b6e694f68eef7deda754e5dc49f971336825c",
+    "preact_pilot_audit.py": "6591c181f55a8b003fb165462d53ff8114db9b35b0b42b240836614e3d7eac1f",
+    "preact_retry_opportunity.py": "ce3e9aa95b64374a4f3b606d67ba76d2b15c78493fc43799bcb389603ba8d248"
+  },
+  "audit_date": "2026-10-06",
+  "warnings": [
+    "SciPy emitted OptimizeWarning: Unknown solver options: iprint during LR fit; fitting completed and HGB was selected."
+  ],
+  "environment_note": "SciPy version and OpenMP setting appended from the same session; timings are the original recorded audit run."
+}

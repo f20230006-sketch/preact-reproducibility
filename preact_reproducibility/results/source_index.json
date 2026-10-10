@@ -1,0 +1,324 @@
+[
+  {
+    "participant_key": "claude-code",
+    "run": 0,
+    "path": "trajectories/claude-code/run_0.jsonl.gz",
+    "rows": 111,
+    "events": 12997,
+    "resolved": 63,
+    "unresolved": 48,
+    "evaluation_statuses": {
+      "failed": 48,
+      "resolved": 63
+    },
+    "uncompressed_bytes": 17834565,
+    "gzip_bytes": 4110775,
+    "content_sha256": "45e1b2a570cc3946bddbf3ae9e3282c0c95e2a6baa4c8a1196264ae14b13186e",
+    "truncated_tool_results": 1,
+    "cache_tool_results_omitted": 0,
+    "infrastructure_redactions": {
+      "known_secrets": 2,
+      "sensitive_env_values": 9
+    }
+  },
+  {
+    "participant_key": "claude-code",
+    "run": 1,
+    "path": "trajectories/claude-code/run_1.jsonl.gz",
+    "rows": 111,
+    "events": 13309,
+    "resolved": 69,
+    "unresolved": 42,
+    "evaluation_statuses": {
+      "failed": 42,
+      "resolved": 69
+    },
+    "uncompressed_bytes": 17966986,
+    "gzip_bytes": 4123355,
+    "content_sha256": "3deedd0034f0178406c3e8774cae78eb33999f0b0f12d27788ee249aa35513e3",
+    "truncated_tool_results": 1,
+    "cache_tool_results_omitted": 0,
+    "infrastructure_redactions": {
+      "known_secrets": 1,
+      "sensitive_env_values": 8
+    }
+  },
+  {
+    "participant_key": "claude-code",
+    "run": 2,
+    "path": "trajectories/claude-code/run_2.jsonl.gz",
+    "rows": 111,
+    "events": 14363,
+    "resolved": 66,
+    "unresolved": 45,
+    "evaluation_statuses": {
+      "failed": 45,
+      "resolved": 66
+    },
+    "uncompressed_bytes": 18493814,
+    "gzip_bytes": 4215563,
+    "content_sha256": "2f4b9b879d10881ced544ff9490de7c6af861ae752299fc356344a06e4998969",
+    "truncated_tool_results": 2,
+    "cache_tool_results_omitted": 0,
+    "infrastructure_redactions": {
+      "known_secrets": 1,
+      "sensitive_env_values": 16
+    }
+  },
+  {
+    "participant_key": "claude-code",
+    "run": 3,
+    "path": "trajectories/claude-code/run_3.jsonl.gz",
+    "rows": 111,
+    "events": 14501,
+    "resolved": 69,
+    "unresolved": 42,
+    "evaluation_statuses": {
+      "failed": 42,
+      "resolved": 69
+    },
+    "uncompressed_bytes": 18117099,
+    "gzip_bytes": 4133270,
+    "content_sha256": "a58454651f7b3613931970650d125ec2722b6718c913f8ee591b0c98b1d8cd90",
+    "truncated_tool_results": 1,
+    "cache_tool_results_omitted": 0,
+    "infrastructure_redactions": {
+      "sensitive_env_values": 8
+    }
+  },
+  {
+    "participant_key": "claude-code",
+    "run": 4,
+    "path": "trajectories/claude-code/run_4.jsonl.gz",
+    "rows": 111,
+    "events": 14376,
+    "resolved": 68,
+    "unresolved": 43,
+    "evaluation_statuses": {
+      "failed": 43,
+      "resolved": 68
+    },
+    "uncompressed_bytes": 17862870,
+    "gzip_bytes": 4095923,
+    "content_sha256": "91ac5c0701e559161136a3fb6305b162f9e9925e0164c1128741238949d3e830",
+    "truncated_tool_results": 1,
+    "cache_tool_results_omitted": 0,
+    "infrastructure_redactions": {
+      "known_secrets": 2,
+      "sensitive_env_values": 14
+    }
+  },
+  {
+    "participant_key": "gpt-5.6-luna",
+    "run": 0,
+    "path": "trajectories/gpt-5.6-luna/run_0.jsonl.gz",
+    "rows": 111,
+    "events": 4340,
+    "resolved": 45,
+    "unresolved": 66,
+    "evaluation_statuses": {
+      "failed": 66,
+      "resolved": 45
+    },
+    "uncompressed_bytes": 17684086,
+    "gzip_bytes": 3398283,
+    "content_sha256": "b4801528421d978c7181f871b1ffa01a1914319afa065c639ddecda8f98ffa24",
+    "truncated_tool_results": 19,
+    "cache_tool_results_omitted": 2,
+    "infrastructure_redactions": {
+      "sensitive_env_values": 10
+    }
+  },
+  {
+    "participant_key": "gpt-5.6-luna",
+    "run": 1,
+    "path": "trajectories/gpt-5.6-luna/run_1.jsonl.gz",
+    "rows": 111,
+    "events": 4261,
+    "resolved": 52,
+    "unresolved": 59,
+    "evaluation_statuses": {
+      "failed": 59,
+      "resolved": 52
+    },
+    "uncompressed_bytes": 17894130,
+    "gzip_bytes": 3486490,
+    "content_sha256": "9632392b9051849e19ba55ae307349f0eb3759ad7844f94d8c3fc1bfb8141e9c",
+    "truncated_tool_results": 25,
+    "cache_tool_results_omitted": 2,
+    "infrastructure_redactions": {
+      "sensitive_env_values": 4
+    }
+  },
+  {
+    "participant_key": "gpt-5.6-luna",
+    "run": 2,
+    "path": "trajectories/gpt-5.6-luna/run_2.jsonl.gz",
+    "rows": 111,
+    "events": 4233,
+    "resolved": 51,
+    "unresolved": 60,
+    "evaluation_statuses": {
+      "failed": 60,
+      "resolved": 51
+    },
+    "uncompressed_bytes": 17210742,
+    "gzip_bytes": 3383581,
+    "content_sha256": "3b3d7ffa3c5395056527656ced1c48fa30c642ec68139bf14f24b6dc1717581f",
+    "truncated_tool_results": 14,
+    "cache_tool_results_omitted": 2,
+    "infrastructure_redactions": {
+      "sensitive_env_values": 5
+    }
+  },
+  {
+    "participant_key": "gpt-5.6-luna",
+    "run": 3,
+    "path": "trajectories/gpt-5.6-luna/run_3.jsonl.gz",
+    "rows": 111,
+    "events": 4368,
+    "resolved": 44,
+    "unresolved": 67,
+    "evaluation_statuses": {
+      "failed": 67,
+      "resolved": 44
+    },
+    "uncompressed_bytes": 17862620,
+    "gzip_bytes": 3531038,
+    "content_sha256": "cf5703ee448e11f56a49ed391e9b257d509d6cda086d3e8252da6c9bd948c9e4",
+    "truncated_tool_results": 17,
+    "cache_tool_results_omitted": 1,
+    "infrastructure_redactions": {
+      "sensitive_env_values": 11
+    }
+  },
+  {
+    "participant_key": "gpt-5.6-luna",
+    "run": 4,
+    "path": "trajectories/gpt-5.6-luna/run_4.jsonl.gz",
+    "rows": 111,
+    "events": 4319,
+    "resolved": 50,
+    "unresolved": 61,
+    "evaluation_statuses": {
+      "failed": 61,
+      "resolved": 50
+    },
+    "uncompressed_bytes": 17222916,
+    "gzip_bytes": 3307261,
+    "content_sha256": "d7de975f1785add086984cfec5b0fef3ff814c436645ebc30a1c3493dee92821",
+    "truncated_tool_results": 10,
+    "cache_tool_results_omitted": 3,
+    "infrastructure_redactions": {
+      "known_secrets": 2,
+      "sensitive_env_values": 8
+    }
+  },
+  {
+    "participant_key": "qwen3.6-27b",
+    "run": 0,
+    "path": "trajectories/qwen3.6-27b/run_0.jsonl.gz",
+    "rows": 111,
+    "events": 24115,
+    "resolved": 31,
+    "unresolved": 80,
+    "evaluation_statuses": {
+      "failed": 80,
+      "resolved": 31
+    },
+    "uncompressed_bytes": 32690777,
+    "gzip_bytes": 6003831,
+    "content_sha256": "235c4cb5aa1666520eec81303b7a83166932a852a46a6724dfc665f3fc29f6eb",
+    "truncated_tool_results": 33,
+    "cache_tool_results_omitted": 0,
+    "infrastructure_redactions": {
+      "known_secrets": 2,
+      "sensitive_env_values": 21
+    }
+  },
+  {
+    "participant_key": "qwen3.6-27b",
+    "run": 1,
+    "path": "trajectories/qwen3.6-27b/run_1.jsonl.gz",
+    "rows": 111,
+    "events": 25032,
+    "resolved": 37,
+    "unresolved": 74,
+    "evaluation_statuses": {
+      "failed": 74,
+      "resolved": 37
+    },
+    "uncompressed_bytes": 32126314,
+    "gzip_bytes": 5869796,
+    "content_sha256": "b8d4521dfeea81ec42065dec1ccf50674621b8bd0d9aad70385d1c1e5abfaa9a",
+    "truncated_tool_results": 16,
+    "cache_tool_results_omitted": 0,
+    "infrastructure_redactions": {
+      "sensitive_env_values": 19
+    }
+  },
+  {
+    "participant_key": "qwen3.6-27b",
+    "run": 2,
+    "path": "trajectories/qwen3.6-27b/run_2.jsonl.gz",
+    "rows": 111,
+    "events": 24873,
+    "resolved": 30,
+    "unresolved": 81,
+    "evaluation_statuses": {
+      "failed": 81,
+      "resolved": 30
+    },
+    "uncompressed_bytes": 31701811,
+    "gzip_bytes": 5803437,
+    "content_sha256": "e3d6b466a3fc8d145428d256fd209de9aced0f379097cdb411e601b9888d7748",
+    "truncated_tool_results": 26,
+    "cache_tool_results_omitted": 1,
+    "infrastructure_redactions": {
+      "known_secrets": 1,
+      "sensitive_env_values": 20
+    }
+  },
+  {
+    "participant_key": "qwen3.6-27b",
+    "run": 3,
+    "path": "trajectories/qwen3.6-27b/run_3.jsonl.gz",
+    "rows": 111,
+    "events": 24436,
+    "resolved": 40,
+    "unresolved": 71,
+    "evaluation_statuses": {
+      "failed": 71,
+      "resolved": 40
+    },
+    "uncompressed_bytes": 30959249,
+    "gzip_bytes": 5639741,
+    "content_sha256": "8485f46fb2b3faa2d49a42e241d98cd74760caa572af7127909bf6cba689baba",
+    "truncated_tool_results": 18,
+    "cache_tool_results_omitted": 1,
+    "infrastructure_redactions": {
+      "sensitive_env_values": 22
+    }
+  },
+  {
+    "participant_key": "qwen3.6-27b",
+    "run": 4,
+    "path": "trajectories/qwen3.6-27b/run_4.jsonl.gz",
+    "rows": 111,
+    "events": 24561,
+    "resolved": 35,
+    "unresolved": 76,
+    "evaluation_statuses": {
+      "failed": 76,
+      "resolved": 35
+    },
+    "uncompressed_bytes": 31390079,
+    "gzip_bytes": 5767742,
+    "content_sha256": "b4b09a8be05d6d8f82036d2cc8cde3bca8b093f14141b9dcf2f0c2e8b21ad326",
+    "truncated_tool_results": 21,
+    "cache_tool_results_omitted": 0,
+    "infrastructure_redactions": {
+      "sensitive_env_values": 21
+    }
+  }
+]

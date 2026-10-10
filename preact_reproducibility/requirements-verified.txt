@@ -1,0 +1,19 @@
+# Observed analysis runtime, Python 3.13.5, Windows 11.
+# Current snapshot, not a clean-environment verification or September reconstruction.
+# NumPy imported version is 2.5.1; installed distribution metadata reports 2.2.6.
+# Preserve this discrepancy in ENVIRONMENT.md rather than claiming a verified lock.
+numpy==2.5.1
+scipy==1.18.0
+scikit-learn==1.6.1
+matplotlib==3.10.9
+joblib==1.4.2
+threadpoolctl==3.5.0
+contourpy==1.3.3
+cycler==0.12.1
+fonttools==4.62.1
+kiwisolver==1.5.0
+packaging==26.2
+pillow==12.2.0
+pyparsing==3.3.2
+python-dateutil==2.9.0.post0
+six==1.17.0

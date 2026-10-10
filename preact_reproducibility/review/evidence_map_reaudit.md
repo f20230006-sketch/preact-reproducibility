@@ -1,0 +1,9 @@
+# Closest-study extraction recheck, 10 October 2026
+
+The main manuscript now uses a compact comparator table; the full map is supplementary. The three closest primary records and their inspected full texts were rechecked against the extraction.
+
+- **FailFast (2608.03222):** the full text states a 350/50/100 instance partition and a Qwen-trained monitor tested across policies. Its reported restart/optional artifact-overlay mechanism is executed recovery. Task holdout, policy transfer, threshold operating points and recovery cells remain reported evidence within that setting. This is positive transfer evidence, so it contradicts any universal claim that monitors cannot transfer.
+- **EarlyEval (2609.02783):** the full text explicitly describes leave-one-agent-out training, separate validation calibration, and behavioral/text/reference-solution features. Its intervention cell remains qualified because the objective is verdict imputation/cheaper evaluation, not proving recovery of an otherwise failing task. Held-out-task evidence is not inferred from held-out-agent testing.
+- **Telemetry monitor (2608.02464):** the full text reports cold transfer AUROC 0.527 and target recalibration 0.885, with different synthetic/external/live/repair denominators. Transfer, calibration and executed repair are predecessors. The synthetic headline metric is not treated as a pooled metric. Detection after onset does not establish pre-error prevention.
+
+R means a reported result in the inspected setting; Q means a qualified comparison/different estimand; NR means not established in this extraction, not proven absence. The full 40-paper map has not been independently double-screened. `bibliography_verification.json` verifies the current identity/access of the 23 manuscript arXiv references, not the empirical correctness of every paper or universal validity of a map cell.

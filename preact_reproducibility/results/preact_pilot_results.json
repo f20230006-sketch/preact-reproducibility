@@ -1,0 +1,250 @@
+{
+  "source": "SWE-Rebench 07/2026, 3 participants x 5 runs x 111 tasks",
+  "checkpoints": [
+    5,
+    10,
+    20,
+    40
+  ],
+  "feature_names": [
+    "n_errors",
+    "error_rate",
+    "recent_error_rate",
+    "error_streak",
+    "max_error_streak",
+    "n_unique_actions",
+    "repeat_action_rate",
+    "recent_repeat_rate",
+    "n_edits",
+    "n_reads",
+    "n_searches",
+    "n_tests",
+    "n_shell",
+    "n_other",
+    "tool_switches",
+    "mean_result_chars",
+    "recent_result_chars",
+    "n_assistant_messages",
+    "last_action_edit",
+    "last_action_test"
+  ],
+  "n_unique_trajectories": 1665,
+  "results": [
+    {
+      "checkpoint": 5,
+      "group": "held_out_tasks",
+      "selected_model": "logistic",
+      "validation_auprc": 0.7029,
+      "monitor": {
+        "n": 170,
+        "failure_rate": 0.4765,
+        "auroc": 0.5854,
+        "auprc": 0.5834,
+        "brier": 0.2469
+      },
+      "prior": {
+        "n": 170,
+        "failure_rate": 0.4765,
+        "auroc": 0.5,
+        "auprc": 0.4765,
+        "brier": 0.2496
+      },
+      "error_repeat_heuristic": {
+        "n": 170,
+        "failure_rate": 0.4765,
+        "auroc": 0.5438,
+        "auprc": 0.5186,
+        "brier": 0.4247
+      }
+    },
+    {
+      "checkpoint": 5,
+      "group": "held_out_agent_and_tasks",
+      "selected_model": "logistic",
+      "validation_auprc": 0.7029,
+      "monitor": {
+        "n": 85,
+        "failure_rate": 0.6706,
+        "auroc": 0.4746,
+        "auprc": 0.6804,
+        "brier": 0.4453
+      },
+      "prior": {
+        "n": 85,
+        "failure_rate": 0.6706,
+        "auroc": 0.5,
+        "auprc": 0.6706,
+        "brier": 0.263
+      },
+      "error_repeat_heuristic": {
+        "n": 85,
+        "failure_rate": 0.6706,
+        "auroc": 0.4298,
+        "auprc": 0.6676,
+        "brier": 0.5507
+      }
+    },
+    {
+      "checkpoint": 10,
+      "group": "held_out_tasks",
+      "selected_model": "logistic",
+      "validation_auprc": 0.7438,
+      "monitor": {
+        "n": 158,
+        "failure_rate": 0.4684,
+        "auroc": 0.6097,
+        "auprc": 0.5664,
+        "brier": 0.2404
+      },
+      "prior": {
+        "n": 158,
+        "failure_rate": 0.4684,
+        "auroc": 0.5,
+        "auprc": 0.4684,
+        "brier": 0.2491
+      },
+      "error_repeat_heuristic": {
+        "n": 158,
+        "failure_rate": 0.4684,
+        "auroc": 0.5632,
+        "auprc": 0.5037,
+        "brier": 0.4145
+      }
+    },
+    {
+      "checkpoint": 10,
+      "group": "held_out_agent_and_tasks",
+      "selected_model": "logistic",
+      "validation_auprc": 0.7438,
+      "monitor": {
+        "n": 85,
+        "failure_rate": 0.6706,
+        "auroc": 0.4217,
+        "auprc": 0.6527,
+        "brier": 0.4554
+      },
+      "prior": {
+        "n": 85,
+        "failure_rate": 0.6706,
+        "auroc": 0.5,
+        "auprc": 0.6706,
+        "brier": 0.2587
+      },
+      "error_repeat_heuristic": {
+        "n": 85,
+        "failure_rate": 0.6706,
+        "auroc": 0.453,
+        "auprc": 0.6634,
+        "brier": 0.5639
+      }
+    },
+    {
+      "checkpoint": 20,
+      "group": "held_out_tasks",
+      "selected_model": "hist_gradient_boosting",
+      "validation_auprc": 0.667,
+      "monitor": {
+        "n": 92,
+        "failure_rate": 0.4783,
+        "auroc": 0.6998,
+        "auprc": 0.7301,
+        "brier": 0.2145
+      },
+      "prior": {
+        "n": 92,
+        "failure_rate": 0.4783,
+        "auroc": 0.5,
+        "auprc": 0.4783,
+        "brier": 0.2495
+      },
+      "error_repeat_heuristic": {
+        "n": 92,
+        "failure_rate": 0.4783,
+        "auroc": 0.5758,
+        "auprc": 0.5599,
+        "brier": 0.4257
+      }
+    },
+    {
+      "checkpoint": 20,
+      "group": "held_out_agent_and_tasks",
+      "selected_model": "hist_gradient_boosting",
+      "validation_auprc": 0.667,
+      "monitor": {
+        "n": 85,
+        "failure_rate": 0.6706,
+        "auroc": 0.4561,
+        "auprc": 0.6473,
+        "brier": 0.2996
+      },
+      "prior": {
+        "n": 85,
+        "failure_rate": 0.6706,
+        "auroc": 0.5,
+        "auprc": 0.6706,
+        "brier": 0.2592
+      },
+      "error_repeat_heuristic": {
+        "n": 85,
+        "failure_rate": 0.6706,
+        "auroc": 0.4972,
+        "auprc": 0.7361,
+        "brier": 0.5581
+      }
+    },
+    {
+      "checkpoint": 40,
+      "group": "held_out_tasks",
+      "selected_model": "hist_gradient_boosting",
+      "validation_auprc": 0.4599,
+      "monitor": {
+        "n": 50,
+        "failure_rate": 0.4,
+        "auroc": 0.5883,
+        "auprc": 0.4437,
+        "brier": 0.2452
+      },
+      "prior": {
+        "n": 50,
+        "failure_rate": 0.4,
+        "auroc": 0.5,
+        "auprc": 0.4,
+        "brier": 0.2537
+      },
+      "error_repeat_heuristic": {
+        "n": 50,
+        "failure_rate": 0.4,
+        "auroc": 0.6017,
+        "auprc": 0.5197,
+        "brier": 0.3561
+      }
+    },
+    {
+      "checkpoint": 40,
+      "group": "held_out_agent_and_tasks",
+      "selected_model": "hist_gradient_boosting",
+      "validation_auprc": 0.4599,
+      "monitor": {
+        "n": 74,
+        "failure_rate": 0.6216,
+        "auroc": 0.5512,
+        "auprc": 0.6527,
+        "brier": 0.2293
+      },
+      "prior": {
+        "n": 74,
+        "failure_rate": 0.6216,
+        "auroc": 0.5,
+        "auprc": 0.6216,
+        "brier": 0.2461
+      },
+      "error_repeat_heuristic": {
+        "n": 74,
+        "failure_rate": 0.6216,
+        "auroc": 0.4088,
+        "auprc": 0.6409,
+        "brier": 0.5139
+      }
+    }
+  ]
+}

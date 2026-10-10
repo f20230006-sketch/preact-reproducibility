@@ -1,0 +1,361 @@
+{
+  "method": "fixed tool-call checkpoints; instance_id task split; 2000 task-cluster bootstrap resamples",
+  "cases": [
+    {
+      "checkpoint": 5,
+      "participant": "claude-code",
+      "selected_model": "logistic",
+      "validation_auprc": 0.497,
+      "test": {
+        "n": 85,
+        "tasks": 17,
+        "failure_rate": 0.365,
+        "auroc": 0.516,
+        "auprc": 0.356,
+        "brier": 0.235
+      },
+      "auroc_task_bootstrap_95pct": [
+        0.343,
+        0.703
+      ],
+      "alarm_at_val_10pct_fpr": {
+        "threshold": 0.5004,
+        "fired": 1,
+        "false_alarm_rate": 0.019,
+        "failure_recall": 0.0
+      }
+    },
+    {
+      "checkpoint": 5,
+      "participant": "gpt-5.6-luna",
+      "selected_model": "logistic",
+      "validation_auprc": 0.797,
+      "test": {
+        "n": 85,
+        "tasks": 17,
+        "failure_rate": 0.588,
+        "auroc": 0.542,
+        "auprc": 0.657,
+        "brier": 0.251
+      },
+      "auroc_task_bootstrap_95pct": [
+        0.391,
+        0.689
+      ],
+      "alarm_at_val_10pct_fpr": {
+        "threshold": 0.6221,
+        "fired": 11,
+        "false_alarm_rate": 0.114,
+        "failure_recall": 0.14
+      }
+    },
+    {
+      "checkpoint": 5,
+      "participant": "qwen3.6-27b",
+      "selected_model": "hist_gradient_boosting",
+      "validation_auprc": 0.645,
+      "test": {
+        "n": 85,
+        "tasks": 17,
+        "failure_rate": 0.671,
+        "auroc": 0.369,
+        "auprc": 0.617,
+        "brier": 0.245
+      },
+      "auroc_task_bootstrap_95pct": [
+        0.245,
+        0.509
+      ],
+      "alarm_at_val_10pct_fpr": {
+        "threshold": 0.9449,
+        "fired": 1,
+        "false_alarm_rate": 0.0,
+        "failure_recall": 0.018
+      }
+    },
+    {
+      "checkpoint": 10,
+      "participant": "claude-code",
+      "selected_model": "hist_gradient_boosting",
+      "validation_auprc": 0.565,
+      "test": {
+        "n": 85,
+        "tasks": 17,
+        "failure_rate": 0.365,
+        "auroc": 0.473,
+        "auprc": 0.361,
+        "brier": 0.265
+      },
+      "auroc_task_bootstrap_95pct": [
+        0.266,
+        0.69
+      ],
+      "alarm_at_val_10pct_fpr": {
+        "threshold": 0.5277,
+        "fired": 16,
+        "false_alarm_rate": 0.222,
+        "failure_recall": 0.129
+      }
+    },
+    {
+      "checkpoint": 10,
+      "participant": "gpt-5.6-luna",
+      "selected_model": "logistic",
+      "validation_auprc": 0.823,
+      "test": {
+        "n": 73,
+        "tasks": 16,
+        "failure_rate": 0.589,
+        "auroc": 0.58,
+        "auprc": 0.657,
+        "brier": 0.244
+      },
+      "auroc_task_bootstrap_95pct": [
+        0.35,
+        0.741
+      ],
+      "alarm_at_val_10pct_fpr": {
+        "threshold": 0.6685,
+        "fired": 27,
+        "false_alarm_rate": 0.333,
+        "failure_recall": 0.395
+      }
+    },
+    {
+      "checkpoint": 10,
+      "participant": "qwen3.6-27b",
+      "selected_model": "hist_gradient_boosting",
+      "validation_auprc": 0.692,
+      "test": {
+        "n": 85,
+        "tasks": 17,
+        "failure_rate": 0.671,
+        "auroc": 0.571,
+        "auprc": 0.769,
+        "brier": 0.223
+      },
+      "auroc_task_bootstrap_95pct": [
+        0.437,
+        0.715
+      ],
+      "alarm_at_val_10pct_fpr": {
+        "threshold": 0.7948,
+        "fired": 14,
+        "false_alarm_rate": 0.071,
+        "failure_recall": 0.211
+      }
+    },
+    {
+      "checkpoint": 20,
+      "participant": "claude-code",
+      "selected_model": "hist_gradient_boosting",
+      "validation_auprc": 0.47,
+      "test": {
+        "n": 76,
+        "tasks": 16,
+        "failure_rate": 0.395,
+        "auroc": 0.631,
+        "auprc": 0.559,
+        "brier": 0.226
+      },
+      "auroc_task_bootstrap_95pct": [
+        0.451,
+        0.807
+      ],
+      "alarm_at_val_10pct_fpr": {
+        "threshold": 0.6767,
+        "fired": 3,
+        "false_alarm_rate": 0.022,
+        "failure_recall": 0.067
+      }
+    },
+    {
+      "checkpoint": 20,
+      "participant": "gpt-5.6-luna",
+      "selected_model": "logistic",
+      "validation_auprc": 0.989,
+      "test": {
+        "n": 16,
+        "tasks": 7,
+        "failure_rate": 0.875,
+        "auroc": 0.429,
+        "auprc": 0.896,
+        "brier": 0.206
+      },
+      "auroc_task_bootstrap_95pct": [
+        0.071,
+        0.692
+      ],
+      "alarm_at_val_10pct_fpr": {
+        "threshold": 0.4846,
+        "fired": 14,
+        "false_alarm_rate": 1.0,
+        "failure_recall": 0.857
+      }
+    },
+    {
+      "checkpoint": 20,
+      "participant": "qwen3.6-27b",
+      "selected_model": "logistic",
+      "validation_auprc": 0.714,
+      "test": {
+        "n": 85,
+        "tasks": 17,
+        "failure_rate": 0.671,
+        "auroc": 0.691,
+        "auprc": 0.795,
+        "brier": 0.2
+      },
+      "auroc_task_bootstrap_95pct": [
+        0.525,
+        0.825
+      ],
+      "alarm_at_val_10pct_fpr": {
+        "threshold": 0.8135,
+        "fired": 15,
+        "false_alarm_rate": 0.107,
+        "failure_recall": 0.211
+      }
+    }
+  ],
+  "transfer_cases": [
+    {
+      "checkpoint": 5,
+      "group": "source_agents_unseen_tasks",
+      "selected_model": "logistic",
+      "test": {
+        "n": 170,
+        "tasks": 17,
+        "failure_rate": 0.476,
+        "auroc": 0.585,
+        "auprc": 0.583,
+        "brier": 0.247
+      },
+      "auroc_task_bootstrap_95pct": [
+        0.492,
+        0.671
+      ],
+      "alarm_at_val_10pct_fpr": {
+        "threshold": 0.5763,
+        "fired": 31,
+        "false_alarm_rate": 0.135,
+        "failure_recall": 0.235
+      }
+    },
+    {
+      "checkpoint": 5,
+      "group": "new_agent_unseen_tasks",
+      "selected_model": "logistic",
+      "test": {
+        "n": 85,
+        "tasks": 17,
+        "failure_rate": 0.671,
+        "auroc": 0.475,
+        "auprc": 0.68,
+        "brier": 0.445
+      },
+      "auroc_task_bootstrap_95pct": [
+        0.316,
+        0.623
+      ],
+      "alarm_at_val_10pct_fpr": {
+        "threshold": 0.5763,
+        "fired": 0,
+        "false_alarm_rate": 0.0,
+        "failure_recall": 0.0
+      }
+    },
+    {
+      "checkpoint": 10,
+      "group": "source_agents_unseen_tasks",
+      "selected_model": "logistic",
+      "test": {
+        "n": 158,
+        "tasks": 17,
+        "failure_rate": 0.468,
+        "auroc": 0.61,
+        "auprc": 0.566,
+        "brier": 0.24
+      },
+      "auroc_task_bootstrap_95pct": [
+        0.486,
+        0.726
+      ],
+      "alarm_at_val_10pct_fpr": {
+        "threshold": 0.5706,
+        "fired": 41,
+        "false_alarm_rate": 0.19,
+        "failure_recall": 0.338
+      }
+    },
+    {
+      "checkpoint": 10,
+      "group": "new_agent_unseen_tasks",
+      "selected_model": "logistic",
+      "test": {
+        "n": 85,
+        "tasks": 17,
+        "failure_rate": 0.671,
+        "auroc": 0.422,
+        "auprc": 0.653,
+        "brier": 0.455
+      },
+      "auroc_task_bootstrap_95pct": [
+        0.309,
+        0.545
+      ],
+      "alarm_at_val_10pct_fpr": {
+        "threshold": 0.5706,
+        "fired": 0,
+        "false_alarm_rate": 0.0,
+        "failure_recall": 0.0
+      }
+    },
+    {
+      "checkpoint": 20,
+      "group": "source_agents_unseen_tasks",
+      "selected_model": "hist_gradient_boosting",
+      "test": {
+        "n": 92,
+        "tasks": 16,
+        "failure_rate": 0.478,
+        "auroc": 0.7,
+        "auprc": 0.73,
+        "brier": 0.214
+      },
+      "auroc_task_bootstrap_95pct": [
+        0.549,
+        0.837
+      ],
+      "alarm_at_val_10pct_fpr": {
+        "threshold": 0.6632,
+        "fired": 15,
+        "false_alarm_rate": 0.042,
+        "failure_recall": 0.295
+      }
+    },
+    {
+      "checkpoint": 20,
+      "group": "new_agent_unseen_tasks",
+      "selected_model": "hist_gradient_boosting",
+      "test": {
+        "n": 85,
+        "tasks": 17,
+        "failure_rate": 0.671,
+        "auroc": 0.456,
+        "auprc": 0.647,
+        "brier": 0.3
+      },
+      "auroc_task_bootstrap_95pct": [
+        0.303,
+        0.64
+      ],
+      "alarm_at_val_10pct_fpr": {
+        "threshold": 0.6632,
+        "fired": 8,
+        "false_alarm_rate": 0.107,
+        "failure_recall": 0.088
+      }
+    }
+  ]
+}

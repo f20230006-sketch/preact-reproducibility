@@ -1,0 +1,2 @@
+# Preserve exact snapshot bytes so published SHA-256 digests remain valid.
+* -text

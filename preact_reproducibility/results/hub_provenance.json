@@ -1,0 +1,9 @@
+{
+  "dataset_id": "ibragim-bad/swe_rebench_07_2026_trajectories",
+  "revision": "cdae27cdd16673f0c682871ad55d325f24cc7020",
+  "retrieved_date": "2026-10-10",
+  "index_sha256": "db3879a1e77db5b412fd8acebbd794da8d845acb84fbee2d88f16b7eaced093f",
+  "remote_index_sha256": "db3879a1e77db5b412fd8acebbd794da8d845acb84fbee2d88f16b7eaced093f",
+  "pinned_index_matches_local": true,
+  "index_url": "https://huggingface.co/datasets/ibragim-bad/swe_rebench_07_2026_trajectories/resolve/cdae27cdd16673f0c682871ad55d325f24cc7020/index.jsonl"
+}

@@ -1,0 +1,2970 @@
+{
+  "protocol": "Unweighted mean and sample SD of defined fold AUROCs; SD describes fold variation, not inferential uncertainty. Same tasks/seeds and outer-fold models as pooled sensitivity. Three seeds are not independent datasets.",
+  "label": "failure=1 means unresolved; resolved=0",
+  "results": [
+    {
+      "checkpoint": 5,
+      "seed": 20261010,
+      "folds": [
+        {
+          "fold": 1,
+          "test_tasks": [
+            "HKUDS__nanobot-4274",
+            "apache__dubbo-go-3357",
+            "astral-sh__ruff-25567",
+            "better-auth__better-auth-9756",
+            "fallow-rs__fallow-762",
+            "fallow-rs__fallow-913",
+            "fathah__hermes-desktop-249",
+            "gleam-lang__gleam-5797",
+            "ivov__lisette-627",
+            "kestra-io__kestra-16067",
+            "langchain-ai__deepagents-3866",
+            "livekit__agents-5944",
+            "marimo-team__marimo-9626",
+            "matrixorigin__matrixone-24632",
+            "microsoft__typescript-go-4062",
+            "mvanhorn__cli-printing-press-2086",
+            "nearai__ironclaw-3694",
+            "nearai__ironclaw-3735",
+            "sipeed__picoclaw-2928",
+            "tashfeenahmed__freellmapi-289",
+            "ubugeeei-prod__vize-1281",
+            "ueberdosis__tiptap-7887",
+            "vuejs__core-14877"
+          ],
+          "n": 115,
+          "transfer": {
+            "n": 115,
+            "failure_rate": 0.6174,
+            "auroc": 0.5267,
+            "auprc": 0.6741,
+            "brier": 0.2749
+          },
+          "own": {
+            "n": 115,
+            "failure_rate": 0.6174,
+            "auroc": 0.3923,
+            "auprc": 0.5465,
+            "brier": 0.2785
+          }
+        },
+        {
+          "fold": 2,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4411",
+            "HKUDS__nanobot-4048",
+            "Soju06__codex-lb-744",
+            "agno-agi__agno-8148",
+            "apache__pulsar-25793",
+            "cloudflare__vinext-1371",
+            "docker__docker-agent-2992",
+            "facebook__lexical-8676",
+            "fathah__hermes-desktop-268",
+            "floci-io__floci-1021",
+            "floci-io__floci-1209",
+            "floci-io__floci-1235",
+            "kestra-io__kestra-16119",
+            "mikro-orm__mikro-orm-7799",
+            "mvanhorn__cli-printing-press-2002",
+            "pydantic__pydantic-ai-5580",
+            "stablyai__orca-4331",
+            "tursodatabase__turso-7117",
+            "ubugeeei-prod__vize-769",
+            "vuejs__core-14897",
+            "withcoral__coral-1143",
+            "woodpecker-ci__woodpecker-6623"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.7,
+            "auroc": 0.5289,
+            "auprc": 0.7164,
+            "brier": 0.5073
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.7,
+            "auroc": 0.4675,
+            "auprc": 0.7219,
+            "brier": 0.2266
+          }
+        },
+        {
+          "fold": 3,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4455",
+            "Gentleman-Programming__gentle-ai-595",
+            "HKUDS__nanobot-4129",
+            "better-auth__better-auth-10070",
+            "cloudflare__vinext-1837",
+            "fallow-rs__fallow-821",
+            "fallow-rs__fallow-824",
+            "intellectronica__ruler-556",
+            "langchain4j__langchain4j-5315",
+            "ludo-technologies__pyscn-500",
+            "marimo-team__marimo-9766",
+            "mui__base-ui-4849",
+            "mui__base-ui-4903",
+            "nesquena__hermes-webui-3069",
+            "openrewrite__rewrite-7784",
+            "oxc-project__oxc-22623",
+            "promptfoo__promptfoo-9313",
+            "raullenchai__Rapid-MLX-426",
+            "stablyai__orca-5176",
+            "ubugeeei-prod__vize-1265",
+            "ueberdosis__tiptap-7896",
+            "withcoral__coral-1186"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.6273,
+            "auroc": 0.561,
+            "auprc": 0.6837,
+            "brier": 0.4336
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.6273,
+            "auroc": 0.4892,
+            "auprc": 0.6018,
+            "brier": 0.2532
+          }
+        },
+        {
+          "fold": 4,
+          "test_tasks": [
+            "Martian-Engineering__lossless-claw-814",
+            "apache__pulsar-25865",
+            "astral-sh__ruff-25414",
+            "cloudnative-pg__cloudnative-pg-10747",
+            "floci-io__floci-1142",
+            "floci-io__floci-1325",
+            "gotd__td-1759",
+            "harbor-framework__harbor-1764",
+            "helidon-io__helidon-11979",
+            "langchain4j__langchain4j-5328",
+            "langchain4j__langchain4j-5367",
+            "ludo-technologies__pyscn-548",
+            "microsoft__typescript-go-4194",
+            "microsoft__waza-247",
+            "mozilla-ai__any-llm-1121",
+            "mvanhorn__cli-printing-press-1920",
+            "open-jarvis__OpenJarvis-465",
+            "rest-sh__restish-337",
+            "teng-lin__notebooklm-py-826",
+            "ubugeeei-prod__vize-1508",
+            "verl-project__verl-6506",
+            "withcoral__coral-1179"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.7636,
+            "auroc": 0.4377,
+            "auprc": 0.7432,
+            "brier": 0.34
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.7636,
+            "auroc": 0.4622,
+            "auprc": 0.7522,
+            "brier": 0.219
+          }
+        },
+        {
+          "fold": 5,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4281",
+            "PerryTS__perry-3982",
+            "apache__hugegraph-3037",
+            "apache__pulsar-25953",
+            "cloudflare__vinext-1574",
+            "danny-avila__LibreChat-13166",
+            "floci-io__floci-1032",
+            "gleam-lang__gleam-5798",
+            "ivov__lisette-491",
+            "ivov__lisette-657",
+            "kenn-io__agentsview-602",
+            "kestra-io__kestra-16450",
+            "kubernetes-sigs__kueue-11559",
+            "kubernetes-sigs__kueue-11619",
+            "marimo-team__marimo-9754",
+            "microsoft__apm-1553",
+            "pydantic__pydantic-ai-5842",
+            "react-hook-form__react-hook-form-13464",
+            "rust-lang__rust-analyzer-22397",
+            "stablyai__orca-1934",
+            "tailscale__tailscale-19847",
+            "ubugeeei-prod__vize-774"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.7364,
+            "auroc": 0.5285,
+            "auprc": 0.7474,
+            "brier": 0.5323
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.7364,
+            "auroc": 0.4523,
+            "auprc": 0.6847,
+            "brier": 0.2075
+          }
+        }
+      ],
+      "summary": {
+        "transfer": {
+          "defined_folds": 5,
+          "unweighted_mean": 0.5165599999999999,
+          "sample_sd": 0.04634509682803566,
+          "min": 0.4377,
+          "max": 0.561
+        },
+        "own": {
+          "defined_folds": 5,
+          "unweighted_mean": 0.4527,
+          "sample_sd": 0.03636571187258681,
+          "min": 0.3923,
+          "max": 0.4892
+        }
+      },
+      "pooled_transfer": {
+        "n": 555,
+        "failure_rate": 0.6883,
+        "auroc": 0.5082,
+        "auprc": 0.693,
+        "brier": 0.4163
+      },
+      "pooled_own": {
+        "n": 555,
+        "failure_rate": 0.6883,
+        "auroc": 0.4362,
+        "auprc": 0.6446,
+        "brier": 0.2373
+      }
+    },
+    {
+      "checkpoint": 5,
+      "seed": 20261011,
+      "folds": [
+        {
+          "fold": 1,
+          "test_tasks": [
+            "HKUDS__nanobot-4129",
+            "Martian-Engineering__lossless-claw-814",
+            "PerryTS__perry-3982",
+            "apache__hugegraph-3037",
+            "facebook__lexical-8676",
+            "fallow-rs__fallow-913",
+            "fathah__hermes-desktop-249",
+            "gleam-lang__gleam-5798",
+            "langchain4j__langchain4j-5328",
+            "livekit__agents-5944",
+            "marimo-team__marimo-9754",
+            "microsoft__typescript-go-4194",
+            "mui__base-ui-4903",
+            "mvanhorn__cli-printing-press-1920",
+            "nearai__ironclaw-3735",
+            "openrewrite__rewrite-7784",
+            "raullenchai__Rapid-MLX-426",
+            "tailscale__tailscale-19847",
+            "ueberdosis__tiptap-7887",
+            "ueberdosis__tiptap-7896",
+            "verl-project__verl-6506",
+            "withcoral__coral-1186",
+            "woodpecker-ci__woodpecker-6623"
+          ],
+          "n": 115,
+          "transfer": {
+            "n": 115,
+            "failure_rate": 0.687,
+            "auroc": 0.3845,
+            "auprc": 0.6618,
+            "brier": 0.4803
+          },
+          "own": {
+            "n": 115,
+            "failure_rate": 0.687,
+            "auroc": 0.3743,
+            "auprc": 0.6241,
+            "brier": 0.2433
+          }
+        },
+        {
+          "fold": 2,
+          "test_tasks": [
+            "Gentleman-Programming__gentle-ai-595",
+            "HKUDS__nanobot-4048",
+            "HKUDS__nanobot-4274",
+            "astral-sh__ruff-25414",
+            "better-auth__better-auth-10070",
+            "cloudflare__vinext-1371",
+            "docker__docker-agent-2992",
+            "floci-io__floci-1021",
+            "floci-io__floci-1235",
+            "harbor-framework__harbor-1764",
+            "kestra-io__kestra-16067",
+            "kubernetes-sigs__kueue-11619",
+            "langchain-ai__deepagents-3866",
+            "langchain4j__langchain4j-5315",
+            "microsoft__waza-247",
+            "mikro-orm__mikro-orm-7799",
+            "open-jarvis__OpenJarvis-465",
+            "oxc-project__oxc-22623",
+            "pydantic__pydantic-ai-5842",
+            "tursodatabase__turso-7117",
+            "ubugeeei-prod__vize-1508",
+            "withcoral__coral-1179"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.6545,
+            "auroc": 0.4742,
+            "auprc": 0.7033,
+            "brier": 0.324
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.6545,
+            "auroc": 0.3651,
+            "auprc": 0.5738,
+            "brier": 0.2472
+          }
+        },
+        {
+          "fold": 3,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4281",
+            "ArcadeData__arcadedb-4455",
+            "apache__dubbo-go-3357",
+            "apache__pulsar-25865",
+            "apache__pulsar-25953",
+            "better-auth__better-auth-9756",
+            "cloudflare__vinext-1574",
+            "danny-avila__LibreChat-13166",
+            "fallow-rs__fallow-762",
+            "fallow-rs__fallow-821",
+            "floci-io__floci-1209",
+            "ivov__lisette-491",
+            "langchain4j__langchain4j-5367",
+            "ludo-technologies__pyscn-548",
+            "microsoft__typescript-go-4062",
+            "mui__base-ui-4849",
+            "react-hook-form__react-hook-form-13464",
+            "rust-lang__rust-analyzer-22397",
+            "tashfeenahmed__freellmapi-289",
+            "ubugeeei-prod__vize-774",
+            "vuejs__core-14877",
+            "vuejs__core-14897"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.7273,
+            "auroc": 0.6735,
+            "auprc": 0.829,
+            "brier": 0.3892
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.7273,
+            "auroc": 0.5073,
+            "auprc": 0.7607,
+            "brier": 0.2017
+          }
+        },
+        {
+          "fold": 4,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4411",
+            "Soju06__codex-lb-744",
+            "apache__pulsar-25793",
+            "fathah__hermes-desktop-268",
+            "floci-io__floci-1032",
+            "floci-io__floci-1325",
+            "helidon-io__helidon-11979",
+            "intellectronica__ruler-556",
+            "ivov__lisette-627",
+            "ivov__lisette-657",
+            "matrixorigin__matrixone-24632",
+            "mozilla-ai__any-llm-1121",
+            "mvanhorn__cli-printing-press-2002",
+            "nearai__ironclaw-3694",
+            "nesquena__hermes-webui-3069",
+            "promptfoo__promptfoo-9313",
+            "rest-sh__restish-337",
+            "sipeed__picoclaw-2928",
+            "stablyai__orca-1934",
+            "ubugeeei-prod__vize-1281",
+            "ubugeeei-prod__vize-769",
+            "withcoral__coral-1143"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.7182,
+            "auroc": 0.5909,
+            "auprc": 0.7533,
+            "brier": 0.4417
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.7182,
+            "auroc": 0.5272,
+            "auprc": 0.7459,
+            "brier": 0.203
+          }
+        },
+        {
+          "fold": 5,
+          "test_tasks": [
+            "agno-agi__agno-8148",
+            "astral-sh__ruff-25567",
+            "cloudflare__vinext-1837",
+            "cloudnative-pg__cloudnative-pg-10747",
+            "fallow-rs__fallow-824",
+            "floci-io__floci-1142",
+            "gleam-lang__gleam-5797",
+            "gotd__td-1759",
+            "kenn-io__agentsview-602",
+            "kestra-io__kestra-16119",
+            "kestra-io__kestra-16450",
+            "kubernetes-sigs__kueue-11559",
+            "ludo-technologies__pyscn-500",
+            "marimo-team__marimo-9626",
+            "marimo-team__marimo-9766",
+            "microsoft__apm-1553",
+            "mvanhorn__cli-printing-press-2086",
+            "pydantic__pydantic-ai-5580",
+            "stablyai__orca-4331",
+            "stablyai__orca-5176",
+            "teng-lin__notebooklm-py-826",
+            "ubugeeei-prod__vize-1265"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.6545,
+            "auroc": 0.4967,
+            "auprc": 0.6556,
+            "brier": 0.4381
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.6545,
+            "auroc": 0.4459,
+            "auprc": 0.6394,
+            "brier": 0.2538
+          }
+        }
+      ],
+      "summary": {
+        "transfer": {
+          "defined_folds": 5,
+          "unweighted_mean": 0.52396,
+          "sample_sd": 0.11125582231955324,
+          "min": 0.3845,
+          "max": 0.6735
+        },
+        "own": {
+          "defined_folds": 5,
+          "unweighted_mean": 0.44396,
+          "sample_sd": 0.07418900188033263,
+          "min": 0.3651,
+          "max": 0.5272
+        }
+      },
+      "pooled_transfer": {
+        "n": 555,
+        "failure_rate": 0.6883,
+        "auroc": 0.5104,
+        "auprc": 0.7032,
+        "brier": 0.4153
+      },
+      "pooled_own": {
+        "n": 555,
+        "failure_rate": 0.6883,
+        "auroc": 0.4479,
+        "auprc": 0.6655,
+        "brier": 0.2299
+      }
+    },
+    {
+      "checkpoint": 5,
+      "seed": 20261012,
+      "folds": [
+        {
+          "fold": 1,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4281",
+            "ArcadeData__arcadedb-4455",
+            "HKUDS__nanobot-4129",
+            "HKUDS__nanobot-4274",
+            "Soju06__codex-lb-744",
+            "apache__pulsar-25793",
+            "astral-sh__ruff-25567",
+            "fallow-rs__fallow-913",
+            "floci-io__floci-1032",
+            "floci-io__floci-1325",
+            "helidon-io__helidon-11979",
+            "ivov__lisette-657",
+            "langchain-ai__deepagents-3866",
+            "livekit__agents-5944",
+            "microsoft__typescript-go-4062",
+            "mikro-orm__mikro-orm-7799",
+            "mozilla-ai__any-llm-1121",
+            "openrewrite__rewrite-7784",
+            "oxc-project__oxc-22623",
+            "promptfoo__promptfoo-9313",
+            "stablyai__orca-5176",
+            "ueberdosis__tiptap-7896",
+            "withcoral__coral-1186"
+          ],
+          "n": 115,
+          "transfer": {
+            "n": 115,
+            "failure_rate": 0.7217,
+            "auroc": 0.602,
+            "auprc": 0.8252,
+            "brier": 0.3108
+          },
+          "own": {
+            "n": 115,
+            "failure_rate": 0.7217,
+            "auroc": 0.5277,
+            "auprc": 0.7532,
+            "brier": 0.2053
+          }
+        },
+        {
+          "fold": 2,
+          "test_tasks": [
+            "astral-sh__ruff-25414",
+            "cloudflare__vinext-1837",
+            "danny-avila__LibreChat-13166",
+            "docker__docker-agent-2992",
+            "fallow-rs__fallow-824",
+            "fathah__hermes-desktop-249",
+            "fathah__hermes-desktop-268",
+            "floci-io__floci-1021",
+            "floci-io__floci-1142",
+            "floci-io__floci-1209",
+            "ivov__lisette-491",
+            "kubernetes-sigs__kueue-11559",
+            "kubernetes-sigs__kueue-11619",
+            "langchain4j__langchain4j-5315",
+            "ludo-technologies__pyscn-548",
+            "marimo-team__marimo-9754",
+            "marimo-team__marimo-9766",
+            "matrixorigin__matrixone-24632",
+            "mvanhorn__cli-printing-press-1920",
+            "sipeed__picoclaw-2928",
+            "tailscale__tailscale-19847",
+            "ubugeeei-prod__vize-769"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.6545,
+            "auroc": 0.4951,
+            "auprc": 0.6713,
+            "brier": 0.3052
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.6545,
+            "auroc": 0.4974,
+            "auprc": 0.6793,
+            "brier": 0.2369
+          }
+        },
+        {
+          "fold": 3,
+          "test_tasks": [
+            "HKUDS__nanobot-4048",
+            "PerryTS__perry-3982",
+            "apache__pulsar-25865",
+            "cloudflare__vinext-1371",
+            "facebook__lexical-8676",
+            "fallow-rs__fallow-762",
+            "fallow-rs__fallow-821",
+            "gleam-lang__gleam-5797",
+            "intellectronica__ruler-556",
+            "kestra-io__kestra-16067",
+            "kestra-io__kestra-16450",
+            "langchain4j__langchain4j-5328",
+            "marimo-team__marimo-9626",
+            "microsoft__typescript-go-4194",
+            "mvanhorn__cli-printing-press-2086",
+            "nearai__ironclaw-3694",
+            "rest-sh__restish-337",
+            "ueberdosis__tiptap-7887",
+            "vuejs__core-14877",
+            "vuejs__core-14897",
+            "withcoral__coral-1179",
+            "woodpecker-ci__woodpecker-6623"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.6455,
+            "auroc": 0.5623,
+            "auprc": 0.683,
+            "brier": 0.2997
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.6455,
+            "auroc": 0.4937,
+            "auprc": 0.6357,
+            "brier": 0.2421
+          }
+        },
+        {
+          "fold": 4,
+          "test_tasks": [
+            "Martian-Engineering__lossless-claw-814",
+            "agno-agi__agno-8148",
+            "apache__pulsar-25953",
+            "better-auth__better-auth-10070",
+            "cloudflare__vinext-1574",
+            "cloudnative-pg__cloudnative-pg-10747",
+            "floci-io__floci-1235",
+            "harbor-framework__harbor-1764",
+            "kestra-io__kestra-16119",
+            "langchain4j__langchain4j-5367",
+            "ludo-technologies__pyscn-500",
+            "microsoft__apm-1553",
+            "mui__base-ui-4849",
+            "mui__base-ui-4903",
+            "nearai__ironclaw-3735",
+            "nesquena__hermes-webui-3069",
+            "raullenchai__Rapid-MLX-426",
+            "react-hook-form__react-hook-form-13464",
+            "rust-lang__rust-analyzer-22397",
+            "ubugeeei-prod__vize-1281",
+            "ubugeeei-prod__vize-1508",
+            "ubugeeei-prod__vize-774"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.8091,
+            "auroc": 0.439,
+            "auprc": 0.7604,
+            "brier": 0.4955
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.8091,
+            "auroc": 0.3288,
+            "auprc": 0.7456,
+            "brier": 0.234
+          }
+        },
+        {
+          "fold": 5,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4411",
+            "Gentleman-Programming__gentle-ai-595",
+            "apache__dubbo-go-3357",
+            "apache__hugegraph-3037",
+            "better-auth__better-auth-9756",
+            "gleam-lang__gleam-5798",
+            "gotd__td-1759",
+            "ivov__lisette-627",
+            "kenn-io__agentsview-602",
+            "microsoft__waza-247",
+            "mvanhorn__cli-printing-press-2002",
+            "open-jarvis__OpenJarvis-465",
+            "pydantic__pydantic-ai-5580",
+            "pydantic__pydantic-ai-5842",
+            "stablyai__orca-1934",
+            "stablyai__orca-4331",
+            "tashfeenahmed__freellmapi-289",
+            "teng-lin__notebooklm-py-826",
+            "tursodatabase__turso-7117",
+            "ubugeeei-prod__vize-1265",
+            "verl-project__verl-6506",
+            "withcoral__coral-1143"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.6091,
+            "auroc": 0.4457,
+            "auprc": 0.5647,
+            "brier": 0.4669
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.6091,
+            "auroc": 0.4557,
+            "auprc": 0.5946,
+            "brier": 0.2777
+          }
+        }
+      ],
+      "summary": {
+        "transfer": {
+          "defined_folds": 5,
+          "unweighted_mean": 0.5088199999999999,
+          "sample_sd": 0.07174578036372592,
+          "min": 0.439,
+          "max": 0.602
+        },
+        "own": {
+          "defined_folds": 5,
+          "unweighted_mean": 0.46066,
+          "sample_sd": 0.07801841449299005,
+          "min": 0.3288,
+          "max": 0.5277
+        }
+      },
+      "pooled_transfer": {
+        "n": 555,
+        "failure_rate": 0.6883,
+        "auroc": 0.507,
+        "auprc": 0.7157,
+        "brier": 0.375
+      },
+      "pooled_own": {
+        "n": 555,
+        "failure_rate": 0.6883,
+        "auroc": 0.4391,
+        "auprc": 0.6571,
+        "brier": 0.2389
+      }
+    },
+    {
+      "checkpoint": 10,
+      "seed": 20261010,
+      "folds": [
+        {
+          "fold": 1,
+          "test_tasks": [
+            "HKUDS__nanobot-4274",
+            "apache__dubbo-go-3357",
+            "astral-sh__ruff-25567",
+            "better-auth__better-auth-9756",
+            "fallow-rs__fallow-762",
+            "fallow-rs__fallow-913",
+            "fathah__hermes-desktop-249",
+            "gleam-lang__gleam-5797",
+            "ivov__lisette-627",
+            "kestra-io__kestra-16067",
+            "langchain-ai__deepagents-3866",
+            "livekit__agents-5944",
+            "marimo-team__marimo-9626",
+            "matrixorigin__matrixone-24632",
+            "microsoft__typescript-go-4062",
+            "mvanhorn__cli-printing-press-2086",
+            "nearai__ironclaw-3694",
+            "nearai__ironclaw-3735",
+            "sipeed__picoclaw-2928",
+            "tashfeenahmed__freellmapi-289",
+            "ubugeeei-prod__vize-1281",
+            "ueberdosis__tiptap-7887",
+            "vuejs__core-14877"
+          ],
+          "n": 115,
+          "transfer": {
+            "n": 115,
+            "failure_rate": 0.6174,
+            "auroc": 0.4091,
+            "auprc": 0.5508,
+            "brier": 0.3549
+          },
+          "own": {
+            "n": 115,
+            "failure_rate": 0.6174,
+            "auroc": 0.4942,
+            "auprc": 0.6358,
+            "brier": 0.2555
+          }
+        },
+        {
+          "fold": 2,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4411",
+            "HKUDS__nanobot-4048",
+            "Soju06__codex-lb-744",
+            "agno-agi__agno-8148",
+            "apache__pulsar-25793",
+            "cloudflare__vinext-1371",
+            "docker__docker-agent-2992",
+            "facebook__lexical-8676",
+            "fathah__hermes-desktop-268",
+            "floci-io__floci-1021",
+            "floci-io__floci-1209",
+            "floci-io__floci-1235",
+            "kestra-io__kestra-16119",
+            "mikro-orm__mikro-orm-7799",
+            "mvanhorn__cli-printing-press-2002",
+            "pydantic__pydantic-ai-5580",
+            "stablyai__orca-4331",
+            "tursodatabase__turso-7117",
+            "ubugeeei-prod__vize-769",
+            "vuejs__core-14897",
+            "withcoral__coral-1143",
+            "woodpecker-ci__woodpecker-6623"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.7,
+            "auroc": 0.499,
+            "auprc": 0.7001,
+            "brier": 0.5499
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.7,
+            "auroc": 0.5053,
+            "auprc": 0.7493,
+            "brier": 0.224
+          }
+        },
+        {
+          "fold": 3,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4455",
+            "Gentleman-Programming__gentle-ai-595",
+            "HKUDS__nanobot-4129",
+            "better-auth__better-auth-10070",
+            "cloudflare__vinext-1837",
+            "fallow-rs__fallow-821",
+            "fallow-rs__fallow-824",
+            "intellectronica__ruler-556",
+            "langchain4j__langchain4j-5315",
+            "ludo-technologies__pyscn-500",
+            "marimo-team__marimo-9766",
+            "mui__base-ui-4849",
+            "mui__base-ui-4903",
+            "nesquena__hermes-webui-3069",
+            "openrewrite__rewrite-7784",
+            "oxc-project__oxc-22623",
+            "promptfoo__promptfoo-9313",
+            "raullenchai__Rapid-MLX-426",
+            "stablyai__orca-5176",
+            "ubugeeei-prod__vize-1265",
+            "ueberdosis__tiptap-7896",
+            "withcoral__coral-1186"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.6273,
+            "auroc": 0.465,
+            "auprc": 0.6275,
+            "brier": 0.3192
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.6273,
+            "auroc": 0.5474,
+            "auprc": 0.6569,
+            "brier": 0.2451
+          }
+        },
+        {
+          "fold": 4,
+          "test_tasks": [
+            "Martian-Engineering__lossless-claw-814",
+            "apache__pulsar-25865",
+            "astral-sh__ruff-25414",
+            "cloudnative-pg__cloudnative-pg-10747",
+            "floci-io__floci-1142",
+            "floci-io__floci-1325",
+            "gotd__td-1759",
+            "harbor-framework__harbor-1764",
+            "helidon-io__helidon-11979",
+            "langchain4j__langchain4j-5328",
+            "langchain4j__langchain4j-5367",
+            "ludo-technologies__pyscn-548",
+            "microsoft__typescript-go-4194",
+            "microsoft__waza-247",
+            "mozilla-ai__any-llm-1121",
+            "mvanhorn__cli-printing-press-1920",
+            "open-jarvis__OpenJarvis-465",
+            "rest-sh__restish-337",
+            "teng-lin__notebooklm-py-826",
+            "ubugeeei-prod__vize-1508",
+            "verl-project__verl-6506",
+            "withcoral__coral-1179"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.7636,
+            "auroc": 0.4714,
+            "auprc": 0.7773,
+            "brier": 0.3787
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.7636,
+            "auroc": 0.5531,
+            "auprc": 0.8327,
+            "brier": 0.2075
+          }
+        },
+        {
+          "fold": 5,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4281",
+            "PerryTS__perry-3982",
+            "apache__hugegraph-3037",
+            "apache__pulsar-25953",
+            "cloudflare__vinext-1574",
+            "danny-avila__LibreChat-13166",
+            "floci-io__floci-1032",
+            "gleam-lang__gleam-5798",
+            "ivov__lisette-491",
+            "ivov__lisette-657",
+            "kenn-io__agentsview-602",
+            "kestra-io__kestra-16450",
+            "kubernetes-sigs__kueue-11559",
+            "kubernetes-sigs__kueue-11619",
+            "marimo-team__marimo-9754",
+            "microsoft__apm-1553",
+            "pydantic__pydantic-ai-5842",
+            "react-hook-form__react-hook-form-13464",
+            "rust-lang__rust-analyzer-22397",
+            "stablyai__orca-1934",
+            "tailscale__tailscale-19847",
+            "ubugeeei-prod__vize-774"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.7364,
+            "auroc": 0.5155,
+            "auprc": 0.7249,
+            "brier": 0.5647
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.7364,
+            "auroc": 0.3755,
+            "auprc": 0.7272,
+            "brier": 0.2315
+          }
+        }
+      ],
+      "summary": {
+        "transfer": {
+          "defined_folds": 5,
+          "unweighted_mean": 0.472,
+          "sample_sd": 0.04070325539806366,
+          "min": 0.4091,
+          "max": 0.5155
+        },
+        "own": {
+          "defined_folds": 5,
+          "unweighted_mean": 0.49510000000000004,
+          "sample_sd": 0.07160359627839932,
+          "min": 0.3755,
+          "max": 0.5531
+        }
+      },
+      "pooled_transfer": {
+        "n": 555,
+        "failure_rate": 0.6883,
+        "auroc": 0.4537,
+        "auprc": 0.6704,
+        "brier": 0.4328
+      },
+      "pooled_own": {
+        "n": 555,
+        "failure_rate": 0.6883,
+        "auroc": 0.494,
+        "auprc": 0.7132,
+        "brier": 0.2329
+      }
+    },
+    {
+      "checkpoint": 10,
+      "seed": 20261011,
+      "folds": [
+        {
+          "fold": 1,
+          "test_tasks": [
+            "HKUDS__nanobot-4129",
+            "Martian-Engineering__lossless-claw-814",
+            "PerryTS__perry-3982",
+            "apache__hugegraph-3037",
+            "facebook__lexical-8676",
+            "fallow-rs__fallow-913",
+            "fathah__hermes-desktop-249",
+            "gleam-lang__gleam-5798",
+            "langchain4j__langchain4j-5328",
+            "livekit__agents-5944",
+            "marimo-team__marimo-9754",
+            "microsoft__typescript-go-4194",
+            "mui__base-ui-4903",
+            "mvanhorn__cli-printing-press-1920",
+            "nearai__ironclaw-3735",
+            "openrewrite__rewrite-7784",
+            "raullenchai__Rapid-MLX-426",
+            "tailscale__tailscale-19847",
+            "ueberdosis__tiptap-7887",
+            "ueberdosis__tiptap-7896",
+            "verl-project__verl-6506",
+            "withcoral__coral-1186",
+            "woodpecker-ci__woodpecker-6623"
+          ],
+          "n": 115,
+          "transfer": {
+            "n": 115,
+            "failure_rate": 0.687,
+            "auroc": 0.4058,
+            "auprc": 0.6448,
+            "brier": 0.4732
+          },
+          "own": {
+            "n": 115,
+            "failure_rate": 0.687,
+            "auroc": 0.5028,
+            "auprc": 0.69,
+            "brier": 0.2281
+          }
+        },
+        {
+          "fold": 2,
+          "test_tasks": [
+            "Gentleman-Programming__gentle-ai-595",
+            "HKUDS__nanobot-4048",
+            "HKUDS__nanobot-4274",
+            "astral-sh__ruff-25414",
+            "better-auth__better-auth-10070",
+            "cloudflare__vinext-1371",
+            "docker__docker-agent-2992",
+            "floci-io__floci-1021",
+            "floci-io__floci-1235",
+            "harbor-framework__harbor-1764",
+            "kestra-io__kestra-16067",
+            "kubernetes-sigs__kueue-11619",
+            "langchain-ai__deepagents-3866",
+            "langchain4j__langchain4j-5315",
+            "microsoft__waza-247",
+            "mikro-orm__mikro-orm-7799",
+            "open-jarvis__OpenJarvis-465",
+            "oxc-project__oxc-22623",
+            "pydantic__pydantic-ai-5842",
+            "tursodatabase__turso-7117",
+            "ubugeeei-prod__vize-1508",
+            "withcoral__coral-1179"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.6545,
+            "auroc": 0.5355,
+            "auprc": 0.7083,
+            "brier": 0.4359
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.6545,
+            "auroc": 0.3286,
+            "auprc": 0.5536,
+            "brier": 0.2667
+          }
+        },
+        {
+          "fold": 3,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4281",
+            "ArcadeData__arcadedb-4455",
+            "apache__dubbo-go-3357",
+            "apache__pulsar-25865",
+            "apache__pulsar-25953",
+            "better-auth__better-auth-9756",
+            "cloudflare__vinext-1574",
+            "danny-avila__LibreChat-13166",
+            "fallow-rs__fallow-762",
+            "fallow-rs__fallow-821",
+            "floci-io__floci-1209",
+            "ivov__lisette-491",
+            "langchain4j__langchain4j-5367",
+            "ludo-technologies__pyscn-548",
+            "microsoft__typescript-go-4062",
+            "mui__base-ui-4849",
+            "react-hook-form__react-hook-form-13464",
+            "rust-lang__rust-analyzer-22397",
+            "tashfeenahmed__freellmapi-289",
+            "ubugeeei-prod__vize-774",
+            "vuejs__core-14877",
+            "vuejs__core-14897"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.7273,
+            "auroc": 0.6327,
+            "auprc": 0.8358,
+            "brier": 0.3133
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.7273,
+            "auroc": 0.5138,
+            "auprc": 0.7865,
+            "brier": 0.2151
+          }
+        },
+        {
+          "fold": 4,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4411",
+            "Soju06__codex-lb-744",
+            "apache__pulsar-25793",
+            "fathah__hermes-desktop-268",
+            "floci-io__floci-1032",
+            "floci-io__floci-1325",
+            "helidon-io__helidon-11979",
+            "intellectronica__ruler-556",
+            "ivov__lisette-627",
+            "ivov__lisette-657",
+            "matrixorigin__matrixone-24632",
+            "mozilla-ai__any-llm-1121",
+            "mvanhorn__cli-printing-press-2002",
+            "nearai__ironclaw-3694",
+            "nesquena__hermes-webui-3069",
+            "promptfoo__promptfoo-9313",
+            "rest-sh__restish-337",
+            "sipeed__picoclaw-2928",
+            "stablyai__orca-1934",
+            "ubugeeei-prod__vize-1281",
+            "ubugeeei-prod__vize-769",
+            "withcoral__coral-1143"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.7182,
+            "auroc": 0.6002,
+            "auprc": 0.7988,
+            "brier": 0.4323
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.7182,
+            "auroc": 0.5402,
+            "auprc": 0.7699,
+            "brier": 0.2049
+          }
+        },
+        {
+          "fold": 5,
+          "test_tasks": [
+            "agno-agi__agno-8148",
+            "astral-sh__ruff-25567",
+            "cloudflare__vinext-1837",
+            "cloudnative-pg__cloudnative-pg-10747",
+            "fallow-rs__fallow-824",
+            "floci-io__floci-1142",
+            "gleam-lang__gleam-5797",
+            "gotd__td-1759",
+            "kenn-io__agentsview-602",
+            "kestra-io__kestra-16119",
+            "kestra-io__kestra-16450",
+            "kubernetes-sigs__kueue-11559",
+            "ludo-technologies__pyscn-500",
+            "marimo-team__marimo-9626",
+            "marimo-team__marimo-9766",
+            "microsoft__apm-1553",
+            "mvanhorn__cli-printing-press-2086",
+            "pydantic__pydantic-ai-5580",
+            "stablyai__orca-4331",
+            "stablyai__orca-5176",
+            "teng-lin__notebooklm-py-826",
+            "ubugeeei-prod__vize-1265"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.6545,
+            "auroc": 0.5351,
+            "auprc": 0.6885,
+            "brier": 0.3125
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.6545,
+            "auroc": 0.3567,
+            "auprc": 0.5735,
+            "brier": 0.2983
+          }
+        }
+      ],
+      "summary": {
+        "transfer": {
+          "defined_folds": 5,
+          "unweighted_mean": 0.54186,
+          "sample_sd": 0.0869682873235986,
+          "min": 0.4058,
+          "max": 0.6327
+        },
+        "own": {
+          "defined_folds": 5,
+          "unweighted_mean": 0.44842000000000004,
+          "sample_sd": 0.09801108100618013,
+          "min": 0.3286,
+          "max": 0.5402
+        }
+      },
+      "pooled_transfer": {
+        "n": 555,
+        "failure_rate": 0.6883,
+        "auroc": 0.5374,
+        "auprc": 0.7316,
+        "brier": 0.3942
+      },
+      "pooled_own": {
+        "n": 555,
+        "failure_rate": 0.6883,
+        "auroc": 0.4548,
+        "auprc": 0.6652,
+        "brier": 0.2425
+      }
+    },
+    {
+      "checkpoint": 10,
+      "seed": 20261012,
+      "folds": [
+        {
+          "fold": 1,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4281",
+            "ArcadeData__arcadedb-4455",
+            "HKUDS__nanobot-4129",
+            "HKUDS__nanobot-4274",
+            "Soju06__codex-lb-744",
+            "apache__pulsar-25793",
+            "astral-sh__ruff-25567",
+            "fallow-rs__fallow-913",
+            "floci-io__floci-1032",
+            "floci-io__floci-1325",
+            "helidon-io__helidon-11979",
+            "ivov__lisette-657",
+            "langchain-ai__deepagents-3866",
+            "livekit__agents-5944",
+            "microsoft__typescript-go-4062",
+            "mikro-orm__mikro-orm-7799",
+            "mozilla-ai__any-llm-1121",
+            "openrewrite__rewrite-7784",
+            "oxc-project__oxc-22623",
+            "promptfoo__promptfoo-9313",
+            "stablyai__orca-5176",
+            "ueberdosis__tiptap-7896",
+            "withcoral__coral-1186"
+          ],
+          "n": 115,
+          "transfer": {
+            "n": 115,
+            "failure_rate": 0.7217,
+            "auroc": 0.5998,
+            "auprc": 0.8224,
+            "brier": 0.4073
+          },
+          "own": {
+            "n": 115,
+            "failure_rate": 0.7217,
+            "auroc": 0.3908,
+            "auprc": 0.6451,
+            "brier": 0.2255
+          }
+        },
+        {
+          "fold": 2,
+          "test_tasks": [
+            "astral-sh__ruff-25414",
+            "cloudflare__vinext-1837",
+            "danny-avila__LibreChat-13166",
+            "docker__docker-agent-2992",
+            "fallow-rs__fallow-824",
+            "fathah__hermes-desktop-249",
+            "fathah__hermes-desktop-268",
+            "floci-io__floci-1021",
+            "floci-io__floci-1142",
+            "floci-io__floci-1209",
+            "ivov__lisette-491",
+            "kubernetes-sigs__kueue-11559",
+            "kubernetes-sigs__kueue-11619",
+            "langchain4j__langchain4j-5315",
+            "ludo-technologies__pyscn-548",
+            "marimo-team__marimo-9754",
+            "marimo-team__marimo-9766",
+            "matrixorigin__matrixone-24632",
+            "mvanhorn__cli-printing-press-1920",
+            "sipeed__picoclaw-2928",
+            "tailscale__tailscale-19847",
+            "ubugeeei-prod__vize-769"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.6545,
+            "auroc": 0.3883,
+            "auprc": 0.5941,
+            "brier": 0.3157
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.6545,
+            "auroc": 0.4887,
+            "auprc": 0.6376,
+            "brier": 0.2402
+          }
+        },
+        {
+          "fold": 3,
+          "test_tasks": [
+            "HKUDS__nanobot-4048",
+            "PerryTS__perry-3982",
+            "apache__pulsar-25865",
+            "cloudflare__vinext-1371",
+            "facebook__lexical-8676",
+            "fallow-rs__fallow-762",
+            "fallow-rs__fallow-821",
+            "gleam-lang__gleam-5797",
+            "intellectronica__ruler-556",
+            "kestra-io__kestra-16067",
+            "kestra-io__kestra-16450",
+            "langchain4j__langchain4j-5328",
+            "marimo-team__marimo-9626",
+            "microsoft__typescript-go-4194",
+            "mvanhorn__cli-printing-press-2086",
+            "nearai__ironclaw-3694",
+            "rest-sh__restish-337",
+            "ueberdosis__tiptap-7887",
+            "vuejs__core-14877",
+            "vuejs__core-14897",
+            "withcoral__coral-1179",
+            "woodpecker-ci__woodpecker-6623"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.6455,
+            "auroc": 0.6009,
+            "auprc": 0.749,
+            "brier": 0.2612
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.6455,
+            "auroc": 0.4561,
+            "auprc": 0.6676,
+            "brier": 0.2556
+          }
+        },
+        {
+          "fold": 4,
+          "test_tasks": [
+            "Martian-Engineering__lossless-claw-814",
+            "agno-agi__agno-8148",
+            "apache__pulsar-25953",
+            "better-auth__better-auth-10070",
+            "cloudflare__vinext-1574",
+            "cloudnative-pg__cloudnative-pg-10747",
+            "floci-io__floci-1235",
+            "harbor-framework__harbor-1764",
+            "kestra-io__kestra-16119",
+            "langchain4j__langchain4j-5367",
+            "ludo-technologies__pyscn-500",
+            "microsoft__apm-1553",
+            "mui__base-ui-4849",
+            "mui__base-ui-4903",
+            "nearai__ironclaw-3735",
+            "nesquena__hermes-webui-3069",
+            "raullenchai__Rapid-MLX-426",
+            "react-hook-form__react-hook-form-13464",
+            "rust-lang__rust-analyzer-22397",
+            "ubugeeei-prod__vize-1281",
+            "ubugeeei-prod__vize-1508",
+            "ubugeeei-prod__vize-774"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.8091,
+            "auroc": 0.5142,
+            "auprc": 0.8049,
+            "brier": 0.4521
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.8091,
+            "auroc": 0.4898,
+            "auprc": 0.8245,
+            "brier": 0.2036
+          }
+        },
+        {
+          "fold": 5,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4411",
+            "Gentleman-Programming__gentle-ai-595",
+            "apache__dubbo-go-3357",
+            "apache__hugegraph-3037",
+            "better-auth__better-auth-9756",
+            "gleam-lang__gleam-5798",
+            "gotd__td-1759",
+            "ivov__lisette-627",
+            "kenn-io__agentsview-602",
+            "microsoft__waza-247",
+            "mvanhorn__cli-printing-press-2002",
+            "open-jarvis__OpenJarvis-465",
+            "pydantic__pydantic-ai-5580",
+            "pydantic__pydantic-ai-5842",
+            "stablyai__orca-1934",
+            "stablyai__orca-4331",
+            "tashfeenahmed__freellmapi-289",
+            "teng-lin__notebooklm-py-826",
+            "tursodatabase__turso-7117",
+            "ubugeeei-prod__vize-1265",
+            "verl-project__verl-6506",
+            "withcoral__coral-1143"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.6091,
+            "auroc": 0.4273,
+            "auprc": 0.5527,
+            "brier": 0.3889
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.6091,
+            "auroc": 0.5002,
+            "auprc": 0.617,
+            "brier": 0.2774
+          }
+        }
+      ],
+      "summary": {
+        "transfer": {
+          "defined_folds": 5,
+          "unweighted_mean": 0.5061,
+          "sample_sd": 0.09736351986242076,
+          "min": 0.3883,
+          "max": 0.6009
+        },
+        "own": {
+          "defined_folds": 5,
+          "unweighted_mean": 0.4651199999999999,
+          "sample_sd": 0.04472289123033081,
+          "min": 0.3908,
+          "max": 0.5002
+        }
+      },
+      "pooled_transfer": {
+        "n": 555,
+        "failure_rate": 0.6883,
+        "auroc": 0.4698,
+        "auprc": 0.6807,
+        "brier": 0.3654
+      },
+      "pooled_own": {
+        "n": 555,
+        "failure_rate": 0.6883,
+        "auroc": 0.4403,
+        "auprc": 0.6477,
+        "brier": 0.2403
+      }
+    },
+    {
+      "checkpoint": 20,
+      "seed": 20261010,
+      "folds": [
+        {
+          "fold": 1,
+          "test_tasks": [
+            "HKUDS__nanobot-4274",
+            "apache__dubbo-go-3357",
+            "astral-sh__ruff-25567",
+            "better-auth__better-auth-9756",
+            "fallow-rs__fallow-762",
+            "fallow-rs__fallow-913",
+            "fathah__hermes-desktop-249",
+            "gleam-lang__gleam-5797",
+            "ivov__lisette-627",
+            "kestra-io__kestra-16067",
+            "langchain-ai__deepagents-3866",
+            "livekit__agents-5944",
+            "marimo-team__marimo-9626",
+            "matrixorigin__matrixone-24632",
+            "microsoft__typescript-go-4062",
+            "mvanhorn__cli-printing-press-2086",
+            "nearai__ironclaw-3694",
+            "nearai__ironclaw-3735",
+            "sipeed__picoclaw-2928",
+            "tashfeenahmed__freellmapi-289",
+            "ubugeeei-prod__vize-1281",
+            "ueberdosis__tiptap-7887",
+            "vuejs__core-14877"
+          ],
+          "n": 115,
+          "transfer": {
+            "n": 115,
+            "failure_rate": 0.6174,
+            "auroc": 0.4673,
+            "auprc": 0.6372,
+            "brier": 0.3585
+          },
+          "own": {
+            "n": 115,
+            "failure_rate": 0.6174,
+            "auroc": 0.4936,
+            "auprc": 0.6479,
+            "brier": 0.2623
+          }
+        },
+        {
+          "fold": 2,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4411",
+            "HKUDS__nanobot-4048",
+            "Soju06__codex-lb-744",
+            "agno-agi__agno-8148",
+            "apache__pulsar-25793",
+            "cloudflare__vinext-1371",
+            "docker__docker-agent-2992",
+            "facebook__lexical-8676",
+            "fathah__hermes-desktop-268",
+            "floci-io__floci-1021",
+            "floci-io__floci-1209",
+            "floci-io__floci-1235",
+            "kestra-io__kestra-16119",
+            "mikro-orm__mikro-orm-7799",
+            "mvanhorn__cli-printing-press-2002",
+            "pydantic__pydantic-ai-5580",
+            "stablyai__orca-4331",
+            "tursodatabase__turso-7117",
+            "ubugeeei-prod__vize-769",
+            "vuejs__core-14897",
+            "withcoral__coral-1143",
+            "woodpecker-ci__woodpecker-6623"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.7,
+            "auroc": 0.5106,
+            "auprc": 0.7479,
+            "brier": 0.3084
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.7,
+            "auroc": 0.6143,
+            "auprc": 0.7753,
+            "brier": 0.2042
+          }
+        },
+        {
+          "fold": 3,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4455",
+            "Gentleman-Programming__gentle-ai-595",
+            "HKUDS__nanobot-4129",
+            "better-auth__better-auth-10070",
+            "cloudflare__vinext-1837",
+            "fallow-rs__fallow-821",
+            "fallow-rs__fallow-824",
+            "intellectronica__ruler-556",
+            "langchain4j__langchain4j-5315",
+            "ludo-technologies__pyscn-500",
+            "marimo-team__marimo-9766",
+            "mui__base-ui-4849",
+            "mui__base-ui-4903",
+            "nesquena__hermes-webui-3069",
+            "openrewrite__rewrite-7784",
+            "oxc-project__oxc-22623",
+            "promptfoo__promptfoo-9313",
+            "raullenchai__Rapid-MLX-426",
+            "stablyai__orca-5176",
+            "ubugeeei-prod__vize-1265",
+            "ueberdosis__tiptap-7896",
+            "withcoral__coral-1186"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.6273,
+            "auroc": 0.5719,
+            "auprc": 0.7077,
+            "brier": 0.246
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.6273,
+            "auroc": 0.6366,
+            "auprc": 0.741,
+            "brier": 0.2225
+          }
+        },
+        {
+          "fold": 4,
+          "test_tasks": [
+            "Martian-Engineering__lossless-claw-814",
+            "apache__pulsar-25865",
+            "astral-sh__ruff-25414",
+            "cloudnative-pg__cloudnative-pg-10747",
+            "floci-io__floci-1142",
+            "floci-io__floci-1325",
+            "gotd__td-1759",
+            "harbor-framework__harbor-1764",
+            "helidon-io__helidon-11979",
+            "langchain4j__langchain4j-5328",
+            "langchain4j__langchain4j-5367",
+            "ludo-technologies__pyscn-548",
+            "microsoft__typescript-go-4194",
+            "microsoft__waza-247",
+            "mozilla-ai__any-llm-1121",
+            "mvanhorn__cli-printing-press-1920",
+            "open-jarvis__OpenJarvis-465",
+            "rest-sh__restish-337",
+            "teng-lin__notebooklm-py-826",
+            "ubugeeei-prod__vize-1508",
+            "verl-project__verl-6506",
+            "withcoral__coral-1179"
+          ],
+          "n": 109,
+          "transfer": {
+            "n": 109,
+            "failure_rate": 0.7615,
+            "auroc": 0.5195,
+            "auprc": 0.8046,
+            "brier": 0.5863
+          },
+          "own": {
+            "n": 109,
+            "failure_rate": 0.7615,
+            "auroc": 0.5695,
+            "auprc": 0.827,
+            "brier": 0.2025
+          }
+        },
+        {
+          "fold": 5,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4281",
+            "PerryTS__perry-3982",
+            "apache__hugegraph-3037",
+            "apache__pulsar-25953",
+            "cloudflare__vinext-1574",
+            "danny-avila__LibreChat-13166",
+            "floci-io__floci-1032",
+            "gleam-lang__gleam-5798",
+            "ivov__lisette-491",
+            "ivov__lisette-657",
+            "kenn-io__agentsview-602",
+            "kestra-io__kestra-16450",
+            "kubernetes-sigs__kueue-11559",
+            "kubernetes-sigs__kueue-11619",
+            "marimo-team__marimo-9754",
+            "microsoft__apm-1553",
+            "pydantic__pydantic-ai-5842",
+            "react-hook-form__react-hook-form-13464",
+            "rust-lang__rust-analyzer-22397",
+            "stablyai__orca-1934",
+            "tailscale__tailscale-19847",
+            "ubugeeei-prod__vize-774"
+          ],
+          "n": 109,
+          "transfer": {
+            "n": 109,
+            "failure_rate": 0.7339,
+            "auroc": 0.5138,
+            "auprc": 0.7818,
+            "brier": 0.5604
+          },
+          "own": {
+            "n": 109,
+            "failure_rate": 0.7339,
+            "auroc": 0.5159,
+            "auprc": 0.7536,
+            "brier": 0.2095
+          }
+        }
+      ],
+      "summary": {
+        "transfer": {
+          "defined_folds": 5,
+          "unweighted_mean": 0.51662,
+          "sample_sd": 0.037218369120637175,
+          "min": 0.4673,
+          "max": 0.5719
+        },
+        "own": {
+          "defined_folds": 5,
+          "unweighted_mean": 0.56598,
+          "sample_sd": 0.06140290709730282,
+          "min": 0.4936,
+          "max": 0.6366
+        }
+      },
+      "pooled_transfer": {
+        "n": 553,
+        "failure_rate": 0.6872,
+        "auroc": 0.463,
+        "auprc": 0.6841,
+        "brier": 0.4109
+      },
+      "pooled_own": {
+        "n": 553,
+        "failure_rate": 0.6872,
+        "auroc": 0.5575,
+        "auprc": 0.7324,
+        "brier": 0.2206
+      }
+    },
+    {
+      "checkpoint": 20,
+      "seed": 20261011,
+      "folds": [
+        {
+          "fold": 1,
+          "test_tasks": [
+            "HKUDS__nanobot-4129",
+            "Martian-Engineering__lossless-claw-814",
+            "PerryTS__perry-3982",
+            "apache__hugegraph-3037",
+            "facebook__lexical-8676",
+            "fallow-rs__fallow-913",
+            "fathah__hermes-desktop-249",
+            "gleam-lang__gleam-5798",
+            "langchain4j__langchain4j-5328",
+            "livekit__agents-5944",
+            "marimo-team__marimo-9754",
+            "microsoft__typescript-go-4194",
+            "mui__base-ui-4903",
+            "mvanhorn__cli-printing-press-1920",
+            "nearai__ironclaw-3735",
+            "openrewrite__rewrite-7784",
+            "raullenchai__Rapid-MLX-426",
+            "tailscale__tailscale-19847",
+            "ueberdosis__tiptap-7887",
+            "ueberdosis__tiptap-7896",
+            "verl-project__verl-6506",
+            "withcoral__coral-1186",
+            "woodpecker-ci__woodpecker-6623"
+          ],
+          "n": 114,
+          "transfer": {
+            "n": 114,
+            "failure_rate": 0.6842,
+            "auroc": 0.5317,
+            "auprc": 0.7386,
+            "brier": 0.4183
+          },
+          "own": {
+            "n": 114,
+            "failure_rate": 0.6842,
+            "auroc": 0.5723,
+            "auprc": 0.7264,
+            "brier": 0.2235
+          }
+        },
+        {
+          "fold": 2,
+          "test_tasks": [
+            "Gentleman-Programming__gentle-ai-595",
+            "HKUDS__nanobot-4048",
+            "HKUDS__nanobot-4274",
+            "astral-sh__ruff-25414",
+            "better-auth__better-auth-10070",
+            "cloudflare__vinext-1371",
+            "docker__docker-agent-2992",
+            "floci-io__floci-1021",
+            "floci-io__floci-1235",
+            "harbor-framework__harbor-1764",
+            "kestra-io__kestra-16067",
+            "kubernetes-sigs__kueue-11619",
+            "langchain-ai__deepagents-3866",
+            "langchain4j__langchain4j-5315",
+            "microsoft__waza-247",
+            "mikro-orm__mikro-orm-7799",
+            "open-jarvis__OpenJarvis-465",
+            "oxc-project__oxc-22623",
+            "pydantic__pydantic-ai-5842",
+            "tursodatabase__turso-7117",
+            "ubugeeei-prod__vize-1508",
+            "withcoral__coral-1179"
+          ],
+          "n": 109,
+          "transfer": {
+            "n": 109,
+            "failure_rate": 0.6514,
+            "auroc": 0.6097,
+            "auprc": 0.7692,
+            "brier": 0.3789
+          },
+          "own": {
+            "n": 109,
+            "failure_rate": 0.6514,
+            "auroc": 0.4351,
+            "auprc": 0.6185,
+            "brier": 0.2564
+          }
+        },
+        {
+          "fold": 3,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4281",
+            "ArcadeData__arcadedb-4455",
+            "apache__dubbo-go-3357",
+            "apache__pulsar-25865",
+            "apache__pulsar-25953",
+            "better-auth__better-auth-9756",
+            "cloudflare__vinext-1574",
+            "danny-avila__LibreChat-13166",
+            "fallow-rs__fallow-762",
+            "fallow-rs__fallow-821",
+            "floci-io__floci-1209",
+            "ivov__lisette-491",
+            "langchain4j__langchain4j-5367",
+            "ludo-technologies__pyscn-548",
+            "microsoft__typescript-go-4062",
+            "mui__base-ui-4849",
+            "react-hook-form__react-hook-form-13464",
+            "rust-lang__rust-analyzer-22397",
+            "tashfeenahmed__freellmapi-289",
+            "ubugeeei-prod__vize-774",
+            "vuejs__core-14877",
+            "vuejs__core-14897"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.7273,
+            "auroc": 0.6242,
+            "auprc": 0.8114,
+            "brier": 0.2519
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.7273,
+            "auroc": 0.454,
+            "auprc": 0.7599,
+            "brier": 0.2323
+          }
+        },
+        {
+          "fold": 4,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4411",
+            "Soju06__codex-lb-744",
+            "apache__pulsar-25793",
+            "fathah__hermes-desktop-268",
+            "floci-io__floci-1032",
+            "floci-io__floci-1325",
+            "helidon-io__helidon-11979",
+            "intellectronica__ruler-556",
+            "ivov__lisette-627",
+            "ivov__lisette-657",
+            "matrixorigin__matrixone-24632",
+            "mozilla-ai__any-llm-1121",
+            "mvanhorn__cli-printing-press-2002",
+            "nearai__ironclaw-3694",
+            "nesquena__hermes-webui-3069",
+            "promptfoo__promptfoo-9313",
+            "rest-sh__restish-337",
+            "sipeed__picoclaw-2928",
+            "stablyai__orca-1934",
+            "ubugeeei-prod__vize-1281",
+            "ubugeeei-prod__vize-769",
+            "withcoral__coral-1143"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.7182,
+            "auroc": 0.5696,
+            "auprc": 0.8005,
+            "brier": 0.3236
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.7182,
+            "auroc": 0.6578,
+            "auprc": 0.7928,
+            "brier": 0.1891
+          }
+        },
+        {
+          "fold": 5,
+          "test_tasks": [
+            "agno-agi__agno-8148",
+            "astral-sh__ruff-25567",
+            "cloudflare__vinext-1837",
+            "cloudnative-pg__cloudnative-pg-10747",
+            "fallow-rs__fallow-824",
+            "floci-io__floci-1142",
+            "gleam-lang__gleam-5797",
+            "gotd__td-1759",
+            "kenn-io__agentsview-602",
+            "kestra-io__kestra-16119",
+            "kestra-io__kestra-16450",
+            "kubernetes-sigs__kueue-11559",
+            "ludo-technologies__pyscn-500",
+            "marimo-team__marimo-9626",
+            "marimo-team__marimo-9766",
+            "microsoft__apm-1553",
+            "mvanhorn__cli-printing-press-2086",
+            "pydantic__pydantic-ai-5580",
+            "stablyai__orca-4331",
+            "stablyai__orca-5176",
+            "teng-lin__notebooklm-py-826",
+            "ubugeeei-prod__vize-1265"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.6545,
+            "auroc": 0.4995,
+            "auprc": 0.7158,
+            "brier": 0.2734
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.6545,
+            "auroc": 0.3666,
+            "auprc": 0.6174,
+            "brier": 0.2885
+          }
+        }
+      ],
+      "summary": {
+        "transfer": {
+          "defined_folds": 5,
+          "unweighted_mean": 0.56694,
+          "sample_sd": 0.05221161748116985,
+          "min": 0.4995,
+          "max": 0.6242
+        },
+        "own": {
+          "defined_folds": 5,
+          "unweighted_mean": 0.49716000000000005,
+          "sample_sd": 0.11641667835838647,
+          "min": 0.3666,
+          "max": 0.6578
+        }
+      },
+      "pooled_transfer": {
+        "n": 553,
+        "failure_rate": 0.6872,
+        "auroc": 0.5616,
+        "auprc": 0.7548,
+        "brier": 0.3298
+      },
+      "pooled_own": {
+        "n": 553,
+        "failure_rate": 0.6872,
+        "auroc": 0.4965,
+        "auprc": 0.698,
+        "brier": 0.2378
+      }
+    },
+    {
+      "checkpoint": 20,
+      "seed": 20261012,
+      "folds": [
+        {
+          "fold": 1,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4281",
+            "ArcadeData__arcadedb-4455",
+            "HKUDS__nanobot-4129",
+            "HKUDS__nanobot-4274",
+            "Soju06__codex-lb-744",
+            "apache__pulsar-25793",
+            "astral-sh__ruff-25567",
+            "fallow-rs__fallow-913",
+            "floci-io__floci-1032",
+            "floci-io__floci-1325",
+            "helidon-io__helidon-11979",
+            "ivov__lisette-657",
+            "langchain-ai__deepagents-3866",
+            "livekit__agents-5944",
+            "microsoft__typescript-go-4062",
+            "mikro-orm__mikro-orm-7799",
+            "mozilla-ai__any-llm-1121",
+            "openrewrite__rewrite-7784",
+            "oxc-project__oxc-22623",
+            "promptfoo__promptfoo-9313",
+            "stablyai__orca-5176",
+            "ueberdosis__tiptap-7896",
+            "withcoral__coral-1186"
+          ],
+          "n": 115,
+          "transfer": {
+            "n": 115,
+            "failure_rate": 0.7217,
+            "auroc": 0.6589,
+            "auprc": 0.8322,
+            "brier": 0.3953
+          },
+          "own": {
+            "n": 115,
+            "failure_rate": 0.7217,
+            "auroc": 0.6216,
+            "auprc": 0.754,
+            "brier": 0.1957
+          }
+        },
+        {
+          "fold": 2,
+          "test_tasks": [
+            "astral-sh__ruff-25414",
+            "cloudflare__vinext-1837",
+            "danny-avila__LibreChat-13166",
+            "docker__docker-agent-2992",
+            "fallow-rs__fallow-824",
+            "fathah__hermes-desktop-249",
+            "fathah__hermes-desktop-268",
+            "floci-io__floci-1021",
+            "floci-io__floci-1142",
+            "floci-io__floci-1209",
+            "ivov__lisette-491",
+            "kubernetes-sigs__kueue-11559",
+            "kubernetes-sigs__kueue-11619",
+            "langchain4j__langchain4j-5315",
+            "ludo-technologies__pyscn-548",
+            "marimo-team__marimo-9754",
+            "marimo-team__marimo-9766",
+            "matrixorigin__matrixone-24632",
+            "mvanhorn__cli-printing-press-1920",
+            "sipeed__picoclaw-2928",
+            "tailscale__tailscale-19847",
+            "ubugeeei-prod__vize-769"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.6545,
+            "auroc": 0.5662,
+            "auprc": 0.7175,
+            "brier": 0.2683
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.6545,
+            "auroc": 0.6166,
+            "auprc": 0.7015,
+            "brier": 0.2196
+          }
+        },
+        {
+          "fold": 3,
+          "test_tasks": [
+            "HKUDS__nanobot-4048",
+            "PerryTS__perry-3982",
+            "apache__pulsar-25865",
+            "cloudflare__vinext-1371",
+            "facebook__lexical-8676",
+            "fallow-rs__fallow-762",
+            "fallow-rs__fallow-821",
+            "gleam-lang__gleam-5797",
+            "intellectronica__ruler-556",
+            "kestra-io__kestra-16067",
+            "kestra-io__kestra-16450",
+            "langchain4j__langchain4j-5328",
+            "marimo-team__marimo-9626",
+            "microsoft__typescript-go-4194",
+            "mvanhorn__cli-printing-press-2086",
+            "nearai__ironclaw-3694",
+            "rest-sh__restish-337",
+            "ueberdosis__tiptap-7887",
+            "vuejs__core-14877",
+            "vuejs__core-14897",
+            "withcoral__coral-1179",
+            "woodpecker-ci__woodpecker-6623"
+          ],
+          "n": 109,
+          "transfer": {
+            "n": 109,
+            "failure_rate": 0.6422,
+            "auroc": 0.4271,
+            "auprc": 0.6297,
+            "brier": 0.3131
+          },
+          "own": {
+            "n": 109,
+            "failure_rate": 0.6422,
+            "auroc": 0.4897,
+            "auprc": 0.6823,
+            "brier": 0.2536
+          }
+        },
+        {
+          "fold": 4,
+          "test_tasks": [
+            "Martian-Engineering__lossless-claw-814",
+            "agno-agi__agno-8148",
+            "apache__pulsar-25953",
+            "better-auth__better-auth-10070",
+            "cloudflare__vinext-1574",
+            "cloudnative-pg__cloudnative-pg-10747",
+            "floci-io__floci-1235",
+            "harbor-framework__harbor-1764",
+            "kestra-io__kestra-16119",
+            "langchain4j__langchain4j-5367",
+            "ludo-technologies__pyscn-500",
+            "microsoft__apm-1553",
+            "mui__base-ui-4849",
+            "mui__base-ui-4903",
+            "nearai__ironclaw-3735",
+            "nesquena__hermes-webui-3069",
+            "raullenchai__Rapid-MLX-426",
+            "react-hook-form__react-hook-form-13464",
+            "rust-lang__rust-analyzer-22397",
+            "ubugeeei-prod__vize-1281",
+            "ubugeeei-prod__vize-1508",
+            "ubugeeei-prod__vize-774"
+          ],
+          "n": 110,
+          "transfer": {
+            "n": 110,
+            "failure_rate": 0.8091,
+            "auroc": 0.4596,
+            "auprc": 0.7757,
+            "brier": 0.546
+          },
+          "own": {
+            "n": 110,
+            "failure_rate": 0.8091,
+            "auroc": 0.4232,
+            "auprc": 0.7883,
+            "brier": 0.2396
+          }
+        },
+        {
+          "fold": 5,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4411",
+            "Gentleman-Programming__gentle-ai-595",
+            "apache__dubbo-go-3357",
+            "apache__hugegraph-3037",
+            "better-auth__better-auth-9756",
+            "gleam-lang__gleam-5798",
+            "gotd__td-1759",
+            "ivov__lisette-627",
+            "kenn-io__agentsview-602",
+            "microsoft__waza-247",
+            "mvanhorn__cli-printing-press-2002",
+            "open-jarvis__OpenJarvis-465",
+            "pydantic__pydantic-ai-5580",
+            "pydantic__pydantic-ai-5842",
+            "stablyai__orca-1934",
+            "stablyai__orca-4331",
+            "tashfeenahmed__freellmapi-289",
+            "teng-lin__notebooklm-py-826",
+            "tursodatabase__turso-7117",
+            "ubugeeei-prod__vize-1265",
+            "verl-project__verl-6506",
+            "withcoral__coral-1143"
+          ],
+          "n": 109,
+          "transfer": {
+            "n": 109,
+            "failure_rate": 0.6055,
+            "auroc": 0.4394,
+            "auprc": 0.5808,
+            "brier": 0.4226
+          },
+          "own": {
+            "n": 109,
+            "failure_rate": 0.6055,
+            "auroc": 0.544,
+            "auprc": 0.6817,
+            "brier": 0.2563
+          }
+        }
+      ],
+      "summary": {
+        "transfer": {
+          "defined_folds": 5,
+          "unweighted_mean": 0.51024,
+          "sample_sd": 0.09965727770714994,
+          "min": 0.4271,
+          "max": 0.6589
+        },
+        "own": {
+          "defined_folds": 5,
+          "unweighted_mean": 0.53902,
+          "sample_sd": 0.08471960811996242,
+          "min": 0.4232,
+          "max": 0.6216
+        }
+      },
+      "pooled_transfer": {
+        "n": 553,
+        "failure_rate": 0.6872,
+        "auroc": 0.4716,
+        "auprc": 0.6693,
+        "brier": 0.3892
+      },
+      "pooled_own": {
+        "n": 553,
+        "failure_rate": 0.6872,
+        "auroc": 0.5059,
+        "auprc": 0.6888,
+        "brier": 0.2325
+      }
+    },
+    {
+      "checkpoint": 40,
+      "seed": 20261010,
+      "folds": [
+        {
+          "fold": 1,
+          "test_tasks": [
+            "HKUDS__nanobot-4274",
+            "apache__dubbo-go-3357",
+            "astral-sh__ruff-25567",
+            "better-auth__better-auth-9756",
+            "fallow-rs__fallow-762",
+            "fallow-rs__fallow-913",
+            "fathah__hermes-desktop-249",
+            "gleam-lang__gleam-5797",
+            "ivov__lisette-627",
+            "kestra-io__kestra-16067",
+            "langchain-ai__deepagents-3866",
+            "livekit__agents-5944",
+            "marimo-team__marimo-9626",
+            "matrixorigin__matrixone-24632",
+            "microsoft__typescript-go-4062",
+            "mvanhorn__cli-printing-press-2086",
+            "nearai__ironclaw-3694",
+            "nearai__ironclaw-3735",
+            "sipeed__picoclaw-2928",
+            "tashfeenahmed__freellmapi-289",
+            "ubugeeei-prod__vize-1281",
+            "ueberdosis__tiptap-7887",
+            "vuejs__core-14877"
+          ],
+          "n": 104,
+          "transfer": {
+            "n": 104,
+            "failure_rate": 0.625,
+            "auroc": 0.4659,
+            "auprc": 0.6281,
+            "brier": 0.3252
+          },
+          "own": {
+            "n": 104,
+            "failure_rate": 0.625,
+            "auroc": 0.6446,
+            "auprc": 0.7556,
+            "brier": 0.227
+          }
+        },
+        {
+          "fold": 2,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4411",
+            "HKUDS__nanobot-4048",
+            "Soju06__codex-lb-744",
+            "agno-agi__agno-8148",
+            "apache__pulsar-25793",
+            "cloudflare__vinext-1371",
+            "docker__docker-agent-2992",
+            "facebook__lexical-8676",
+            "fathah__hermes-desktop-268",
+            "floci-io__floci-1021",
+            "floci-io__floci-1209",
+            "floci-io__floci-1235",
+            "kestra-io__kestra-16119",
+            "mikro-orm__mikro-orm-7799",
+            "mvanhorn__cli-printing-press-2002",
+            "pydantic__pydantic-ai-5580",
+            "stablyai__orca-4331",
+            "tursodatabase__turso-7117",
+            "ubugeeei-prod__vize-769",
+            "vuejs__core-14897",
+            "withcoral__coral-1143",
+            "woodpecker-ci__woodpecker-6623"
+          ],
+          "n": 97,
+          "transfer": {
+            "n": 97,
+            "failure_rate": 0.7629,
+            "auroc": 0.5494,
+            "auprc": 0.8063,
+            "brier": 0.2286
+          },
+          "own": {
+            "n": 97,
+            "failure_rate": 0.7629,
+            "auroc": 0.4542,
+            "auprc": 0.7583,
+            "brier": 0.2181
+          }
+        },
+        {
+          "fold": 3,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4455",
+            "Gentleman-Programming__gentle-ai-595",
+            "HKUDS__nanobot-4129",
+            "better-auth__better-auth-10070",
+            "cloudflare__vinext-1837",
+            "fallow-rs__fallow-821",
+            "fallow-rs__fallow-824",
+            "intellectronica__ruler-556",
+            "langchain4j__langchain4j-5315",
+            "ludo-technologies__pyscn-500",
+            "marimo-team__marimo-9766",
+            "mui__base-ui-4849",
+            "mui__base-ui-4903",
+            "nesquena__hermes-webui-3069",
+            "openrewrite__rewrite-7784",
+            "oxc-project__oxc-22623",
+            "promptfoo__promptfoo-9313",
+            "raullenchai__Rapid-MLX-426",
+            "stablyai__orca-5176",
+            "ubugeeei-prod__vize-1265",
+            "ueberdosis__tiptap-7896",
+            "withcoral__coral-1186"
+          ],
+          "n": 101,
+          "transfer": {
+            "n": 101,
+            "failure_rate": 0.6337,
+            "auroc": 0.5146,
+            "auprc": 0.6572,
+            "brier": 0.2569
+          },
+          "own": {
+            "n": 101,
+            "failure_rate": 0.6337,
+            "auroc": 0.6267,
+            "auprc": 0.7463,
+            "brier": 0.2291
+          }
+        },
+        {
+          "fold": 4,
+          "test_tasks": [
+            "Martian-Engineering__lossless-claw-814",
+            "apache__pulsar-25865",
+            "astral-sh__ruff-25414",
+            "cloudnative-pg__cloudnative-pg-10747",
+            "floci-io__floci-1142",
+            "floci-io__floci-1325",
+            "gotd__td-1759",
+            "harbor-framework__harbor-1764",
+            "helidon-io__helidon-11979",
+            "langchain4j__langchain4j-5328",
+            "langchain4j__langchain4j-5367",
+            "ludo-technologies__pyscn-548",
+            "microsoft__typescript-go-4194",
+            "microsoft__waza-247",
+            "mozilla-ai__any-llm-1121",
+            "mvanhorn__cli-printing-press-1920",
+            "open-jarvis__OpenJarvis-465",
+            "rest-sh__restish-337",
+            "teng-lin__notebooklm-py-826",
+            "ubugeeei-prod__vize-1508",
+            "verl-project__verl-6506",
+            "withcoral__coral-1179"
+          ],
+          "n": 94,
+          "transfer": {
+            "n": 94,
+            "failure_rate": 0.734,
+            "auroc": 0.6545,
+            "auprc": 0.8408,
+            "brier": 0.2201
+          },
+          "own": {
+            "n": 94,
+            "failure_rate": 0.734,
+            "auroc": 0.6052,
+            "auprc": 0.7842,
+            "brier": 0.2041
+          }
+        },
+        {
+          "fold": 5,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4281",
+            "PerryTS__perry-3982",
+            "apache__hugegraph-3037",
+            "apache__pulsar-25953",
+            "cloudflare__vinext-1574",
+            "danny-avila__LibreChat-13166",
+            "floci-io__floci-1032",
+            "gleam-lang__gleam-5798",
+            "ivov__lisette-491",
+            "ivov__lisette-657",
+            "kenn-io__agentsview-602",
+            "kestra-io__kestra-16450",
+            "kubernetes-sigs__kueue-11559",
+            "kubernetes-sigs__kueue-11619",
+            "marimo-team__marimo-9754",
+            "microsoft__apm-1553",
+            "pydantic__pydantic-ai-5842",
+            "react-hook-form__react-hook-form-13464",
+            "rust-lang__rust-analyzer-22397",
+            "stablyai__orca-1934",
+            "tailscale__tailscale-19847",
+            "ubugeeei-prod__vize-774"
+          ],
+          "n": 94,
+          "transfer": {
+            "n": 94,
+            "failure_rate": 0.7128,
+            "auroc": 0.5627,
+            "auprc": 0.7552,
+            "brier": 0.2293
+          },
+          "own": {
+            "n": 94,
+            "failure_rate": 0.7128,
+            "auroc": 0.5368,
+            "auprc": 0.7476,
+            "brier": 0.2215
+          }
+        }
+      ],
+      "summary": {
+        "transfer": {
+          "defined_folds": 5,
+          "unweighted_mean": 0.5494199999999999,
+          "sample_sd": 0.0696530473130932,
+          "min": 0.4659,
+          "max": 0.6545
+        },
+        "own": {
+          "defined_folds": 5,
+          "unweighted_mean": 0.5735,
+          "sample_sd": 0.07821400130411432,
+          "min": 0.4542,
+          "max": 0.6446
+        }
+      },
+      "pooled_transfer": {
+        "n": 490,
+        "failure_rate": 0.6918,
+        "auroc": 0.5191,
+        "auprc": 0.7017,
+        "brier": 0.2534
+      },
+      "pooled_own": {
+        "n": 490,
+        "failure_rate": 0.6918,
+        "auroc": 0.5869,
+        "auprc": 0.7493,
+        "brier": 0.2202
+      }
+    },
+    {
+      "checkpoint": 40,
+      "seed": 20261011,
+      "folds": [
+        {
+          "fold": 1,
+          "test_tasks": [
+            "HKUDS__nanobot-4129",
+            "Martian-Engineering__lossless-claw-814",
+            "PerryTS__perry-3982",
+            "apache__hugegraph-3037",
+            "facebook__lexical-8676",
+            "fallow-rs__fallow-913",
+            "fathah__hermes-desktop-249",
+            "gleam-lang__gleam-5798",
+            "langchain4j__langchain4j-5328",
+            "livekit__agents-5944",
+            "marimo-team__marimo-9754",
+            "microsoft__typescript-go-4194",
+            "mui__base-ui-4903",
+            "mvanhorn__cli-printing-press-1920",
+            "nearai__ironclaw-3735",
+            "openrewrite__rewrite-7784",
+            "raullenchai__Rapid-MLX-426",
+            "tailscale__tailscale-19847",
+            "ueberdosis__tiptap-7887",
+            "ueberdosis__tiptap-7896",
+            "verl-project__verl-6506",
+            "withcoral__coral-1186",
+            "woodpecker-ci__woodpecker-6623"
+          ],
+          "n": 106,
+          "transfer": {
+            "n": 106,
+            "failure_rate": 0.6887,
+            "auroc": 0.5423,
+            "auprc": 0.7419,
+            "brier": 0.2218
+          },
+          "own": {
+            "n": 106,
+            "failure_rate": 0.6887,
+            "auroc": 0.4886,
+            "auprc": 0.6835,
+            "brier": 0.2441
+          }
+        },
+        {
+          "fold": 2,
+          "test_tasks": [
+            "Gentleman-Programming__gentle-ai-595",
+            "HKUDS__nanobot-4048",
+            "HKUDS__nanobot-4274",
+            "astral-sh__ruff-25414",
+            "better-auth__better-auth-10070",
+            "cloudflare__vinext-1371",
+            "docker__docker-agent-2992",
+            "floci-io__floci-1021",
+            "floci-io__floci-1235",
+            "harbor-framework__harbor-1764",
+            "kestra-io__kestra-16067",
+            "kubernetes-sigs__kueue-11619",
+            "langchain-ai__deepagents-3866",
+            "langchain4j__langchain4j-5315",
+            "microsoft__waza-247",
+            "mikro-orm__mikro-orm-7799",
+            "open-jarvis__OpenJarvis-465",
+            "oxc-project__oxc-22623",
+            "pydantic__pydantic-ai-5842",
+            "tursodatabase__turso-7117",
+            "ubugeeei-prod__vize-1508",
+            "withcoral__coral-1179"
+          ],
+          "n": 102,
+          "transfer": {
+            "n": 102,
+            "failure_rate": 0.6569,
+            "auroc": 0.6375,
+            "auprc": 0.7525,
+            "brier": 0.2747
+          },
+          "own": {
+            "n": 102,
+            "failure_rate": 0.6569,
+            "auroc": 0.5962,
+            "auprc": 0.7088,
+            "brier": 0.2251
+          }
+        },
+        {
+          "fold": 3,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4281",
+            "ArcadeData__arcadedb-4455",
+            "apache__dubbo-go-3357",
+            "apache__pulsar-25865",
+            "apache__pulsar-25953",
+            "better-auth__better-auth-9756",
+            "cloudflare__vinext-1574",
+            "danny-avila__LibreChat-13166",
+            "fallow-rs__fallow-762",
+            "fallow-rs__fallow-821",
+            "floci-io__floci-1209",
+            "ivov__lisette-491",
+            "langchain4j__langchain4j-5367",
+            "ludo-technologies__pyscn-548",
+            "microsoft__typescript-go-4062",
+            "mui__base-ui-4849",
+            "react-hook-form__react-hook-form-13464",
+            "rust-lang__rust-analyzer-22397",
+            "tashfeenahmed__freellmapi-289",
+            "ubugeeei-prod__vize-774",
+            "vuejs__core-14877",
+            "vuejs__core-14897"
+          ],
+          "n": 94,
+          "transfer": {
+            "n": 94,
+            "failure_rate": 0.7021,
+            "auroc": 0.5779,
+            "auprc": 0.7549,
+            "brier": 0.2444
+          },
+          "own": {
+            "n": 94,
+            "failure_rate": 0.7021,
+            "auroc": 0.493,
+            "auprc": 0.7143,
+            "brier": 0.2345
+          }
+        },
+        {
+          "fold": 4,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4411",
+            "Soju06__codex-lb-744",
+            "apache__pulsar-25793",
+            "fathah__hermes-desktop-268",
+            "floci-io__floci-1032",
+            "floci-io__floci-1325",
+            "helidon-io__helidon-11979",
+            "intellectronica__ruler-556",
+            "ivov__lisette-627",
+            "ivov__lisette-657",
+            "matrixorigin__matrixone-24632",
+            "mozilla-ai__any-llm-1121",
+            "mvanhorn__cli-printing-press-2002",
+            "nearai__ironclaw-3694",
+            "nesquena__hermes-webui-3069",
+            "promptfoo__promptfoo-9313",
+            "rest-sh__restish-337",
+            "sipeed__picoclaw-2928",
+            "stablyai__orca-1934",
+            "ubugeeei-prod__vize-1281",
+            "ubugeeei-prod__vize-769",
+            "withcoral__coral-1143"
+          ],
+          "n": 101,
+          "transfer": {
+            "n": 101,
+            "failure_rate": 0.7525,
+            "auroc": 0.4,
+            "auprc": 0.6924,
+            "brier": 0.2643
+          },
+          "own": {
+            "n": 101,
+            "failure_rate": 0.7525,
+            "auroc": 0.5379,
+            "auprc": 0.7964,
+            "brier": 0.1972
+          }
+        },
+        {
+          "fold": 5,
+          "test_tasks": [
+            "agno-agi__agno-8148",
+            "astral-sh__ruff-25567",
+            "cloudflare__vinext-1837",
+            "cloudnative-pg__cloudnative-pg-10747",
+            "fallow-rs__fallow-824",
+            "floci-io__floci-1142",
+            "gleam-lang__gleam-5797",
+            "gotd__td-1759",
+            "kenn-io__agentsview-602",
+            "kestra-io__kestra-16119",
+            "kestra-io__kestra-16450",
+            "kubernetes-sigs__kueue-11559",
+            "ludo-technologies__pyscn-500",
+            "marimo-team__marimo-9626",
+            "marimo-team__marimo-9766",
+            "microsoft__apm-1553",
+            "mvanhorn__cli-printing-press-2086",
+            "pydantic__pydantic-ai-5580",
+            "stablyai__orca-4331",
+            "stablyai__orca-5176",
+            "teng-lin__notebooklm-py-826",
+            "ubugeeei-prod__vize-1265"
+          ],
+          "n": 87,
+          "transfer": {
+            "n": 87,
+            "failure_rate": 0.6552,
+            "auroc": 0.6123,
+            "auprc": 0.756,
+            "brier": 0.2856
+          },
+          "own": {
+            "n": 87,
+            "failure_rate": 0.6552,
+            "auroc": 0.4988,
+            "auprc": 0.6703,
+            "brier": 0.257
+          }
+        }
+      ],
+      "summary": {
+        "transfer": {
+          "defined_folds": 5,
+          "unweighted_mean": 0.5539999999999999,
+          "sample_sd": 0.09326741124315606,
+          "min": 0.4,
+          "max": 0.6375
+        },
+        "own": {
+          "defined_folds": 5,
+          "unweighted_mean": 0.5229,
+          "sample_sd": 0.04541255333054946,
+          "min": 0.4886,
+          "max": 0.5962
+        }
+      },
+      "pooled_transfer": {
+        "n": 490,
+        "failure_rate": 0.6918,
+        "auroc": 0.5644,
+        "auprc": 0.7238,
+        "brier": 0.2572
+      },
+      "pooled_own": {
+        "n": 490,
+        "failure_rate": 0.6918,
+        "auroc": 0.5241,
+        "auprc": 0.7009,
+        "brier": 0.2309
+      }
+    },
+    {
+      "checkpoint": 40,
+      "seed": 20261012,
+      "folds": [
+        {
+          "fold": 1,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4281",
+            "ArcadeData__arcadedb-4455",
+            "HKUDS__nanobot-4129",
+            "HKUDS__nanobot-4274",
+            "Soju06__codex-lb-744",
+            "apache__pulsar-25793",
+            "astral-sh__ruff-25567",
+            "fallow-rs__fallow-913",
+            "floci-io__floci-1032",
+            "floci-io__floci-1325",
+            "helidon-io__helidon-11979",
+            "ivov__lisette-657",
+            "langchain-ai__deepagents-3866",
+            "livekit__agents-5944",
+            "microsoft__typescript-go-4062",
+            "mikro-orm__mikro-orm-7799",
+            "mozilla-ai__any-llm-1121",
+            "openrewrite__rewrite-7784",
+            "oxc-project__oxc-22623",
+            "promptfoo__promptfoo-9313",
+            "stablyai__orca-5176",
+            "ueberdosis__tiptap-7896",
+            "withcoral__coral-1186"
+          ],
+          "n": 104,
+          "transfer": {
+            "n": 104,
+            "failure_rate": 0.7692,
+            "auroc": 0.3156,
+            "auprc": 0.6882,
+            "brier": 0.2215
+          },
+          "own": {
+            "n": 104,
+            "failure_rate": 0.7692,
+            "auroc": 0.549,
+            "auprc": 0.7935,
+            "brier": 0.1968
+          }
+        },
+        {
+          "fold": 2,
+          "test_tasks": [
+            "astral-sh__ruff-25414",
+            "cloudflare__vinext-1837",
+            "danny-avila__LibreChat-13166",
+            "docker__docker-agent-2992",
+            "fallow-rs__fallow-824",
+            "fathah__hermes-desktop-249",
+            "fathah__hermes-desktop-268",
+            "floci-io__floci-1021",
+            "floci-io__floci-1142",
+            "floci-io__floci-1209",
+            "ivov__lisette-491",
+            "kubernetes-sigs__kueue-11559",
+            "kubernetes-sigs__kueue-11619",
+            "langchain4j__langchain4j-5315",
+            "ludo-technologies__pyscn-548",
+            "marimo-team__marimo-9754",
+            "marimo-team__marimo-9766",
+            "matrixorigin__matrixone-24632",
+            "mvanhorn__cli-printing-press-1920",
+            "sipeed__picoclaw-2928",
+            "tailscale__tailscale-19847",
+            "ubugeeei-prod__vize-769"
+          ],
+          "n": 106,
+          "transfer": {
+            "n": 106,
+            "failure_rate": 0.6415,
+            "auroc": 0.5062,
+            "auprc": 0.6799,
+            "brier": 0.2532
+          },
+          "own": {
+            "n": 106,
+            "failure_rate": 0.6415,
+            "auroc": 0.6947,
+            "auprc": 0.8038,
+            "brier": 0.206
+          }
+        },
+        {
+          "fold": 3,
+          "test_tasks": [
+            "HKUDS__nanobot-4048",
+            "PerryTS__perry-3982",
+            "apache__pulsar-25865",
+            "cloudflare__vinext-1371",
+            "facebook__lexical-8676",
+            "fallow-rs__fallow-762",
+            "fallow-rs__fallow-821",
+            "gleam-lang__gleam-5797",
+            "intellectronica__ruler-556",
+            "kestra-io__kestra-16067",
+            "kestra-io__kestra-16450",
+            "langchain4j__langchain4j-5328",
+            "marimo-team__marimo-9626",
+            "microsoft__typescript-go-4194",
+            "mvanhorn__cli-printing-press-2086",
+            "nearai__ironclaw-3694",
+            "rest-sh__restish-337",
+            "ueberdosis__tiptap-7887",
+            "vuejs__core-14877",
+            "vuejs__core-14897",
+            "withcoral__coral-1179",
+            "woodpecker-ci__woodpecker-6623"
+          ],
+          "n": 103,
+          "transfer": {
+            "n": 103,
+            "failure_rate": 0.6602,
+            "auroc": 0.508,
+            "auprc": 0.7041,
+            "brier": 0.2805
+          },
+          "own": {
+            "n": 103,
+            "failure_rate": 0.6602,
+            "auroc": 0.4445,
+            "auprc": 0.6639,
+            "brier": 0.2621
+          }
+        },
+        {
+          "fold": 4,
+          "test_tasks": [
+            "Martian-Engineering__lossless-claw-814",
+            "agno-agi__agno-8148",
+            "apache__pulsar-25953",
+            "better-auth__better-auth-10070",
+            "cloudflare__vinext-1574",
+            "cloudnative-pg__cloudnative-pg-10747",
+            "floci-io__floci-1235",
+            "harbor-framework__harbor-1764",
+            "kestra-io__kestra-16119",
+            "langchain4j__langchain4j-5367",
+            "ludo-technologies__pyscn-500",
+            "microsoft__apm-1553",
+            "mui__base-ui-4849",
+            "mui__base-ui-4903",
+            "nearai__ironclaw-3735",
+            "nesquena__hermes-webui-3069",
+            "raullenchai__Rapid-MLX-426",
+            "react-hook-form__react-hook-form-13464",
+            "rust-lang__rust-analyzer-22397",
+            "ubugeeei-prod__vize-1281",
+            "ubugeeei-prod__vize-1508",
+            "ubugeeei-prod__vize-774"
+          ],
+          "n": 93,
+          "transfer": {
+            "n": 93,
+            "failure_rate": 0.8387,
+            "auroc": 0.3393,
+            "auprc": 0.8051,
+            "brier": 0.218
+          },
+          "own": {
+            "n": 93,
+            "failure_rate": 0.8387,
+            "auroc": 0.5385,
+            "auprc": 0.8313,
+            "brier": 0.2053
+          }
+        },
+        {
+          "fold": 5,
+          "test_tasks": [
+            "ArcadeData__arcadedb-4411",
+            "Gentleman-Programming__gentle-ai-595",
+            "apache__dubbo-go-3357",
+            "apache__hugegraph-3037",
+            "better-auth__better-auth-9756",
+            "gleam-lang__gleam-5798",
+            "gotd__td-1759",
+            "ivov__lisette-627",
+            "kenn-io__agentsview-602",
+            "microsoft__waza-247",
+            "mvanhorn__cli-printing-press-2002",
+            "open-jarvis__OpenJarvis-465",
+            "pydantic__pydantic-ai-5580",
+            "pydantic__pydantic-ai-5842",
+            "stablyai__orca-1934",
+            "stablyai__orca-4331",
+            "tashfeenahmed__freellmapi-289",
+            "teng-lin__notebooklm-py-826",
+            "tursodatabase__turso-7117",
+            "ubugeeei-prod__vize-1265",
+            "verl-project__verl-6506",
+            "withcoral__coral-1143"
+          ],
+          "n": 84,
+          "transfer": {
+            "n": 84,
+            "failure_rate": 0.5357,
+            "auroc": 0.5527,
+            "auprc": 0.5859,
+            "brier": 0.2896
+          },
+          "own": {
+            "n": 84,
+            "failure_rate": 0.5357,
+            "auroc": 0.5909,
+            "auprc": 0.6409,
+            "brier": 0.2837
+          }
+        }
+      ],
+      "summary": {
+        "transfer": {
+          "defined_folds": 5,
+          "unweighted_mean": 0.44436,
+          "sample_sd": 0.10866063224553775,
+          "min": 0.3156,
+          "max": 0.5527
+        },
+        "own": {
+          "defined_folds": 5,
+          "unweighted_mean": 0.56352,
+          "sample_sd": 0.09077506265489436,
+          "min": 0.4445,
+          "max": 0.6947
+        }
+      },
+      "pooled_transfer": {
+        "n": 490,
+        "failure_rate": 0.6918,
+        "auroc": 0.5211,
+        "auprc": 0.6991,
+        "brier": 0.2518
+      },
+      "pooled_own": {
+        "n": 490,
+        "failure_rate": 0.6918,
+        "auroc": 0.5287,
+        "auprc": 0.7228,
+        "brier": 0.229
+      }
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+[
+  {
+    "features": "all",
+    "model": "logistic",
+    "validation": {
+      "n": 94,
+      "auroc": 0.598,
+      "auprc": 0.65,
+      "brier": 0.249
+    },
+    "source_test": {
+      "n": 92,
+      "auroc": 0.71,
+      "auprc": 0.745,
+      "brier": 0.212
+    },
+    "new_agent_test": {
+      "n": 85,
+      "auroc": 0.407,
+      "auprc": 0.626,
+      "brier": 0.377
+    }
+  },
+  {
+    "features": "all",
+    "model": "hist_gradient_boosting",
+    "validation": {
+      "n": 94,
+      "auroc": 0.577,
+      "auprc": 0.667,
+      "brier": 0.264
+    },
+    "source_test": {
+      "n": 92,
+      "auroc": 0.7,
+      "auprc": 0.73,
+      "brier": 0.214
+    },
+    "new_agent_test": {
+      "n": 85,
+      "auroc": 0.456,
+      "auprc": 0.647,
+      "brier": 0.3
+    }
+  },
+  {
+    "features": "rates",
+    "model": "logistic",
+    "validation": {
+      "n": 94,
+      "auroc": 0.647,
+      "auprc": 0.665,
+      "brier": 0.234
+    },
+    "source_test": {
+      "n": 92,
+      "auroc": 0.717,
+      "auprc": 0.732,
+      "brier": 0.213
+    },
+    "new_agent_test": {
+      "n": 85,
+      "auroc": 0.376,
+      "auprc": 0.619,
+      "brier": 0.354
+    }
+  },
+  {
+    "features": "rates",
+    "model": "hist_gradient_boosting",
+    "validation": {
+      "n": 94,
+      "auroc": 0.562,
+      "auprc": 0.57,
+      "brier": 0.273
+    },
+    "source_test": {
+      "n": 92,
+      "auroc": 0.656,
+      "auprc": 0.666,
+      "brier": 0.234
+    },
+    "new_agent_test": {
+      "n": 85,
+      "auroc": 0.497,
+      "auprc": 0.701,
+      "brier": 0.3
+    }
+  },
+  {
+    "features": "rates_plus_tool_mix",
+    "model": "logistic",
+    "validation": {
+      "n": 94,
+      "auroc": 0.634,
+      "auprc": 0.684,
+      "brier": 0.24
+    },
+    "source_test": {
+      "n": 92,
+      "auroc": 0.713,
+      "auprc": 0.746,
+      "brier": 0.209
+    },
+    "new_agent_test": {
+      "n": 85,
+      "auroc": 0.419,
+      "auprc": 0.639,
+      "brier": 0.353
+    }
+  },
+  {
+    "features": "rates_plus_tool_mix",
+    "model": "hist_gradient_boosting",
+    "validation": {
+      "n": 94,
+      "auroc": 0.57,
+      "auprc": 0.651,
+      "brier": 0.265
+    },
+    "source_test": {
+      "n": 92,
+      "auroc": 0.721,
+      "auprc": 0.755,
+      "brier": 0.21
+    },
+    "new_agent_test": {
+      "n": 85,
+      "auroc": 0.443,
+      "auprc": 0.646,
+      "brier": 0.294
+    }
+  }
+]

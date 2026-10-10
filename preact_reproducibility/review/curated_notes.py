@@ -1,0 +1,341 @@
+"""Human-readable extraction judgments; independent of scraped metadata.
+
+R = reported evidence, Q = qualified/different estimand, NR = not extracted.
+Matrix dimensions: unseen tasks, held-out agent, held-out scaffold/domain,
+calibration/threshold analysis, downstream intervention, controlled replay/repair.
+R never means independently reproduced or universally valid.
+"""
+NOTES={}
+def add(aid, category, short, domain, target, summary, findings, design, gap, future, role, location, matrix=None):
+    NOTES[aid]=dict(category=category,short=short,domain=domain,target=target,summary=summary,
+                    findings=findings,design=design,gap=gap,future=future,role=role,
+                    evidence_location=location,matrix=matrix or ['NR']*6)
+
+add('2602.03338',1,'Intervention paradox','QA and ALFWorld','Terminal failure and disruption/recovery',
+'A binary critic scores live prefixes; temperature scaling adjusts confidence before rollback or appended guidance. The study separates recovery of otherwise failing runs from disruption of otherwise successful ones, and uses a 50-task pilot to predict whether deployment will help.',
+'Offline AUROC 0.94 coexists with a 26-percentage-point success collapse in one setting; high-failure ALFWorld gains 2.8 points. Outcomes depend on the backbone and baseline success rate.',
+'Task-disjoint train/validation/test partitions; ALFWorld is absent from critic training. Intervention sweeps and heuristic controls support a deployment comparison rather than only offline classification.',
+'The predictor-to-policy distinction is already demonstrated. Two simple intervention modes do not identify a general action-specific optimal policy; a global go/no-go pilot is narrower than local benefit estimation.',
+'Estimate action-specific net benefit with replicated checkpoint branches, and test confidence-bound decisions against a fixed threshold at equal total budget.',
+'Principal conceptual baseline; prevents an AUROC-only novelty claim.','Sections on critic calibration, intervention results, pilot test, and limitations.',['R','NR','R','R','R','R'])
+
+add('2608.03222',1,'FailFast–RestartSmart','SWE-bench Verified','Terminal failure, stopping and restart',
+'A 0.6B black-box monitor learns terminal and dense fail-to-pass supervision from observable prefixes. An alarm starts a same-policy run with a clean prompt history. Stable partial edits are offered as an optional diff, so the new attempt can inspect, apply, or reject them.',
+'At a target 5% false-positive rate, transferred monitoring saves 14.6–20.4% execution tokens. At a 25% target, Qwen resolution rises from 66.6% to 71.8%, versus 66.8% for cold restart. The higher-success operating point adds net token cost.',
+'Frozen 350/50/100 instance-grouped split keeps repetitions together; 100 held-out tasks × five runs support paired comparisons. Training on Qwen transfers to three policies, including a closed API.',
+'Transfer can succeed: PreAct cannot claim all monitors fail across agents. Restart and artifact reuse are established; a fixed restart policy does not learn which feasible intervention is best.',
+'Compare monitor representations on identical traces and budgets; add verification and abstention controls, reporting any overhead beyond saved execution tokens.',
+'Closest SWE predictor/recovery comparator.','Experimental setup, threshold calibration, Tables on stopping and restart, deployment limitations.',['R','R','NR','R','R','R'])
+
+add('2605.06455',1,'PrefixGuard','WebArena, SkillsBench, tau²-Bench, TerminalBench','Horizon-specific terminal warning and rule violations',
+'Learned event adapters convert heterogeneous traces into a GRU risk sequence. A risk-labeled deterministic finite automaton provides symbolic replay and rule inspection. First-alert thresholds use successful calibration trajectories, linking ranking to an explicit alarm budget.',
+'The inspected v2 reports superior mean AUPRC in 24 benchmark–horizon settings, with gains of 12.0–21.9 points. At nominal 10% FAR, horizon-averaged recall spans 56.1–93.0%. Rule checking identifies violations in 21 of 265 successful tau²-Bench runs.',
+'Its allocator keeps each held-out task represented in training. This is held-out trajectory evaluation, not unseen-task or held-out-agent evidence. Validation selects checkpoints; a separate calibration set freezes alarms.',
+'Online warning and symbolic diagnosis are prior work. The paper explicitly leaves unseen tasks/agents and controlled correction unmeasured; a successful terminal label can conceal rule violations.',
+'Use task-disjoint and agent-disjoint splits, then randomize corrections at pre-action checkpoints while separating terminal success from constraint satisfaction.',
+'Principal horizon-aware predictor comparator; important split-design contrast.','v2 Appendix B split allocation and calibration; conclusion.',['NR','NR','NR','R','NR','NR'])
+
+add('2606.05414',1,'Sparse evidence','Dialog, support, tool use and planning','Sparse evidence of eventual failure',
+'An attention model learns which turns carry failure evidence from terminal labels instead of labeling every prefix equally. A preference-conditioned alpha-STOP policy chooses an accuracy–earliness operating point without retraining a separate trigger for each preference.',
+'Across five benchmarks, relevant evidence occupies 4.7–11.3% of turns and first appears after 59.0–83.6% of trajectories on average. Predictor frontier hypervolume improves 1–10%; the combined system improves 3–42% over compared triggers.',
+'The benchmark mixture includes non-agent dialog data. Frontier quality concerns prediction and timing, not successful rescue. Evidence relevance is model-derived, not a causal-error timestamp.',
+'Terminal labels are weak supervision for actionable warnings. Sparse attention is not proof of the earliest recoverable point, and an early alert does not establish benefit.',
+'Compare sparse supervision with adjudicated onset and recoverability labels; report calibration and resumed outcomes at fixed alarm budgets.',
+'Label-validity baseline and warning-horizon caution.','Evidence-sparsity analysis, predictor/trigger experiments, limitations.',['NR','NR','NR','Q','NR','NR'])
+
+add('2605.08715',1,'AgentForesight','Multi-agent coding, math and agentic tasks','Decisive error boundary and responsible agent',
+'A specialized 7B auditor reads only each unfolding prefix and predicts whether a decisive error has appeared, where it lies, and who contributed. AFTraj-2K pairs safe traces with injected unsafe variants and consensus-derived critical-step labels.',
+'Reported comparisons include gains up to 19.9% against selected judges and substantially lower step-localization error. External Who&When tests probe transfer beyond its construction pipeline.',
+'The v2 split groups each safe trajectory with its injected variants, preventing sibling leakage. The external benchmark is disjoint; this does not isolate an unseen backbone from all other changes.',
+'Boundary detection is at or near an error already occurring. It cannot be renamed pre-error prevention; injected and consensus labels require executable and organic-failure checks.',
+'Test prefix alarms before the harmful action, report lead time relative to executable onset, and measure corrective value with monitor-call overhead included.',
+'Closest multi-agent online auditing comparator.','v2 evaluation protocol, external Who&When experiment, Appendix G limitations.',['Q','NR','Q','NR','NR','NR'])
+
+add('2607.27443',1,'Trajectory Graph Copilot','ALFWorld, TextWorld, ScienceWorld, TravelPlanner','Risk of the proposed next action',
+'Historical action trajectories form a probabilistic graph; a learned graph debugger evaluates the current proposed action and returns feedback before execution. External structural information helps the same agent self-correct, reducing dependence on parametric introspection alone.',
+'The paper reports average pass-ratio improvement of 14.69% across four benchmarks and three agents. Pass ratio and grounding ratio are distinct outputs and need separate interpretation.',
+'Benchmarks use explicit task/variant partitions and multiple backbone comparisons. Testing several backbones is not automatically a frozen monitor trained without the target agent. Historical graphs remain an input requirement.',
+'Pre-execution warning plus self-correction already exists. Graph coverage, new actions and environment changes may limit deployment; a single feedback mechanism does not establish optimal action selection.',
+'Compare frozen cross-agent graphs with domain-adapted graphs, test cold start, and audit false disruption under matched compute.',
+'Required pre-action baseline; rules out generic pre-execution novelty.','Section 5 experimental setup, pass/grounding comparisons and graph construction.',['R','NR','NR','NR','R','Q'])
+
+add('2604.15075',1,'Atropos','Agent tasks under self-consistency','Eventual failure of parallel inference paths',
+'A graph convolutional predictor scores merged parallel paths. Predicted weak-model failures terminate early, and surviving context can be handed to a stronger model. The method evaluates cost-benefit tradeoffs under multi-path/self-consistency execution.',
+'Reported midpoint accuracy is about 0.85; hotswap converts up to 27.57% of predicted failures. A reported operating point reaches 74.35% of closed-model performance at 23.9% of its cost.',
+'Model replacement is an intervention, not evidence that a frozen monitor transfers to an unseen agent. Some expensive stronger-model baseline costs/performance are extrapolated; compare measured and estimated quantities separately.',
+'Early stopping and escalation are prior work. Parallel-path assumptions and estimated baseline costs complicate direct comparison to a single active software-agent run.',
+'Repeat all cost baselines with direct execution, vary model prices, and test single-run escalation against cheap verification at common budgets.',
+'Model-switching and cost comparator, conditional on matching its execution regime.','Prediction/hotswap experiments and threats to validity.',['NR','NR','NR','Q','R','Q'])
+
+add('2609.02783',1,'EarlyEval','SWE-bench Verified, TerminalBench, Toolathlon','Early prediction of benchmark verdict',
+'Two LightGBM heads predict success and failure from behavior, text and reference-solution metadata. Monotonic calibration rescales confidence; threshold halting reduces benchmark execution while preserving aggregate resolve rates and model ranking.',
+'Reported savings span 13–26% of steps, up to 44.1% input tokens and 29.4% output tokens, at 89–97% accuracy. Resolve-rate shifts average roughly 1–2 points.',
+'Leave-one-agent-out evaluation directly tests an unseen agent. Reference-free ablations are relevant for deployment, because benchmark solutions are not normally available to a live assistant.',
+'Outcome imputation for cheaper evaluation is different from task completion. Omitted reference features can change performance; aggregate ranking preservation does not certify every run or target calibration.',
+'Reproduce the reference-free variant on task-disjoint data and measure completion after intervention, rather than counting a predicted verdict as a solved task.',
+'Strong inexpensive predictor and positive transfer evidence.','Research questions, Section III calibration/features, leave-one-agent-out results.',['NR','R','NR','R','Q','NR'])
+
+add('2605.15206',1,'AgentStop','Local web QA and SWE agents','Likely unsuccessful run and energy waste',
+'A lightweight supervisor uses execution signals including token log probabilities to stop unpromising local-agent trajectories. Hardware measurements connect agent reasoning and repeated execution to GPU power, heat and battery use.',
+'The paper reports 15–20% energy saving with less than 5% task-utility loss in evaluated settings. Energy savings are measured on consumer hardware and are not interchangeable with token savings.',
+'Threshold sweeps expose a utility–efficiency frontier. Closed APIs may not expose log probabilities. The discussion explicitly leaves transfer across horizons, prompts and reasoning depths uncertain.',
+'Cancellation trades success for resources; it is not recovery. Useful partial state may be lost and model access requirements limit portability.',
+'Test black-box feature variants and checkpoint salvage, with joules, wall time, tokens and final completion reported separately.',
+'Resource-saving baseline and hardware-cost motivation.','Hardware experiments, early-stop results, Discussion 8.1.',['NR','NR','NR','Q','Q','NR'])
+
+add('2608.23670',1,'Automata from traces','Twelve datasets / eight domains','Failure ranking and next-step topology',
+'An activity abstraction compresses a corpus into a finite-state machine. Per-state behavioral features support failure classification, while state context predicts subsequent actions. The automaton captures shared harness-level execution structure.',
+'Reported machines contain 7–43 states and replay held-out traces with fitness at least 0.997. Failure AUROC reaches 0.94 in some settings; replay fitness is not prediction accuracy.',
+'Experiments use dataset-specific abstractions and 80/20 partitions. Broad dataset coverage does not itself establish frozen leave-agent/scaffold-out monitoring. The machine accepts a directly-follows closure, not the true generating language.',
+'Structural regularity can encode harness shortcuts. Bigram-preserving adversarial traces may replay, and high ranking need not yield calibrated alarms or useful intervention.',
+'Fit abstractions on source scaffolds only; test unseen schemas and goal semantics, including adversarial topology-preserving failures.',
+'Structural representation comparator close to PreAct features.','Setup, failure-prediction experiments, Section 6 limitations.',['NR','NR','NR','NR','Q','NR'])
+
+add('2609.25647',1,'Calibration-transfer audit','SWE-bench Verified; TerminalBench boundary test','Target/head-specific calibration error',
+'A frozen dual-head prediction pipeline is audited with leave-one-agent-out and shared-predictor leave-two-agent-out controls. Oracle prior correction is a diagnostic, while task resampling, training cohorts and jackknife tests probe persistence.',
+'Broad pairwise heterogeneity does not pass the prespecified criterion. Two target/head cells retain corrected gaps 0.1377 and 0.1107. TerminalBench does not establish cross-benchmark replication; one head makes no qualifying decisions.',
+'Holding a predictor fixed across targets separates target behavior from changes in training cohort. Oracle correction uses information unavailable as a routine deployment feature.',
+'The result is target-specific, not proof that every agent transfer fails or that the model alone causes it. This already studies calibration transfer, restricting PreAct novelty.',
+'Compare target-specific recalibration and abstention with prior-only adjustment, estimating success and coverage under common stopping rules.',
+'Mandatory calibration/transfer predecessor; motivates a narrower replication contribution.','Abstract, shared-predictor controls, persistence battery and boundary-test results.',['Q','R','Q','R','NR','NR'])
+
+add('2508.00500',1,'ProbGuard','Driving and embodied household tasks','Unsafe-state reachability',
+'Symbolic abstractions and a learned discrete-time Markov chain estimate the probability of remaining safe. Semantic validity constraints and a PAC-style sample analysis support the abstraction, while threshold crossing activates re-prompting or halting.',
+'Warnings precede driving violations by up to 15.84 seconds at one zero-observed-false-alarm setting. Embodied re-prompting reduces unsafe behavior 65.37% while retaining 80.4% of baseline completion; stricter halting has a larger completion cost.',
+'Safety outcomes and task completion are explicitly distinct. Assumptions about state abstraction and model certification must be respected; a finite sample with zero alarms is not a universal guarantee.',
+'Anticipatory runtime safety is established, including intervention. Ordinary task rescue and broad model/scaffold transfer remain separate questions.',
+'Add goal-completion labels and evaluate safety/completion Pareto tradeoffs under schema shift and changing dynamics.',
+'Formal reachability precedent; use a separate safety target.','v4 safety/intervention experiments and probabilistic abstraction; author reports ASE 2026 acceptance.',['NR','NR','NR','Q','R','Q'])
+
+add('2509.02360',1,'SWE-PRM','SWE-bench Verified','Online trajectory inefficiency and course correction',
+'An inference-time process reward model identifies redundant exploration, loops and missed termination. Taxonomy-guided feedback steers execution without updating the base policy; ablations compare unguided and explicit next-action prescriptions.',
+'A reported setup improves resolution from 40.0% to 50.6% and reduces trajectory length relative to some feedback alternatives. Additional inference cost can be as low as $0.2 in that setup.',
+'The result evaluates a policy-plus-monitor combination, not a general failure probability. Agent strength and feedback wording affect the relevant comparison.',
+'Online correction already changes task success. Benefits from one backbone cannot be assumed for stronger policies; benign exploration may be misread as inefficiency.',
+'Measure disruption/recovery separately and test feedback against same-policy restart and verification, matching total inference cost.',
+'Direct intervention baseline; moved from adjacent to Category 1.','Inference-time framework and feedback strategy experiments.',['NR','NR','NR','NR','R','Q'])
+
+add('2608.02464',1,'Telemetry sentinel','Synthetic telemetry, booking tools, AFTraj-2K, ATBench','Post-onset derailment, verification and repair',
+'A one-class echo-state-network/CUSUM ensemble learns healthy telemetry. Deterministic grounding and tool-contract checks complement behavioral alarms. Failed booking runs are rolled back to a fact-gathering checkpoint and repaired under several feedback policies.',
+'Synthetic-study AUROC is 0.872; cold cross-family monitoring is 0.527 versus 0.885 after target recalibration. On the 120-episode booking study, located repair raises success about 52% to 73%; conditional recovery is 45% versus 16% for resampling.',
+'Synthetic, injected live, external-corpus and repair cohorts have different denominators. Paired repair uses identical prefixes and repeated live calls. The paper and current repository differ on some p-values and verification counts; this extraction uses the paper.',
+'Matched-prefix repair, transfer failure and recalibration are already present. Detection often follows onset; narrow recomputable tasks and injected faults limit generalization. Adaptive repair is not significantly better than resampling in this study.',
+'Test organic software failures before onset, factorial model/scaffold holdouts, and prespecified utility-based selection against the located-repair policy at equal total cost.',
+'Most consequential newly added comparator; sharply narrows claimed novelty.','Synthetic result table, deployment transfer, Section 9 repair table and Section 11 limitations.',['NR','R','Q','R','R','R'])
+
+add('2603.20260',1,'ProMAS','Who&When multi-agent logs','Predictive error localization',
+'Causal Delta Features encode semantic displacement into a quantized Vector Markov Space. A prediction head and jump detector use risk acceleration to flag critical reasoning changes before the complete log is consumed.',
+'The reported step-level accuracy is 22.97% while inspecting 27% of reasoning logs, a 73% reduction in data inspected. This is localization accuracy, not failure AUROC or task-success gain.',
+'Evaluation uses a failure-attribution benchmark and compares latency/accuracy against reactive and post-hoc methods. Fewer consumed logs do not by themselves prove a positive lead time before error.',
+'Semantic predictive multi-agent monitoring is prior work. Log reduction and localization do not establish calibrated risk or successful prevention.',
+'Report the alert position relative to annotated error, success-run false alarms, and randomized remediation with monitored agent execution.',
+'Additional semantic/Markov predictor baseline.','Method, Who&When experiment and accuracy/latency comparison.',['NR','NR','NR','NR','NR','NR'])
+
+add('2605.06737',2,'Self-healing framework','Multi-agent software automation','Detected abnormal behavior and recovery',
+'Reliability assessment combines output consistency, semantic correctness and execution success. Abnormal patterns trigger adaptive replanning or corrective prompts, providing an integrated detection/recovery workflow rather than a separate future-horizon predictor.',
+'Although the abstract claims improvements, Section 4.4 says experiments are currently being conducted and comprehensive results will follow. The inspected version supplies no completed quantitative result table; recovery gains must not be treated as established.',
+'The proposed setup uses task-specific reliability weights and a 0.65 preliminary threshold. This is retained as an inherited framework reference, an explicit exception to empirical-study eligibility.',
+'A reliability score is not a calibrated failure probability. Completed validation, sample counts, uncertainty and quantitative recovery effects remain missing in the inspected version.',
+'Compare identical recovery actions triggered before versus after executable onset, using held-out tasks and a separately frozen threshold.',
+'Reactive/integrated recovery comparator.','Sections 3–4 framework, setup, baselines and evaluation.')
+
+add('2602.02475',2,'AgentRx','11 API, incident and web/file task settings','Retrospective critical-step diagnosis',
+'Constraints synthesized from a failed trajectory are checked step by step. A validation log supplies explicit evidence to a judge, which localizes the critical step and failure category. Manual grounded-theory annotation supports a cross-domain taxonomy.',
+'The dataset contains 170 failed trajectories; reported step-localization improvement averages 75% over prior work. The judge may abstain as inconclusive when evidence is weak.',
+'This evaluates diagnosis conditioned on a known failed run. Three-run result variation and category definitions are reported; future trajectory evidence is available during retrospective constraint synthesis.',
+'The diagnostic pipeline cannot be used online unchanged. No success controls means its diagnosis accuracy is not an alarm false-positive rate.',
+'Mask future observations, add successful controls and compare prefix-only constraint synthesis with terminal diagnosis before evaluating rescue.',
+'Source of failure labels and auditable diagnostics.','Benchmark construction, judging experiments and Section 7 limitations.')
+
+add('2601.12294',2,'ToolPRMBench','BFCL, ToolSandbox, GTA and ToolTalk','Local correct-versus-incorrect action ranking',
+'Each test case contains history, a correct action, a plausible wrong alternative and tool metadata. Offline sampling isolates single-step errors; online rollout sampling captures accumulated mistakes. Multi-model verification reduces label noise.',
+'The appendix lists 987 cases: 542 training and 445 test. General PRMs often fail to exceed 55% average accuracy, motivating tool-specialized supervision.',
+'Some source benchmarks appear only in testing. The principal experiment is intrinsic PRM discrimination, not full search-policy improvement; multi-LLM labels are not infallible.',
+'Choosing the locally better action does not estimate eventual failure, recoverability or intervention effect. The authors explicitly limit extensive end-to-end search evaluation.',
+'Resume both action alternatives from the same checkpoint and measure terminal outcomes, cost and cross-tool calibration.',
+'Action-risk component and local correctness benchmark.','Main discrimination experiments, Limitations and Appendix A split table.')
+
+add('2605.12925',2,'AgentLens','OpenHands / SWE-bench Verified','Process quality despite terminal pass',
+'Task-specific prefix-tree references merge multiple passing runs. History-sensitive intent labels distinguish exploration, implementation, verification and orchestration, supporting process quality, divergence and waste analyses.',
+'From 2,614 trajectories over eight models and 60 tasks, 47 tasks support a 1,815-trace reference-based subset. In that subset, 10.7% of passing runs are classified as Lucky Passes.',
+'Post-hoc scoring relies on passing references for the same task, unavailable for a new issue. Subset eligibility changes the denominator; quality ranking is not a failure classifier.',
+'An anomalous process can still succeed. Treating process defects as terminal failure labels would introduce target mismatch and may penalize valid exploration.',
+'Test deployment-available intent features on unseen tasks and predict waste, defects and terminal resolution as separate targets.',
+'Target-validity and feature-semantics caution.','Dataset construction, process-tier experiments and Appendix A limitations.')
+
+add('2609.34415',2,'PROACT-Agent','Bilingual agent safety and AgentDojo','Unsafe state and exact safety boundary',
+'Progressive trajectory unrolling and causal rectification enforce temporal consistency of safety labels. A runtime guard evaluates updated context before the next model inference; localized bilingual variants probe safety across language contexts.',
+'PROACT-Bench has 155,780 states. Under source holdout, unsafe F1 is 91.46% and boundary detection 90.63%; non-DoS targeted attack success in AgentDojo drops from 20.82% to 0.40%.',
+'Canonical roots group derived prefix, rationale and language variants. Source holdout differs from agent holdout. Synthetic adjudicated safety labels and attack-specific outcomes are separate from task resolution.',
+'Safety-boundary consistency is relevant, but interception after malicious content is observed is not ordinary failure prevention. No classifier offers universal protection.',
+'Adapt temporal consistency checks to organic task-error annotations; measure benign-task disruption and generalization outside attack sources.',
+'Temporal label construction and safety boundary comparator.','Canonical-root/source split table, held-out safety and AgentDojo results.')
+
+add('2503.18666',2,'AgentSpec','Code execution, embodied agents and driving','Runtime constraint enforcement',
+'A domain-specific language expresses triggers, predicates and enforcement actions. Rules block, modify or constrain unsafe behavior with interpretable checks, providing a deterministic layer alongside stochastic policies.',
+'Evaluated rules prevent over 90% of unsafe code cases and all hazardous embodied actions in the tested scenarios; driving compliance reaches 100% in the evaluated configuration. Generated-rule coverage is weaker than curated-rule coverage.',
+'Those percentages concern specified scenario populations, not all future unsafe executions. Millisecond enforcement overhead is measured; policy quality and rule completeness are distinct.',
+'Known constraints can be enforced without learned prediction, but unseen semantic task failures may lack executable predicates. Safety compliance is not calibrated task-failure forecasting.',
+'Compare rule checks, learned monitors and combined gates on organic tool failures, with separate rule coverage and task-disruption statistics.',
+'Mandatory deterministic enforcement baseline.','Runtime DSL, evaluation and generated-rule experiments; record reports ICSE 2026 publication.')
+
+add('2607.09996',2,'Who&When Pro','Three modalities and 26 benchmarks','Injected-failure attribution labels',
+'A controlled pipeline exactly replays a successful prefix before injecting a fault. Golden labels support attribution across modalities and protocols, addressing ambiguity in natural failed logs.',
+'The paper introduces 12,326 failed trajectories and analyzes attribution behavior across model families, modalities and protocols.',
+'Injection provenance supplies a known boundary. The dataset is conditioned on induced failures; causal labels reflect the injected intervention, not every naturally arising multi-cause failure.',
+'A known injected step does not guarantee natural-failure validity or successful-run warning calibration. Attribution after a fault differs from prediction before it.',
+'Use successful parent traces as grouped controls; validate on adjudicated organic errors and quantify the injection-to-natural transfer gap.',
+'Event-time label source and replay-validity precedent.','Controlled construction pipeline and benchmark analysis.')
+
+add('2505.00212',2,'Who&When','127 multi-agent systems','Responsible agent and decisive step',
+'Fine-grained failed logs support automated attribution via all-at-once, binary-search and stepwise methods. The study separates responsibility for an unsuccessful task from locating the pivotal reasoning step.',
+'The best method reaches 53.5% responsible-agent accuracy but only 14.2% decisive-step accuracy; strong reasoning models remain unreliable for practical attribution.',
+'Labels support debugging completed failures. The evaluation is not a prefix warning trial and excludes the successful-run population needed for alarm calibration.',
+'Error localization is difficult and labels may require complete traces. Training an online monitor on these labels needs explicit masking and onset definitions.',
+'Assess annotator uncertainty, prefix-only localization and interventional confirmation rather than treating one step as uniquely causal.',
+'Failure-attribution benchmark behind several newer monitors.','Dataset and attribution comparisons; inspected camera-ready v3.')
+
+add('2503.13657',2,'MAST','Seven multi-agent frameworks','Failure taxonomy and propagation',
+'Expert analysis of 150 traces yields fourteen failure modes grouped into system design, inter-agent misalignment and task verification. A validated judge scales annotations across a larger multi-agent corpus.',
+'MAST-Data contains over 1,600 traces. Reported expert agreement is kappa 0.88; failures often reflect coordination and verification rather than one isolated model error.',
+'This is an empirical taxonomy, not a prospective predictor. Annotator agreement measures label consistency, not causal validity or monitor recall.',
+'Failure categories can guide features but do not provide prevention windows. System-level causes may not be attributable to one recoverable local action.',
+'Annotate when each mode first becomes observable and test interventions specific to coordination versus capability versus verification failures.',
+'Failure modes and multi-agent feature design.','Taxonomy construction, annotation validation and cross-framework analysis.')
+
+add('2607.09510',2,'Failure as a process','CLI coding agents','Developing trajectory failure mechanisms',
+'The study treats coding failure as a developing sequence of decisions and observations rather than only a final unresolved patch. It analyzes recurring phases and behavioral patterns in CLI-agent traces.',
+'Of 3,843 traces from seven frontier models and three scaffolds on Terminal-Bench, 1,794 valid complete traces (over 63,000 steps) receive manual annotation. Fourteen findings indicate predominantly epistemic errors, often beginning early but becoming visible late.',
+'A retrospective trajectory study can associate behaviors with outcome without demonstrating that those features are visible early or causally repairable.',
+'Patterns can reflect scaffold logging, task difficulty or selection on final outcome. A descriptive association does not establish an online risk score.',
+'Freeze prefix-only features from its taxonomy, test task/agent holdouts, and validate candidate mechanisms with controlled edits to the execution policy.',
+'Source of organic coding-failure mechanisms.','Empirical setup, trajectory analyses and limitations; findings refined from full-text extraction.')
+
+add('2604.12147',2,'Plan compliance','Autonomous programming agents','Plan adherence and task success',
+'The paper compares declared plans with subsequent actions, analyzing how plan quality, reminders and execution choices affect programming-agent behavior. It supplies evidence for plan deviation as a candidate monitor signal.',
+'The inspected v3 analyzes 21,120 SWE-agent trajectories across four models, two SWE benchmarks and eight plan variations. Standard plans and reminders help in evaluated settings; subpar plans and some added early phases hurt. Older bibliography counts are superseded.',
+'Plan generation and reminders are evaluated as agent-policy interventions. A deviation may be beneficial adaptation to new evidence, so compliance labels require context.',
+'A strict plan-deviation feature risks false alarms when the original plan is wrong. Plans differ in granularity and scaffold presentation.',
+'Separate justified revision from unexplained drift, and test whether a deviation signal predicts added verification value beyond tool errors and task difficulty.',
+'Plan-deviation feature backing with a target-mismatch caution.','Plan/action assessment, reminder experiment and threats to validity.')
+
+add('2509.10401',2,'Abduct, Act, Predict','Multi-agent failure attribution','Causally validated failure hypotheses',
+'A single LLM inference is scaffolded to abduct hidden causes, propose a minimal correction and imagine the subsequent trajectory. Full conversation context supports causal-style reasoning, without requiring actual environment execution of the imagined branch.',
+'Step accuracy is 47.46% versus 16.67% on 126 algorithm-generated cases, and 29.31% versus 12.07% on 58 hand-crafted cases. These are attribution results, not measured rescue rates.',
+'The correction and outcome are mentally simulated inside the model. This is not an executable interventional identification design, despite causal terminology.',
+'Causal-style prompting is already established. Imagined outcomes can be wrong; PreAct must distinguish hypothetical attribution from actual branch execution and randomization.',
+'Reuse active hypothesis verification in live prefixes, recording legality, replayability and downstream outcome for each intervention.',
+'Causal-debugging predecessor; constrains counterfactual novelty.','Abduct/act/predict framework and attribution evaluation.')
+
+add('2512.06749',2,'DoVer','Magnetic-One / GAIA, AssistantBench; AG2 / GSMPlus','Intervention-verified debugging and task recovery',
+'Failure hypotheses are tested by targeted interventions such as changing a plan or editing a message. Outcome progress replaces a single responsible-step label, because distinct repairs may independently solve the same failed task.',
+'Reported recovery is 18–28% on failed GAIA/AssistantBench trials, with up to 16% milestone progress and 30–60% of hypotheses validated/refuted; AG2/GSMPlus recovery is 49%.',
+'These are conditional failed-trial recovery rates, not population success gains. Cross-framework evidence supports debugging portability but does not establish a frozen predictive monitor.',
+'Outcome-oriented and intervention-validated debugging are established. Recovery after completed failure does not choose an early beneficial interruption point.',
+'Compare diagnostic interventions at matched live checkpoints and include untouched successful runs to estimate disruption and net utility.',
+'Strong outcome-oriented debugging/recovery comparator.','Framework, dataset-specific recovery and hypothesis-validation results.')
+
+add('2509.25370',2,'AgentDebug','Tool-using agent benchmarks','Failure explanation and learning from feedback',
+'A failure-analysis framework organizes recurring agent errors and converts diagnoses into feedback intended to improve subsequent execution. The work connects error analysis with corrective agent behavior.',
+'AgentErrorBench spans ALFWorld, GAIA and WebShop. Average all-correct attribution rises from 0.3% to 24.3%, and exact step accuracy from 28% to 45%. Iterative targeted feedback improves task success by up to 26% relative, not 26 percentage points.',
+'Diagnosis and feedback may use completed trajectories. Their availability at a proposed action must be checked before using them as online features.',
+'Improving later attempts is different from rescuing the current run. Fault labels can mix local symptoms with upstream causes.',
+'Evaluate masked-prefix feedback, compare to simple reflection/retry, and retain a same-policy resampling control.',
+'Diagnosis-to-learning baseline.','Failure taxonomy, AgentDebug framework and benchmark experiments.')
+
+add('2505.08638',2,'TRAIL','Agent execution traces','Issue localization and trace reasoning',
+'A trace-based benchmark evaluates how well models identify and explain agentic execution issues. It provides structured error-analysis tasks and a reusable setting for diagnostic reasoning.',
+'TRAIL contains 148 human-annotated traces from single- and multi-agent systems. The reported best Gemini-2.5-Pro score is 11%; this benchmark score is not warning accuracy or failure AUROC.',
+'Post-hoc issue analysis can see information that a live monitor cannot. Its labeled unit is an issue in a trace, rather than an independent task-level intervention outcome.',
+'Trace reasoning quality does not show early detection or recovery value. Errors may be valid labels without a unique intervention point.',
+'Build prefix masks and success controls, then use executable checks to test whether the identified issue is actionable.',
+'Diagnostic benchmark and evidence-grounding reference.','Benchmark construction and model localization evaluation.')
+
+add('2602.11348',2,'AgentNoiseBench','Tool-using agents under noisy conditions','Robustness to perturbed observations',
+'The benchmark perturbs the external conditions faced by tool agents and evaluates robustness. It separates environmental noise from reasoning capability and exposes how corrupted observations affect execution.',
+'The study distinguishes user noise from tool noise and preserves task solvability during injection. Its primary comparison reports an average accuracy drop of 20.8% under noise; the measure is task accuracy, not monitor discrimination.',
+'Controlled noise permits systematic stress tests. Perturbation realism, severity and dependence on tool schemas limit extrapolation to organic failures.',
+'Noise sensitivity is not an online alarm policy. A monitor can spuriously learn injection artifacts rather than semantic contradiction.',
+'Evaluate intervention policies on both injected and naturally noisy runs, and compare tool-contract checks with semantic inconsistency scores.',
+'Stress-test environment and observation-quality feature backing.','Noise construction and robustness experiments.')
+
+add('2210.03629',3,'ReAct','QA, verification, ALFWorld and WebShop','Agent reasoning–action loop',
+'Interleaved reasoning and environmental actions allow a language model to gather evidence, track plans and revise decisions. Tool observations reduce hallucination and error propagation compared with reasoning in isolation.',
+'Reported interactive success gains over imitation/reinforcement baselines are 34 points on ALFWorld and 10 on WebShop in the original setup.',
+'These are historical backbone-specific agent comparisons, not current frontier performance or a separate failure-monitor evaluation.',
+'ReAct supplies observable prefixes but no calibrated monitor, alarm threshold or action-specific interruption value.',
+'Attach monitors without changing base-agent prompts; measure marginal benefit over a strong ReAct-like policy at matched budget.',
+'Trajectory notation and base-policy architecture.','ICLR camera-ready v3 methods and interactive results.')
+
+add('2303.11366',3,'Reflexion','Sequential decisions, coding and reasoning','Verbal trial-to-trial feedback',
+'An agent stores linguistic reflections from scalar or textual task feedback in episodic memory. Later trials condition on that memory without updating model weights.',
+'The paper reports 91% HumanEval pass@1 in one configuration versus the cited GPT-4 baseline of 80%; this is not a repository-agent early-warning result.',
+'Reflection sources and memory ablations clarify the learning mechanism. Historical benchmark conditions and repeated attempts must be matched in any comparison.',
+'Feedback after an attempt is not evidence of beneficial interruption during one. Poor reflections may anchor a new rollout on a wrong diagnosis.',
+'Compare reflection, clean restart and artifact reuse at identical checkpoint budgets, with feedback correctness audited.',
+'Reactive reflection/retry foundation.','Framework and reflection/memory ablations.')
+
+add('2504.08942',3,'AgentRewardBench','Five web-agent benchmarks','Evaluator validity, success and side effects',
+'Expert reviewers annotate success, side effects and repetition in completed web trajectories. Twelve language-model judges are compared against those labels and conventional rule-based evaluators.',
+'The benchmark has 1,302 trajectories from four agent LLMs. No judge dominates across all five environments; common rule-based checks can undercount success.',
+'Evaluator agreement concerns label quality. An expert success label and an executable state verifier each have limits; side effects need a separate outcome.',
+'A monitor may learn benchmark-checker artifacts. Noisy terminal labels can distort both training and alarm calibration.',
+'Audit contested outcomes, annotate side effects independently, and run sensitivity analyses under executable and expert labels.',
+'Outcome-label validity foundation.','Expert annotation and LLM/rule evaluator comparisons.')
+
+add('2310.17552',3,'Model-based runtime robotics','Simulated and physical robot manipulation','Future risky states and human assistance',
+'A latent dynamics model simulates future policy actions, and a failure classifier predicts risk. Human interventions provide supervision without requiring dangerous failures; the policy and monitor improve through interactive imitation learning.',
+'Reported success gains are 23% in simulation and 40% on hardware against compared baselines; robot-specific human-workload measures improve as deployment data accumulate.',
+'The environment admits learned transition dynamics; human intervention labels reflect perceived risk. It is a cross-domain precedent, not direct tool-language-agent evidence.',
+'Semantic APIs, nondeterministic external services and irreversible actions make reliable language-agent simulation harder than latent robot-state rollout.',
+'Use checkpoint/replay where valid and explicit abstention where a tool effect cannot be simulated; audit human-help burden separately.',
+'Predictive help-seeking and lookahead precedent.','Dynamics/failure-model design and system-level experiments.')
+
+add('2307.13854',3,'WebArena','Self-hosted realistic websites','Functional web-task completion',
+'Reproducible websites, tools and long-horizon goals create a realistic browser-agent evaluation setting. Functional terminal checks establish a task-level success endpoint.',
+'The original best GPT-4 agent reaches 14.41% success versus 78.24% for humans; these historical figures motivate difficulty and are not a current model ranking.',
+'Self-hosting permits state snapshots but requires careful reset and task independence. Evaluation predicates do not necessarily capture every acceptable user outcome.',
+'Benchmark success alone supplies no causal-error timestamp or intervention-effect label.',
+'Add replayable checkpoints, event-time annotations and harmless-success controls for a cross-domain PreAct trial.',
+'Controlled web transfer environment.','Environment/task construction and baseline evaluation.')
+
+add('2308.03688',3,'AgentBench','Eight interactive environments','General agent capability evaluation',
+'A multi-environment benchmark tests language models as agents and analyzes failures in long-term reasoning, decision making and instruction following.',
+'The paper documents a capability gap between evaluated commercial and open models and releases environments and an integrated evaluation package.',
+'Benchmark diversity is not a single comparable outcome or failure-monitor training distribution. Environment-specific scoring and horizons matter.',
+'Aggregate scores hide the onset and mechanism of failure. A general capability benchmark cannot substitute for a task-disjoint monitor test.',
+'Choose one reproducible environment first, then test the monitor on genuinely held-out environments with matched label definitions.',
+'Domain coverage and benchmark-selection foundation.','ICLR 2024 benchmark design and failure analysis.')
+
+add('2310.06770',3,'SWE-bench','Real repository issues','Patch-based software-task resolution',
+'Repository issues and human-authored fixes define realistic software tasks. Tests assess whether generated patches resolve an issue, moving evaluation beyond isolated function completion.',
+'The benchmark contains 2,294 issue instances drawn from 12 Python repositories in its original release. Historical model baselines demonstrate substantial difficulty.',
+'Tests define an operational endpoint, not all dimensions of patch quality. Repository overlap, contamination and repeated attempts require grouped evaluation.',
+'A failed test outcome does not label first error or show whether a live-prefix action could rescue the run.',
+'Track branch states and full budgets, use repository/task holdouts, and audit patch side effects and verifier adequacy.',
+'Repository-task outcome definition.','Dataset construction and execution-based evaluation.')
+
+add('2505.23419',3,'SWE-bench Live','Fresh GitHub issue instances','Benchmark freshness and reproducibility',
+'A continuously refreshed software-engineering benchmark seeks to reduce contamination and staleness while preserving executable task environments and comparable evaluation.',
+'Its release and baseline evaluations support freshness-aware software-agent testing; the exact current inventory is version-dependent and should be frozen before experiments.',
+'A changing benchmark requires dataset-version identifiers, environment manifests and compatible task predicates. Refreshing tasks alone does not ensure no leakage.',
+'Temporal freshness does not establish monitor transfer or causal prevention. Version drift can masquerade as model change.',
+'Run a temporal holdout with frozen artifacts, separating time shift from agent/scaffold shift and reporting retention of calibration.',
+'Temporal external-validation and reproducibility foundation.','Inspected v2 benchmark pipeline and evaluation.')
+
+add('1706.04599',3,'Neural calibration','Supervised image/text classification','Probability calibration',
+'Modern neural classifiers can be confidently wrong. Post-hoc temperature scaling adjusts logits using held-out data, distinguishing probability accuracy from class discrimination.',
+'The study finds temperature scaling effective across evaluated architectures and datasets; it does not establish robustness to arbitrary distribution shift.',
+'The methodological evidence predates tool agents. A monotonic calibrator preserves ranking and cannot repair AUROC below chance.',
+'In-domain calibration is not a certificate for a new tool scaffold, and threshold calibration is different from measuring full probabilistic reliability.',
+'Report Brier/reliability and decision coverage by deployment; recalibrate only with separate target data and preserve an untouched target test split.',
+'Calibration foundation; contextual exception to the 2022 start date.','Calibration metrics and temperature-scaling experiments.')
+
+# Adjacent studies have evidence for different targets; avoid leaving measured
+# downstream experiments indistinguishable from unextracted results.
+NOTES['2601.12294']['matrix']=['Q','NR','Q','NR','NR','NR']
+NOTES['2609.34415']['matrix']=['Q','NR','Q','NR','R','Q']
+NOTES['2503.18666']['matrix']=['NR','NR','NR','NR','R','Q']
+NOTES['2604.12147']['matrix']=['NR','NR','NR','NR','R','R']
+NOTES['2512.06749']['matrix']=['NR','NR','Q','NR','R','R']
+NOTES['2509.25370']['matrix']=['NR','NR','NR','NR','R','Q']
