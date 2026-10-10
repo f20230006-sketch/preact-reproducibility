@@ -1,5 +1,5 @@
 {
-  "scope": "Public reproducibility snapshot with authorized author information; raw traces, copied full texts and stale manuscript PDF excluded.",
+  "scope": "Tracked public reproducibility snapshot with authorized author details; raw traces, full-text copies, caches and stale manuscript PDF excluded.",
   "publication_date": "2026-10-11",
   "files": [
     {
@@ -16,6 +16,21 @@
       "path": "LICENSE",
       "bytes": 1076,
       "sha256": "481038e9a68914dfa668e56ab8d7372e16eea5cb8ebf9896b209f584c335ca65"
+    },
+    {
+      "path": "PUBLICATION_CHECK.md",
+      "bytes": 1835,
+      "sha256": "3a5ecf6d5e6aadec81d011825ccd8fb8b01d22b639fafa7c63210ccd8256e8e0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4211,
+      "sha256": "46a1c79d52b96234bcf958b2080b28b457ba5568364df5d5eb0758ffdd0d0b01"
+    },
+    {
+      "path": "paper_mosicom2026/README.md",
+      "bytes": 3852,
+      "sha256": "5b46d31f64cde2e470540cb55cb7b1a9ab1d76a117c39cefe7265182f42b3376"
     },
     {
       "path": "paper_mosicom2026/author_metadata.json",
@@ -83,11 +98,6 @@
       "sha256": "63f623febc942aa259ffbfee889c04cc673589b28a6d09e0c676ddd59520b6cd"
     },
     {
-      "path": "paper_mosicom2026/README.md",
-      "bytes": 3852,
-      "sha256": "5b46d31f64cde2e470540cb55cb7b1a9ab1d76a117c39cefe7265182f42b3376"
-    },
-    {
       "path": "paper_mosicom2026/v5_revision_response.md",
       "bytes": 4374,
       "sha256": "dd20c2776ac2fbee82a49c6326b22113c791c6b48b1c91aa12de42afd56679a8"
@@ -98,19 +108,49 @@
       "sha256": "79edaa7fe62d0b9d8c38ae2d02ff09f17e5c7ac0df644620731611ac5676988d"
     },
     {
-      "path": "preact_reproducibility/__pycache__/preact_pilot.cpython-313.pyc",
-      "bytes": 14966,
-      "sha256": "0b58417e73cace2b9b343f609b22a761732255c3f3d7e69c14126e597829154e"
+      "path": "preact_reproducibility/COMPLETE_RESULTS.md",
+      "bytes": 35237,
+      "sha256": "883fbc2418ffe8808fad40f6acaaa26d1ab1dba456fdaaf678a28600a8ef69de"
     },
     {
-      "path": "preact_reproducibility/__pycache__/preact_pilot_audit.cpython-313.pyc",
-      "bytes": 10289,
-      "sha256": "958bd790219fb3546a91437e9e821379f770c85545be9e8bb8fc2c24b124bda2"
+      "path": "preact_reproducibility/ENVIRONMENT.md",
+      "bytes": 2381,
+      "sha256": "46a7ca04c7aba608b835a27e00630870dd66ea84767fef21a73ca8c93bdd847e"
     },
     {
-      "path": "preact_reproducibility/__pycache__/revision_analysis.cpython-313.pyc",
-      "bytes": 18355,
-      "sha256": "35f59357036e4919f23f5096eec39d6378dc01a2a3e1d6e7f8ec6bf3796baa2c"
+      "path": "preact_reproducibility/LICENSE",
+      "bytes": 1076,
+      "sha256": "481038e9a68914dfa668e56ab8d7372e16eea5cb8ebf9896b209f584c335ca65"
+    },
+    {
+      "path": "preact_reproducibility/MAJOR_REVISION_RESULTS.md",
+      "bytes": 8595,
+      "sha256": "37028f87ccfdce8f4da3ea7e066d89c3d6b75a1a5e3e3722e8a70ce76c1d4aa4"
+    },
+    {
+      "path": "preact_reproducibility/OUTCOME_CONVENTION.md",
+      "bytes": 1482,
+      "sha256": "bce5a5d2b04350404f083072daa094120da3fa99352edfad95c009d2999deac5"
+    },
+    {
+      "path": "preact_reproducibility/PER_FOLD_RESULTS.md",
+      "bytes": 1103,
+      "sha256": "716c0b1e0d68473b72f1429fc2d289bfddfa3037ed8e1db923f136d3dba96e4f"
+    },
+    {
+      "path": "preact_reproducibility/README.md",
+      "bytes": 7984,
+      "sha256": "3dac3acc14aaca4baf68a70220f03a27ecea9123f25f3052896dd19f4e9b61a5"
+    },
+    {
+      "path": "preact_reproducibility/RESULTS.md",
+      "bytes": 2413,
+      "sha256": "f00ed474e7867bdf8742b9af1ebd3a27f94726cb61d657d3cc670f0aaa5c9d8b"
+    },
+    {
+      "path": "preact_reproducibility/REVIEWER_FINDINGS.md",
+      "bytes": 5078,
+      "sha256": "74af20cc968e3b6a7ff7644f468f5e1400d956d5b5a07145b83b82e9c242a10b"
     },
     {
       "path": "preact_reproducibility/build_major_revision.py",
@@ -123,19 +163,9 @@
       "sha256": "87669ac4d60bc4173a631c36360887f4663a9e506cf9d1c548d238190927dd06"
     },
     {
-      "path": "preact_reproducibility/COMPLETE_RESULTS.md",
-      "bytes": 35237,
-      "sha256": "883fbc2418ffe8808fad40f6acaaa26d1ab1dba456fdaaf678a28600a8ef69de"
-    },
-    {
       "path": "preact_reproducibility/download_pilot.py",
       "bytes": 1670,
       "sha256": "0b6f37d536c40a2a336f53e8e4a652e8e70f7aca110d62ba38cbb349fc3deea2"
-    },
-    {
-      "path": "preact_reproducibility/ENVIRONMENT.md",
-      "bytes": 2381,
-      "sha256": "46a7ca04c7aba608b835a27e00630870dd66ea84767fef21a73ca8c93bdd847e"
     },
     {
       "path": "preact_reproducibility/figures/checkpoint_metrics.pdf",
@@ -223,29 +253,9 @@
       "sha256": "10c7a5fc2bbec3ae2223026b5450634250d166cb6703a17429d83da24d41f678"
     },
     {
-      "path": "preact_reproducibility/LICENSE",
-      "bytes": 1076,
-      "sha256": "481038e9a68914dfa668e56ab8d7372e16eea5cb8ebf9896b209f584c335ca65"
-    },
-    {
-      "path": "preact_reproducibility/MAJOR_REVISION_RESULTS.md",
-      "bytes": 8595,
-      "sha256": "37028f87ccfdce8f4da3ea7e066d89c3d6b75a1a5e3e3722e8a70ce76c1d4aa4"
-    },
-    {
-      "path": "preact_reproducibility/OUTCOME_CONVENTION.md",
-      "bytes": 1482,
-      "sha256": "bce5a5d2b04350404f083072daa094120da3fa99352edfad95c009d2999deac5"
-    },
-    {
       "path": "preact_reproducibility/per_fold_audit.py",
       "bytes": 3807,
       "sha256": "666fbf7c17af443397156ae8c449dd8ab4ebf61056900e2c9cf51d3002691d17"
-    },
-    {
-      "path": "preact_reproducibility/PER_FOLD_RESULTS.md",
-      "bytes": 1103,
-      "sha256": "716c0b1e0d68473b72f1429fc2d289bfddfa3037ed8e1db923f136d3dba96e4f"
     },
     {
       "path": "preact_reproducibility/preact_invariance_ablation.py",
@@ -276,11 +286,6 @@
       "path": "preact_reproducibility/publication.json",
       "bytes": 269,
       "sha256": "1d7110c10b2c3541eddd02b37960eddd9ffc168838bfeca755928a9c1d8db2ca"
-    },
-    {
-      "path": "preact_reproducibility/README.md",
-      "bytes": 7984,
-      "sha256": "3dac3acc14aaca4baf68a70220f03a27ecea9123f25f3052896dd19f4e9b61a5"
     },
     {
       "path": "preact_reproducibility/requirements-clean.txt",
@@ -358,9 +363,14 @@
       "sha256": "c2f13dd1327570d491833428f56b96d93f6674a2ccb1900825d04b28da98dfda"
     },
     {
-      "path": "preact_reproducibility/RESULTS.md",
-      "bytes": 2413,
-      "sha256": "f00ed474e7867bdf8742b9af1ebd3a27f94726cb61d657d3cc670f0aaa5c9d8b"
+      "path": "preact_reproducibility/review/LITERATURE_REVIEW.md",
+      "bytes": 100107,
+      "sha256": "98f65d712e797ab7d82177da2ffb702ac19fab2e85abe2d54b443e138f912f45"
+    },
+    {
+      "path": "preact_reproducibility/review/README.md",
+      "bytes": 2599,
+      "sha256": "edd99b60e1de7e78e2d4a94d3ca48cc94448ad01fb52f062b2e207275d1958dd"
     },
     {
       "path": "preact_reproducibility/review/bibliography_verification.json",
@@ -403,11 +413,6 @@
       "sha256": "e7bf4a300c0dcbfef8265631ee1c07d7ab42ce91a84b87b21b6cf83bdf803e39"
     },
     {
-      "path": "preact_reproducibility/review/LITERATURE_REVIEW.md",
-      "bytes": 100107,
-      "sha256": "98f65d712e797ab7d82177da2ffb702ac19fab2e85abe2d54b443e138f912f45"
-    },
-    {
       "path": "preact_reproducibility/review/outputs/evidence_map.pdf",
       "bytes": 14853,
       "sha256": "b85e56b1118b46c28a0fca79a9c190f243e5a4f63e8c6544209af4538b318630"
@@ -421,11 +426,6 @@
       "path": "preact_reproducibility/review/protocol.md",
       "bytes": 4571,
       "sha256": "da405f1ec1280c21ab0fede2fd0a7c3182c5a3b00543fd37296cc95a39f7ee02"
-    },
-    {
-      "path": "preact_reproducibility/review/README.md",
-      "bytes": 2599,
-      "sha256": "edd99b60e1de7e78e2d4a94d3ca48cc94448ad01fb52f062b2e207275d1958dd"
     },
     {
       "path": "preact_reproducibility/review/references.bib",
@@ -463,11 +463,6 @@
       "sha256": "63b9b09d39f1eda7829803270579d59990c242bd51a3dd88fdfb0aedf5caf4aa"
     },
     {
-      "path": "preact_reproducibility/REVIEWER_FINDINGS.md",
-      "bytes": 5078,
-      "sha256": "74af20cc968e3b6a7ff7644f468f5e1400d956d5b5a07145b83b82e9c242a10b"
-    },
-    {
       "path": "preact_reproducibility/revision_analysis.py",
       "bytes": 9502,
       "sha256": "9274ce66a0602c34e3c1a1b3530664dbb224b5da4924068f7c756083d4a93ebb"
@@ -501,16 +496,6 @@
       "path": "preact_reproducibility/visualize_results.py",
       "bytes": 7216,
       "sha256": "5179eefc6b2b97d526a45c530a8869dbe29c0e037d0be4643138472f4494e73d"
-    },
-    {
-      "path": "PUBLICATION_CHECK.md",
-      "bytes": 1835,
-      "sha256": "3a5ecf6d5e6aadec81d011825ccd8fb8b01d22b639fafa7c63210ccd8256e8e0"
-    },
-    {
-      "path": "README.md",
-      "bytes": 4211,
-      "sha256": "46a1c79d52b96234bcf958b2080b28b457ba5568364df5d5eb0758ffdd0d0b01"
     }
   ]
 }
